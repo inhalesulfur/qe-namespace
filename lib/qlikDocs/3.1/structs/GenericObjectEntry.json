@@ -1,0 +1,17 @@
+{
+    "qProperty": {
+        "desc": "Information about the generic object properties.",
+        "instance": "GenericObjectProperties",
+        "type": "object"
+    },
+    "qChildren": {
+        "desc": "Information about the children of the generic object.",
+        "instance": "GenericObjectEntry",
+        "type": "array"
+    },
+    "qEmbeddedSnapshotRef": {
+        "desc": "Reference to a bookmark/snapshot that is embedded in the generic object.",
+        "instance": "Null GenericBookmarkEntry",
+        "type": "primitive"
+    }
+}

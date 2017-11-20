@@ -1,0 +1,22 @@
+{
+    "qLeft": {
+        "desc": "Position from the left.\nCorresponds to the first column.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qTop": {
+        "desc": "Position from the top.\nCorresponds to the first row.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qWidth": {
+        "desc": "Number of columns in the page. The indexing of the columns may vary depending on whether the cells are expanded or not (parameter qAlwaysFullyExpanded in HyperCubeDef).",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qHeight": {
+        "desc": "Number of rows or elements in the page. The indexing of the rows may vary depending on whether the cells are expanded or not (parameter qAlwaysFullyExpanded in HyperCubeDef).",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

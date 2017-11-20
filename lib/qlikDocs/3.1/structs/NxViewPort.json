@@ -1,0 +1,17 @@
+{
+    "qWidth": {
+        "desc": "Width of the canvas in pixels.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qHeight": {
+        "desc": "Height of the canvas in pixels.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qZoomLevel": {
+        "desc": "Zoom level.",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

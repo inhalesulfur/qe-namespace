@@ -1,0 +1,12 @@
+{
+    "qRootId": {
+        "desc": "Identifier of the root object.\nIf the linked object is a child, the root identifier is the identifier of the parent.\nIf the linked object is an app object, the root identifier is the same than the identifier of the linked object since the linked object is a root object.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qInfo": {
+        "desc": "Information about the linked object.",
+        "instance": "NxInfo",
+        "type": "object"
+    }
+}

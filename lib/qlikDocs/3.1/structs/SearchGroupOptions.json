@@ -1,0 +1,17 @@
+{
+    "qGroupType": {
+        "desc": "Type of the group.",
+        "instance": "GenericObjectType",
+        "type": "primitive"
+    },
+    "qOffset": {
+        "desc": "Position starting from 0.\nThe default value is 0.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qCount": {
+        "desc": "Maximum number of items per group (in qItems[ ]).\nThe default value is -1; all values are returned.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

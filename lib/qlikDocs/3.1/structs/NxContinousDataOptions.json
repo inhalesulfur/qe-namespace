@@ -1,0 +1,22 @@
+{
+    "qStart": {
+        "desc": "Start value.\n",
+        "instance": "Double",
+        "type": "primitive"
+    },
+    "qEnd": {
+        "desc": "End value.\n",
+        "instance": "Double",
+        "type": "primitive"
+    },
+    "qNbrPoints": {
+        "desc": "Number of bins for binning.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qMaxNbrTicks": {
+        "desc": "Maximum number of ticks.",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

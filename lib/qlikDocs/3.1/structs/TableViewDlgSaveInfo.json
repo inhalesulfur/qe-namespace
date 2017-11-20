@@ -1,0 +1,20 @@
+{
+    "qPos": {
+        "desc": "Information about the position of the dialog window.\nNot used in Qlik Sense.\n",
+        "instance": "Rect",
+        "type": "object"
+    },
+    "qCtlInfo": {
+        "desc": "Set of data for internal and source view modes.",
+        "instance": "TableViewCtlSaveInfo",
+        "type": "object"
+    },
+    "qMode": {
+        "desc": "View mode to display when opening Qlik Sense data model viewer.\nOne of:\n\n0 for internal view mode\n1 for source view mode\n\n",
+        "values": {
+            "0": "internal view mode",
+            "1": "source view mode"
+        },
+        "type": "primitive"
+    }
+}

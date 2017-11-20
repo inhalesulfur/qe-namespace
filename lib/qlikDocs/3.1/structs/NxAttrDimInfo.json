@@ -1,0 +1,27 @@
+{
+    "qCardinal": {
+        "desc": "Cardinality of the attribute expression. ",
+        "instance": "Int",
+        "type": "primitive"
+    },
+    "qSize": {
+        "desc": "Number of rows.",
+        "instance": "Size",
+        "type": "primitive"
+    },
+    "qFallbackTitle": {
+        "desc": "The title for the attribute dimension.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qLocked": {
+        "desc": "The Locked value of the dimension.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qError": {
+        "desc": "Validation error.",
+        "instance": "REF(NxValidationError)",
+        "type": "primitive"
+    }
+}

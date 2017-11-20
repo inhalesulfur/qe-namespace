@@ -1,0 +1,44 @@
+{
+    "qName": {
+        "desc": "Name of the script function.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qGroup": {
+        "desc": "Group of the script function.",
+        "instance": "FunctionGroup",
+        "type": "primitive",
+        "values": {
+            "ALL": "FUNC_GROUP_ALL",
+            "U": "FUNC_GROUP_UNKNOWN",
+            "NONE": "FUNC_GROUP_NONE",
+            "AGGR": "FUNC_GROUP_AGGR",
+            "NUM": "FUNC_GROUP_NUMERIC",
+            "RNG": "FUNC_GROUP_RANGE",
+            "EXP": "FUNC_GROUP_EXPONENTIAL_AND_LOGARITHMIC",
+            "TRIG": "FUNC_GROUP_TRIGONOMETRIC_AND_HYPERBOLIC",
+            "FIN": "FUNC_GROUP_FINANCIAL",
+            "MATH": "FUNC_GROUP_MATH_CONSTANT_AND_PARAM_FREE",
+            "COUNT": "FUNC_GROUP_COUNTER",
+            "STR": "FUNC_GROUP_STRING",
+            "MAPP": "FUNC_GROUP_MAPPING",
+            "RCRD": "FUNC_GROUP_INTER_RECORD",
+            "CND": "FUNC_GROUP_CONDITIONAL",
+            "LOG": "FUNC_GROUP_LOGICAL",
+            "NULL": "FUNC_GROUP_NULL",
+            "SYS": "FUNC_GROUP_SYSTEM",
+            "FILE": "FUNC_GROUP_FILE",
+            "TBL": "FUNC_GROUP_TABLE",
+            "DATE": "FUNC_GROUP_DATE_AND_TIME",
+            "NUMI": "FUNC_GROUP_NUMBER_INTERPRET",
+            "FRMT": "FUNC_GROUP_FORMATTING",
+            "CLR": "FUNC_GROUP_COLOR",
+            "RNK": "FUNC_GROUP_RANKING"
+        }
+    },
+    "qSignature": {
+        "desc": "Signature of the script function.\nGives general information about the function.\n",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

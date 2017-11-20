@@ -1,0 +1,47 @@
+{
+    "qStateName": {
+        "desc": "Name of the alternate state.\nDefault is current selections $.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qLibraryId": {
+        "desc": "Refers to a dimension stored in the library.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qDef": {
+        "desc": "Refers to a dimension stored in the list object.",
+        "instance": "NxInlineDimensionDef",
+        "type": "object"
+    },
+    "qAutoSortByState": {
+        "desc": "Defines the sorting by state.",
+        "instance": "NxAutoSortByStateDef",
+        "type": "object"
+    },
+    "qFrequencyMode ": {
+        "desc": "Defines the frequency mode. The frequency mode is used to calculate the frequency of a value in a list object.\nThis parameter is optional.\nDefault is NX_FREQUENCY_NONE.\n",
+        "values": {
+            "NX_FREQUENCY_NONE": "",
+            "NX_FREQUENCY_VALUE": "",
+            "NX_FREQUENCY_PERCENT. The percentage is between 0 and 100.": "",
+            "NX_FREQUENCY_RELATIVE. Same as percent except that the relative value is between 0 and 1.": ""
+        },
+        "type": "primitive"
+    },
+    "qShowAlternatives": {
+        "desc": "If set to true, alternative values are allowed in qData.\nThis parameter is optional. The default value is false.\nIf set to false, no alternative values are displayed in qData. Values are excluded instead.\nNote that on the contrary, the qStateCounts parameter counts the excluded values as alternative values.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qInitialDataFetch": {
+        "desc": "Fetches an initial data set.",
+        "instance": "NxPage",
+        "type": "array"
+    },
+    "qExpressions": {
+        "desc": "Lists the expressions in the list object.\nThis parameter is optional.\n",
+        "instance": "NxListObjectExpressionDef",
+        "type": "array"
+    }
+}

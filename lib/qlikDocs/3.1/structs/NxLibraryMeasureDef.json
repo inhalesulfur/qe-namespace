@@ -1,0 +1,31 @@
+{
+    "qLabel": {
+        "desc": "Label of the measure.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qDef": {
+        "desc": "Definition of the measure.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qGrouping": {
+        "desc": "Used to define a cyclic group or drill-down group.\nThis parameter is optional.\nDefault value is no grouping.\n",
+        "values": {
+            "N": "no grouping",
+            "H": "drill-down",
+            "C": "cyclic"
+        },
+        "type": "primitive"
+    },
+    "qExpressions": {
+        "desc": "Array of expressions.",
+        "instance": "String",
+        "type": "array"
+    },
+    "qActiveExpression": {
+        "desc": "Index to the active expression in a measure.",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

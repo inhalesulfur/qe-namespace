@@ -1,0 +1,7 @@
+{
+    "qValues": {
+        "desc": "List of values inside the table.\nThe first values (in result/qPreview/0/qValues) correspond to the field names in the table.\nThe following values (from result/qPreview/1/qValues) are the values of the fields in the table.\n",
+        "instance": "String",
+        "type": "array"
+    }
+}

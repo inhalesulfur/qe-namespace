@@ -1,0 +1,29 @@
+{
+    "qFieldPairName": {
+        "desc": "Pair of fields.\n&lt;FieldName1&gt; / &lt;FieldName2&gt;\nWhere:\n&lt;FieldName1&gt; is a field in the table 1 (defined in qTable1)\n &lt;FieldName2&gt; is a field in the table 2 (defined in qTable2)\nIf the field is a synthetic key, the name of the field is preceded by [Synthetic key]:.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qScoreSummary": {
+        "desc": "Flag used to interpret calculated scores.\nOne of the following values or sum of values that apply:\n\n0: The cardinal ratio cannot be zero but the symbol score and the row score can be zero.\n-1: The fields do not have the same type.\n-2: The number of rows of the field FieldName1 is zero.\n-4: The number of distinct values of thefield FieldName1 is zero.\n-8: The number of rows of the field FieldName2 is zero.\n-16: The number of distinct values of thefield FieldName2 is zero.\n\nExample:\nThe number of rows of the field FieldName1 is zero, and the number of distinct values of the field FieldName2 is zero, then qScoreSummary is -18.\n",
+        "values": {
+            "0": "The cardinal ratio cannot be zero but the symbol score and the row score can be zero.",
+            "-1": "The fields do not have the same type.",
+            "-2": "The number of rows of the field FieldName1 is zero.",
+            "-4": "The number of distinct values of the  field FieldName1 is zero.",
+            "-8": "The number of rows of the field FieldName2 is zero.",
+            "-16": "The number of distinct values of the  field FieldName2 is zero."
+        },
+        "type": "primitive"
+    },
+    "qField1Scores": {
+        "desc": "Association information about the field FieldName1 defined in qFieldPairName.",
+        "instance": "FieldScores",
+        "type": "object"
+    },
+    "qField2Scores": {
+        "desc": "Association information about the field FieldName2 defined in qFieldPairName.",
+        "instance": "FieldScores",
+        "type": "object"
+    }
+}

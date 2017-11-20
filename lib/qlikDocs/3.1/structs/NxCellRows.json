@@ -1,0 +1,7 @@
+{
+    "NxCellRows": {
+        "desc": "Array of data.",
+        "instance": "NxCell",
+        "type": "array"
+    }
+}

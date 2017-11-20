@@ -1,0 +1,12 @@
+{
+    "qx": {
+        "desc": "x-coordinate in pixels.\nThe origin is the top left of the screen.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qy": {
+        "desc": "y-coordinate in pixels.\nThe origin is the top left of the screen.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

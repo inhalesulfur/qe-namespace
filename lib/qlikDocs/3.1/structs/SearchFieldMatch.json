@@ -1,0 +1,22 @@
+{
+    "qField": {
+        "desc": "Position of the field in the list of fields, starting from 0. \nThe list of fields is defined in qResults/qFieldNames and contains the search associations.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qValues": {
+        "desc": "Positions of the matching values in the search results.\nThe maximum number of values in this list is defined by qMaxNbrFieldMatches.\n",
+        "instance": "Integer",
+        "type": "array"
+    },
+    "qTerms": {
+        "desc": "Positions of the search terms, starting from 0.",
+        "instance": "Integer",
+        "type": "array"
+    },
+    "qNoOfMatches": {
+        "desc": "Number of search hits in the field.\nThe number of values in qValues and the value of qNoOfMatches are equal if qMaxNbrFieldMatches is -1.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

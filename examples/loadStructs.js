@@ -1,3 +1,4 @@
-sl = require("../lib/structLoader");
+var loader = require("../lib/index");
 
-sl.loadQlikEngineStructs("September2017");
+//loader.loadStructs("September2017");
+loader.loadStructs("3.1");

@@ -1,0 +1,17 @@
+{
+    "qName": {
+        "desc": "Name of the OLEDB provider.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qDescription": {
+        "desc": "Description of the OLEDB provider.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qBit32": {
+        "desc": "This parameter is optional. Default is false.\nIs set to true if the version of the OLEDB provider is32-bit.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    }
+}

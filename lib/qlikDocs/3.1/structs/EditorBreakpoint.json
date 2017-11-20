@@ -1,0 +1,17 @@
+{
+    "qbufferName": {
+        "desc": "Name of the breakpoint.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qlineIx": {
+        "desc": "Line number in the script where the breakpoint is set.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qEnabled": {
+        "desc": "If set to true then the breakpoint is enabled (in use).",
+        "instance": "Boolean",
+        "type": "primitive"
+    }
+}

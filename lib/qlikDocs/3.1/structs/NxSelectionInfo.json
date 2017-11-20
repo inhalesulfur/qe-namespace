@@ -1,0 +1,12 @@
+{
+    "qInSelections": {
+        "desc": "Is set to true if the visualization is in selection mode. \nFor more information about the selection mode, see BeginSelections method.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qMadeSelections": {
+        "desc": "Is set to true if the visualization is in selection mode and if some selections have been made while in selection mode.\nFor more information about the selection mode, see BeginSelections method.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    }
+}

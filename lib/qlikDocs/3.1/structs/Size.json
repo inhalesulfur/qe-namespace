@@ -1,0 +1,12 @@
+{
+    "qcx": {
+        "desc": "Number of pixels on the x axis.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qcy": {
+        "desc": "Number of pixels on the y axis.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "qExpression": {
+        "desc": "Definition of the attribute expression.\nExample: \"Max(OrderID)\"\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qLibraryId": {
+        "desc": "Definition of the attribute expression stored in the library..\nExample: \"MyGenericMeasure\"\n",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

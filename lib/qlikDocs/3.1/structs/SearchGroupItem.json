@@ -1,0 +1,30 @@
+{
+    "qItemType": {
+        "desc": "Type of the group item.",
+        "values": {
+            "1": "for Field: the type of the search group item is a field.",
+            "2": "for GenericObject: the type of the search group item is a generic object."
+        },
+        "type": "primitive"
+    },
+    "qTotalNumberOfMatches": {
+        "desc": "Total number of distinct matches in the search group item.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qIdentifier": {
+        "desc": "Identifier of the item. \nIt corresponds to: \n\nThe name of the field, if the type of the search group is data set. \nThe id of the generic object if the type of the search group is generic object.\n\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qItemMatches": {
+        "desc": "List of matches in the search group item. \nThe group item matches are numbered from the value of SearchGroupItemOptions.qOffset to the value of SearchGroupItemOptions.qOffset + SearchGroupItemOptions.qCount.\n",
+        "instance": "SearchGroupItemMatch",
+        "type": "array"
+    },
+    "qSearchTermsMatched": {
+        "desc": "Indexes of the search terms that are included in the group item. These search terms are related to the list of terms defined in SearchResult.qSearchTerms.\n",
+        "instance": "Integer",
+        "type": "array"
+    }
+}

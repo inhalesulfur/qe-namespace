@@ -1,0 +1,17 @@
+{
+    "qDef": {
+        "desc": "Expression or field name.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qLibraryId": {
+        "desc": "LibraryId for dimension.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qSortBy": {
+        "desc": "Sorting.",
+        "instance": "SortCriteria",
+        "type": "primitive"
+    }
+}

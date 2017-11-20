@@ -1,0 +1,12 @@
+{
+    "qName": {
+        "desc": "Name of the field",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qTags": {
+        "desc": "List of tags",
+        "instance": "String",
+        "type": "array"
+    }
+}

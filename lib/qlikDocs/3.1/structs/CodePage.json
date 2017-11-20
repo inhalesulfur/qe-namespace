@@ -1,0 +1,17 @@
+{
+    "qNumber": {
+        "desc": "Number of the code page",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qName": {
+        "desc": "Name of the code page",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qDescription": {
+        "desc": "Description of the code page",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

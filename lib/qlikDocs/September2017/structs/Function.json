@@ -6,7 +6,9 @@
     },
     "qGroup": {
         "desc": "Group of the script function.",
-        "instance": {
+        "instance": "FunctionGroup",
+        "type": "primitive",
+        "values": {
             "ALL": "FUNC_GROUP_ALL",
             "U": "FUNC_GROUP_UNKNOWN",
             "NONE": "FUNC_GROUP_NONE",
@@ -34,8 +36,7 @@
             "RNK": "FUNC_GROUP_RANKING",
             "GEO": "FUNC_GROUP_GEO",
             "EXT": "FUNC_GROUP_EXTERNAL"
-        },
-        "type": "primitive"
+        }
     },
     "qSignature": {
         "desc": "Signature of the script function.\nGives general information about the function.\n",

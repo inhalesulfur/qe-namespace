@@ -1,0 +1,22 @@
+{
+    "qLeft": {
+        "desc": "Position from the left.\nCorresponds to the lowest possible value of the first measure (the measure on the x-axis).\n",
+        "instance": "<p>Double</p>",
+        "type": "primitive"
+    },
+    "qTop": {
+        "desc": "Position from the top.\nCorresponds to the highest possible value of the second measure (the measure on the y-axis).\n",
+        "instance": "<p>Double</p>",
+        "type": "primitive"
+    },
+    "qWidth": {
+        "desc": "Width of the page.\nCorresponds to the highest possible value of the first measure (the measure on the x-axis).\n",
+        "instance": "<p>Double</p>",
+        "type": "primitive"
+    },
+    "qHeight": {
+        "desc": "Height of the page.\nThe difference between qTop and qHeight gives the lowest possible value of the second measure (the measure on the y-axis).\n",
+        "instance": "<p>Double</p>",
+        "type": "primitive"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "qInfo": {
+        "desc": "Information about the measure.\nThis parameter is mandatory.\n",
+        "instance": "NxInfo",
+        "type": "object"
+    },
+    "qMeasure": {
+        "desc": "Definition of the measure.\nThis parameter is mandatory.\n",
+        "instance": "NxLibraryMeasureDef",
+        "type": "object"
+    },
+    "qMetaDef": {
+        "desc": "Definition of the dynamic properties.\n",
+        "instance": "Dynamic properties",
+        "type": "primitive"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "qPos": {
+        "desc": "Information about the position of the broom point.",
+        "instance": "Point",
+        "type": "object"
+    },
+    "qTable": {
+        "desc": "Name of the table.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qFields": {
+        "desc": "List of fields in the table.",
+        "instance": "String",
+        "type": "array"
+    }
+}

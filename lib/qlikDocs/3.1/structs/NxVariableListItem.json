@@ -1,0 +1,47 @@
+{
+    "qName": {
+        "desc": "Name of the variable.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qDescription": {
+        "desc": "Description of the variable.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qDefinition": {
+        "desc": "Definition of the variable. It can be a value or an expression.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qIsConfig": {
+        "desc": "If set to true, it means that the variable is a system variable.\n A system variable provides information about the system and is set by the engine. The content cannot be changed by the user.\nThis parameter is optional.\nThe default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qIsReserved": {
+        "desc": "If set to true, it means that the variable is reserved.\nThis parameter is optional.\nThe default value is false.\nExamples:\n• ScriptError is a reserved variable, set by the engine.\n• DayNames is a reserved variable, set by the user.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qMeta": {
+        "desc": "Information about publishing and permissions.\nThis parameter is optional.\n",
+        "instance": "NxMeta",
+        "type": "object"
+    },
+    "qInfo": {
+        "desc": "Identifier and type of the object.\nThis parameter is mandatory.\n",
+        "instance": "NxInfo",
+        "type": "object"
+    },
+    "qData": {
+        "desc": "Data.",
+        "instance": "JSON",
+        "type": "primitive"
+    },
+    "qIsScriptCreated": {
+        "desc": "If set to true, it means that the variable was defined via script.",
+        "instance": "Boolean",
+        "type": "primitive"
+    }
+}

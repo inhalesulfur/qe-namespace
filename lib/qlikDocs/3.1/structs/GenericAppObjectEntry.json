@@ -1,0 +1,12 @@
+{
+    "qMetaData": {
+        "desc": "Information about meta data",
+        "instance": "GenericAppObjectMetaData",
+        "type": "object"
+    },
+    "qRoot": {
+        "desc": "Information about the generic object",
+        "instance": "GenericObjectEntry",
+        "type": "object"
+    }
+}

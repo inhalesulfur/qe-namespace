@@ -1,0 +1,12 @@
+{
+    "qName": {
+        "desc": "Name of the table.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qType": {
+        "desc": "Type of the table.\nFor examples: Table, View\n",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

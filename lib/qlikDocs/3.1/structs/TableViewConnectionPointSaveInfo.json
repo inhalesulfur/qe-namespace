@@ -1,0 +1,12 @@
+{
+    "qPos": {
+        "desc": "Information about the position of the connection point.",
+        "instance": "Point",
+        "type": "object"
+    },
+    "qFields": {
+        "desc": "List of the fields in the table.",
+        "instance": "String",
+        "type": "array"
+    }
+}

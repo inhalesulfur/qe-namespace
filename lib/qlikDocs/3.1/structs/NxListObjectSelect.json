@@ -1,0 +1,22 @@
+{
+    "qPath": {
+        "desc": "Path to the definition of the list object.\n\n\nFor example, /qListObjectDef.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qToggleMode": {
+        "desc": "Set to true to keep any selections present in the list object.\nIf this parameter is set to false, selections made before accepting the object search become alternative.\nThe default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qSoftLock": {
+        "desc": "Set to true to ignore locks; in that case, locked fields can be selected. \nThe default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qValues": {
+        "desc": "Indexes (or element numbers) of the values to select.",
+        "instance": "Integer",
+        "type": "array"
+    }
+}

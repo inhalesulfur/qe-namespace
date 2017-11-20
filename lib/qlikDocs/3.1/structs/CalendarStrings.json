@@ -1,0 +1,22 @@
+{
+    "qDayNames": {
+        "desc": "List of short day names.",
+        "instance": "String",
+        "type": "array"
+    },
+    "qMonthNames": {
+        "desc": "List of short month names.",
+        "instance": "String",
+        "type": "array"
+    },
+    "qLongDayNames": {
+        "desc": "List of long day names.",
+        "instance": "String",
+        "type": "array"
+    },
+    "qLongMonthNames": {
+        "desc": "List of long month names.",
+        "instance": "String",
+        "type": "array"
+    }
+}

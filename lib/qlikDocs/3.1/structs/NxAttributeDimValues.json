@@ -1,0 +1,7 @@
+{
+    "qValues": {
+        "desc": "List of values.\n",
+        "instance": "NxSimpleDimValue",
+        "type": "array"
+    }
+}

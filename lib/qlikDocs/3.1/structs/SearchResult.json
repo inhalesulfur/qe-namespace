@@ -1,0 +1,17 @@
+{
+    "qSearchTerms": {
+        "desc": "List of the search terms.",
+        "instance": "String",
+        "type": "array"
+    },
+    "qTotalNumberOfGroups": {
+        "desc": "Total number of groups.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qSearchGroupArray": {
+        "desc": "List of search groups.\nThe groups are numbered from the value of SearchPage.qOffset to the value of SearchPage.qOffset + SearchPage.qCount.\n",
+        "instance": "SearchGroup",
+        "type": "array"
+    }
+}

@@ -1,8 +1,9 @@
 {
     "qRange": {
         "desc": "Range information.\n",
-        "instance": {},
-        "type": "primitive"
+        "instance": "Range",
+        "type": "primitive",
+        "values": {}
     },
     "qDimIx": {
         "desc": "Dimension index.\n",

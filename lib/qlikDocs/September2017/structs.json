@@ -23,6 +23,25 @@
             "type": "array"
         }
     },
+    "AppObjectListDef": {
+        "qType": {
+            "desc": "Type of the app list.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qData": {
+            "desc": "Data that you want to include in the app list definition.\nYou need to enter the paths to the information you want to retrieve.\n",
+            "instance": "JSON",
+            "type": "primitive"
+        }
+    },
+    "AppObjectList": {
+        "qItems": {
+            "desc": "Information about the list of dimensions",
+            "instance": "NxContainerEntry",
+            "type": "array"
+        }
+    },
     "AppEntry": {
         "qID": {
             "desc": "Identifier of the app.",
@@ -207,6 +226,44 @@
             "type": "primitive"
         }
     },
+    "BookmarkFieldItem": {
+        "qDef": {
+            "desc": "Name and type of the field",
+            "instance": "FieldDefEx",
+            "type": "object"
+        },
+        "qLocked": {
+            "desc": "Indicates if the field is locked.\nDefault is false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qSelectInfo": {
+            "desc": "Information on the selections criteria",
+            "instance": "SelectInfo",
+            "type": "primitive",
+            "values": {}
+        },
+        "qValues": {
+            "desc": "List of the selected values\nEither the list of selected values or the list of excluded values is displayed.\n",
+            "instance": "FieldValue",
+            "type": "array"
+        },
+        "qExcludedValues": {
+            "desc": "List of excluded values.\nEither the list of selected values or the list of excluded values is displayed.\n",
+            "instance": "FieldValue",
+            "type": "array"
+        },
+        "qAndMode": {
+            "desc": "If set to true, selections within a list object are made in AND mode; If you have a list object that lists all customers, by selecting Customer 1 and Customer 2 while in and-mode, all records that are associated with Customer 1 and Customer 2 are selected.\nThe default value is false; selections within a list object are made in OR mode.If you have a list object that lists all customers, by selecting Customer 1 and Customer 2 while in or-mode, all records that are associated with either Customer 1 or Customer 2 are selected.\nThis parameter is not returned if set to false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qOneAndOnlyOne": {
+            "desc": "If set to true, the field has always one selection (not 0 and not more than 1). If another value is selected, the previous one is unselected.\nThe default value is false. This parameter is not returned if set to false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        }
+    },
     "BookmarkListDef": {
         "qType": {
             "desc": "Type of the list",
@@ -231,62 +288,6 @@
             "type": "object"
         }
     },
-    "BookmarkFieldItem": {
-        "qDef": {
-            "desc": "Name and type of the field",
-            "instance": "FieldDefEx",
-            "type": "object"
-        },
-        "qLocked": {
-            "desc": "Indicates if the field is locked.\nDefault is false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qSelectInfo": {
-            "desc": "Information on the selections criteria",
-            "instance": {},
-            "type": "primitive"
-        },
-        "qValues": {
-            "desc": "List of the selected values\nEither the list of selected values or the list of excluded values is displayed.\n",
-            "instance": "FieldValue",
-            "type": "array"
-        },
-        "qExcludedValues": {
-            "desc": "List of excluded values.\nEither the list of selected values or the list of excluded values is displayed.\n",
-            "instance": "FieldValue",
-            "type": "array"
-        },
-        "qAndMode": {
-            "desc": "If set to true, selections within a list object are made in AND mode; If you have a list object that lists all customers, by selecting Customer 1 and Customer 2 while in and-mode, all records that are associated with Customer 1 and Customer 2 are selected.\nThe default value is false; selections within a list object are made in OR mode.If you have a list object that lists all customers, by selecting Customer 1 and Customer 2 while in or-mode, all records that are associated with either Customer 1 or Customer 2 are selected.\nThis parameter is not returned if set to false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qOneAndOnlyOne": {
-            "desc": "If set to true, the field has always one selection (not 0 and not more than 1). If another value is selected, the previous one is unselected.\nThe default value is false. This parameter is not returned if set to false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        }
-    },
-    "AppObjectListDef": {
-        "qType": {
-            "desc": "Type of the app list.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qData": {
-            "desc": "Data that you want to include in the app list definition.\nYou need to enter the paths to the information you want to retrieve.\n",
-            "instance": "JSON",
-            "type": "primitive"
-        }
-    },
-    "BookmarkList": {
-        "qItems": {
-            "desc": "Information about the list of bookmarks",
-            "instance": "NxContainerEntry",
-            "type": "array"
-        }
-    },
     "CalendarStrings": {
         "qDayNames": {
             "desc": "List of short day names.",
@@ -306,6 +307,13 @@
         "qLongMonthNames": {
             "desc": "List of long month names.",
             "instance": "String",
+            "type": "array"
+        }
+    },
+    "BookmarkList": {
+        "qItems": {
+            "desc": "Information about the list of bookmarks",
+            "instance": "NxContainerEntry",
             "type": "array"
         }
     },
@@ -332,23 +340,6 @@
         "qData": {
             "desc": "Data that you want to include in the child list definition.\nYou need to enter the paths to the information you want to retrieve.\n",
             "instance": "JSON",
-            "type": "primitive"
-        }
-    },
-    "CodePage": {
-        "qNumber": {
-            "desc": "Number of the code page",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qName": {
-            "desc": "Name of the code page",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qDescription": {
-            "desc": "Description of the code page",
-            "instance": "String",
             "type": "primitive"
         }
     },
@@ -421,29 +412,20 @@
             "type": "object"
         }
     },
-    "CustomConnector": {
-        "qProvider": {
-            "desc": "Name of the custom connector file.",
+    "CodePage": {
+        "qNumber": {
+            "desc": "Number of the code page",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qName": {
+            "desc": "Name of the code page",
             "instance": "String",
             "type": "primitive"
         },
-        "qParent": {
-            "desc": "Name of the parent folder that contains the custom connector file.",
+        "qDescription": {
+            "desc": "Description of the code page",
             "instance": "String",
-            "type": "primitive"
-        },
-        "qDisplayName": {
-            "desc": "Name of the custom connector as displayed in the Qlik interface.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qMachineMode": {
-            "desc": "Mode of the machine (64 or 32 bits).",
-            "values": {
-                "CONNECT_DEFAULT": "used internally",
-                "CONNECT_64": "",
-                "CONNECT_32": ""
-            },
             "type": "primitive"
         }
     },
@@ -462,18 +444,6 @@
             "desc": "Information about publishing and permissions.",
             "instance": "NxMeta",
             "type": "object"
-        }
-    },
-    "Database": {
-        "qName": {
-            "desc": "Name of the database.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qIsDefault": {
-            "desc": "Is set to true if the database is set by default.",
-            "instance": "Boolean",
-            "type": "primitive"
         }
     },
     "DatabaseInfo": {
@@ -531,6 +501,44 @@
             "desc": "List of the script keywords",
             "instance": "String",
             "type": "array"
+        }
+    },
+    "CustomConnector": {
+        "qProvider": {
+            "desc": "Name of the custom connector file.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qParent": {
+            "desc": "Name of the parent folder that contains the custom connector file.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qDisplayName": {
+            "desc": "Name of the custom connector as displayed in the Qlik interface.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qMachineMode": {
+            "desc": "Mode of the machine (64 or 32 bits).",
+            "values": {
+                "CONNECT_DEFAULT": "used internally",
+                "CONNECT_64": "",
+                "CONNECT_32": ""
+            },
+            "type": "primitive"
+        }
+    },
+    "Database": {
+        "qName": {
+            "desc": "Name of the database.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qIsDefault": {
+            "desc": "Is set to true if the database is set by default.",
+            "instance": "Boolean",
+            "type": "primitive"
         }
     },
     "DataField": {
@@ -593,6 +601,28 @@
             "type": "array"
         }
     },
+    "DelimiterInfo": {
+        "qName": {
+            "desc": "Name of the delimiter.\nExample:\n\"Tab_DELIMITER\"\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qScriptCode": {
+            "desc": "Representation of the delimiter value that is used in the script.\nExample:\n\"'\\t'\"\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qNumber": {
+            "desc": "Delimiter character number used by the engine to determine how to separate the values.",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qIsMultiple": {
+            "desc": "Is set to true if multiple spaces are used to separate the values.",
+            "instance": "Boolean",
+            "type": "primitive"
+        }
+    },
     "DerivedFieldsInTableData": {
         "qDefinitionName": {
             "desc": "Name of the derived definition.\n",
@@ -615,28 +645,6 @@
             "desc": "Information about the list of dimensions",
             "instance": "NxContainerEntry",
             "type": "array"
-        }
-    },
-    "DelimiterInfo": {
-        "qName": {
-            "desc": "Name of the delimiter.\nExample:\n\"Tab_DELIMITER\"\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qScriptCode": {
-            "desc": "Representation of the delimiter value that is used in the script.\nExample:\n\"'\\t'\"\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qNumber": {
-            "desc": "Delimiter character number used by the engine to determine how to separate the values.",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qIsMultiple": {
-            "desc": "Is set to true if multiple spaces are used to separate the values.",
-            "instance": "Boolean",
-            "type": "primitive"
         }
     },
     "DimensionListDef": {
@@ -701,6 +709,28 @@
             "desc": "Thumbnail of the app.",
             "instance": "StaticContentUrl",
             "type": "object"
+        }
+    },
+    "DriveInfo": {
+        "qDrive": {
+            "desc": "Value of the drive\nExamples:\n C:\\\\, E:\\\\\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qType": {
+            "desc": "Type of the drive.\nFixed means physical drive.\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qTypeIdentifier": {
+            "desc": "Information about the drive type.\n",
+            "instance": "DriveType",
+            "type": "object"
+        },
+        "qName": {
+            "desc": "Name of the drive.",
+            "instance": "String",
+            "type": "primitive"
         }
     },
     "DriveType": {
@@ -804,35 +834,6 @@
             "type": "primitive"
         }
     },
-    "DriveInfo": {
-        "qDrive": {
-            "desc": "Value of the drive\nExamples:\n C:\\\\, E:\\\\\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qType": {
-            "desc": "Type of the drive.\nFixed means physical drive.\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qTypeIdentifier": {
-            "desc": "Information about the drive type.\n",
-            "instance": "DriveType",
-            "type": "object"
-        },
-        "qName": {
-            "desc": "Name of the drive.",
-            "instance": "String",
-            "type": "primitive"
-        }
-    },
-    "AppObjectList": {
-        "qItems": {
-            "desc": "Information about the list of dimensions",
-            "instance": "NxContainerEntry",
-            "type": "array"
-        }
-    },
     "FieldDefEx": {
         "qName": {
             "desc": "Name of the field",
@@ -846,88 +847,6 @@
                 "1": "for PRESENT: plain field",
                 "2": "for IS_EXPR: calculated dimension"
             },
-            "type": "primitive"
-        }
-    },
-    "FieldDescription": {
-        "qInternalNumber": {
-            "desc": "Internal number of the field.",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qName": {
-            "desc": "Name of the field.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qSrcTables": {
-            "desc": "List of table names.",
-            "instance": "String",
-            "type": "array"
-        },
-        "qIsSystem": {
-            "desc": "If set to true, it means that the field is a system field.\nThe default value is false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qIsHidden": {
-            "desc": "If set to true, it means that the field is hidden.\nThe default value is false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qIsSemantic": {
-            "desc": "If set to true, it means that the field is a semantic.\nThe default value is false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qDistinctOnly": {
-            "desc": "If set to true, only distinct field values are shown.\nThe default value is false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qCardinal": {
-            "desc": "Number of distinct field values.",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qTotalCount": {
-            "desc": "Total number of field values.",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qIsLocked": {
-            "desc": "If set to true, it means that the field is locked.\nThe default value is false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qAlwaysOneSelected": {
-            "desc": "If set to true, it means that the field has one and only one selection (not 0 and not more than 1).\nIf this property is set to true, the field cannot be cleared anymore and no more selections can be performed in that field.\nThe default value is false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qAndMode": {
-            "desc": "If set to true a logical AND (instead of a logical OR) is used when making selections in a field.\nThe default value is false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qIsNumeric": {
-            "desc": "Is set to true if the value is a numeric.\nThe default value is false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qComment": {
-            "desc": "Field comment.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qTags": {
-            "desc": "Gives information on a field. For example, it can return the type of the field.\nExamples: key, text, ASCII\n",
-            "instance": "String",
-            "type": "array"
-        },
-        "qIsDefinitionOnly": {
-            "desc": "If set to true, it means that the field is a field on the fly.\nThe default value is false.\n",
-            "instance": "Boolean",
             "type": "primitive"
         }
     },
@@ -1023,13 +942,6 @@
             "type": "array"
         }
     },
-    "FieldList": {
-        "qItems": {
-            "desc": "Array of items",
-            "instance": "NxFieldDescription",
-            "type": "array"
-        }
-    },
     "FieldListDef": {
         "qShowSystem": {
             "desc": "Shows the system tables if set to true.",
@@ -1067,6 +979,88 @@
             "type": "primitive"
         }
     },
+    "FieldDescription": {
+        "qInternalNumber": {
+            "desc": "Internal number of the field.",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qName": {
+            "desc": "Name of the field.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qSrcTables": {
+            "desc": "List of table names.",
+            "instance": "String",
+            "type": "array"
+        },
+        "qIsSystem": {
+            "desc": "If set to true, it means that the field is a system field.\nThe default value is false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qIsHidden": {
+            "desc": "If set to true, it means that the field is hidden.\nThe default value is false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qIsSemantic": {
+            "desc": "If set to true, it means that the field is a semantic.\nThe default value is false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qDistinctOnly": {
+            "desc": "If set to true, only distinct field values are shown.\nThe default value is false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qCardinal": {
+            "desc": "Number of distinct field values.",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qTotalCount": {
+            "desc": "Total number of field values.",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qIsLocked": {
+            "desc": "If set to true, it means that the field is locked.\nThe default value is false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qAlwaysOneSelected": {
+            "desc": "If set to true, it means that the field has one and only one selection (not 0 and not more than 1).\nIf this property is set to true, the field cannot be cleared anymore and no more selections can be performed in that field.\nThe default value is false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qAndMode": {
+            "desc": "If set to true a logical AND (instead of a logical OR) is used when making selections in a field.\nThe default value is false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qIsNumeric": {
+            "desc": "Is set to true if the value is a numeric.\nThe default value is false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qComment": {
+            "desc": "Field comment.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qTags": {
+            "desc": "Gives information on a field. For example, it can return the type of the field.\nExamples: key, text, ASCII\n",
+            "instance": "String",
+            "type": "array"
+        },
+        "qIsDefinitionOnly": {
+            "desc": "If set to true, it means that the field is a field on the fly.\nThe default value is false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        }
+    },
     "FieldValue": {
         "qText": {
             "desc": "Text related to the field value\nThis parameter is optional.\n",
@@ -1084,10 +1078,19 @@
             "type": "primitive"
         }
     },
+    "FieldList": {
+        "qItems": {
+            "desc": "Array of items",
+            "instance": "NxFieldDescription",
+            "type": "array"
+        }
+    },
     "FileDataFormat": {
         "qType": {
             "desc": "Type of the file.\n",
-            "instance": {
+            "instance": "FileType",
+            "type": "primitive",
+            "values": {
                 "CSV": "Delimited",
                 "FIX": "Fixed Record",
                 "DIF": "Data Interchange Format",
@@ -1099,8 +1102,7 @@
                 "QVX": "QVX file",
                 "JSON": "JSON&nbsp;format",
                 "KML": "KML file"
-            },
-            "type": "primitive"
+            }
         },
         "qLabel": {
             "desc": "One of:\n\nembedded labels (field names are present in the file)\nno labels\nexplicit labels (for DIFfiles)\n\n",
@@ -1183,6 +1185,18 @@
             "type": "primitive"
         }
     },
+    "GenericBookmarkEntry": {
+        "qProperties": {
+            "desc": "Information about the properties of the bookmark.",
+            "instance": "GenericBookmarkProperties",
+            "type": "object"
+        },
+        "qBookmark": {
+            "desc": "Information about the bookmark.",
+            "instance": "NxBookmark",
+            "type": "object"
+        }
+    },
     "FolderItem": {
         "qName": {
             "desc": "Name of the folder item.",
@@ -1199,28 +1213,21 @@
             "type": "primitive"
         }
     },
-    "GenericBookmarkEntry": {
-        "qProperties": {
-            "desc": "Information about the properties of the bookmark.",
-            "instance": "GenericBookmarkProperties",
+    "GenericBookmarkLayout": {
+        "qInfo": {
+            "desc": "Information about the object",
+            "instance": "NxInfo",
             "type": "object"
+        },
+        "qMeta": {
+            "desc": "Information on publishing and permissions",
+            "instance": "Null or <span class=\"path\">NxMeta</span>",
+            "type": "primitive"
         },
         "qBookmark": {
-            "desc": "Information about the bookmark.",
+            "desc": "Information about the bookmark",
             "instance": "NxBookmark",
             "type": "object"
-        }
-    },
-    "GenericBookmarkProperties": {
-        "qInfo": {
-            "desc": "Information about the bookmark.\nThis parameter is mandatory.\n",
-            "instance": {},
-            "type": "primitive"
-        },
-        "qMetaDef": {
-            "desc": "Definition of the dynamic properties.",
-            "instance": "Dynamic properties",
-            "type": "primitive"
         }
     },
     "Function": {
@@ -1231,7 +1238,9 @@
         },
         "qGroup": {
             "desc": "Group of the script function.",
-            "instance": {
+            "instance": "FunctionGroup",
+            "type": "primitive",
+            "values": {
                 "ALL": "FUNC_GROUP_ALL",
                 "U": "FUNC_GROUP_UNKNOWN",
                 "NONE": "FUNC_GROUP_NONE",
@@ -1259,30 +1268,12 @@
                 "RNK": "FUNC_GROUP_RANKING",
                 "GEO": "FUNC_GROUP_GEO",
                 "EXT": "FUNC_GROUP_EXTERNAL"
-            },
-            "type": "primitive"
+            }
         },
         "qSignature": {
             "desc": "Signature of the script function.\nGives general information about the function.\n",
             "instance": "String",
             "type": "primitive"
-        }
-    },
-    "GenericBookmarkLayout": {
-        "qInfo": {
-            "desc": "Information about the object",
-            "instance": "NxInfo",
-            "type": "object"
-        },
-        "qMeta": {
-            "desc": "Information on publishing and permissions",
-            "instance": "Null or <span class=\"path\">NxMeta</span>",
-            "type": "primitive"
-        },
-        "qBookmark": {
-            "desc": "Information about the bookmark",
-            "instance": "NxBookmark",
-            "type": "object"
         }
     },
     "GenericDimensionInfo": {
@@ -1312,6 +1303,19 @@
             "type": "primitive"
         }
     },
+    "GenericBookmarkProperties": {
+        "qInfo": {
+            "desc": "Information about the bookmark.\nThis parameter is mandatory.\n",
+            "instance": "NxInfo",
+            "type": "primitive",
+            "values": {}
+        },
+        "qMetaDef": {
+            "desc": "Definition of the dynamic properties.",
+            "instance": "Dynamic properties",
+            "type": "primitive"
+        }
+    },
     "GenericDimensionLayout": {
         "qInfo": {
             "desc": "Identifier and type of the dimension.",
@@ -1325,12 +1329,13 @@
         },
         "qDim": {
             "desc": "Name and label of the dimension, information about grouping.",
-            "instance": {
+            "instance": "NxLibraryDimensionDef",
+            "type": "primitive",
+            "values": {
                 "N": "no grouping",
                 "H": "drill-down",
                 "C": "cyclic"
-            },
-            "type": "primitive"
+            }
         },
         "qDimInfos": {
             "desc": "Cardinal and tags related to the dimension. \nLength of the longest value in the field.\n",
@@ -1372,23 +1377,6 @@
             "type": "primitive"
         }
     },
-    "GenericMeasureProperties": {
-        "qInfo": {
-            "desc": "Information about the measure.\nThis parameter is mandatory.\n",
-            "instance": "NxInfo",
-            "type": "object"
-        },
-        "qMeasure": {
-            "desc": "Definition of the measure.\nThis parameter is mandatory.\n",
-            "instance": "NxLibraryMeasureDef",
-            "type": "object"
-        },
-        "qMetaDef": {
-            "desc": "Definition of the dynamic properties.\n",
-            "instance": "Dynamic properties",
-            "type": "primitive"
-        }
-    },
     "GenericObjectEntry": {
         "qProperty": {
             "desc": "Information about the generic object properties.",
@@ -1403,6 +1391,23 @@
         "qEmbeddedSnapshotRef": {
             "desc": "Reference to a bookmark/snapshot that is embedded in the generic object.",
             "instance": "Null GenericBookmarkEntry",
+            "type": "primitive"
+        }
+    },
+    "GenericMeasureProperties": {
+        "qInfo": {
+            "desc": "Information about the measure.\nThis parameter is mandatory.\n",
+            "instance": "NxInfo",
+            "type": "object"
+        },
+        "qMeasure": {
+            "desc": "Definition of the measure.\nThis parameter is mandatory.\n",
+            "instance": "NxLibraryMeasureDef",
+            "type": "object"
+        },
+        "qMetaDef": {
+            "desc": "Definition of the dynamic properties.\n",
+            "instance": "Dynamic properties",
             "type": "primitive"
         }
     },
@@ -1438,23 +1443,6 @@
             "type": "object"
         }
     },
-    "GenericObjectProperties": {
-        "qInfo": {
-            "desc": "Identifier and type of the object.\nThis parameter is mandatory.\n",
-            "instance": "NxInfo",
-            "type": "object"
-        },
-        "qExtendsId": {
-            "desc": "Should beset to create an object that is linked to another object. Enter the identifier of the linking object (i.e the object you want to link to).\nThis parameter is mandatory.\nIf you do not want to link your object, set this parameter to an empty string.\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qMetaDef": {
-            "desc": "Definition of the dynamic properties.\n",
-            "instance": "Dynamic properties",
-            "type": "primitive"
-        }
-    },
     "GenericVariableLayout": {
         "qInfo": {
             "desc": "Identifier and type of the object.\nThis parameter is mandatory.\n",
@@ -1479,6 +1467,23 @@
         "qIsScriptCreated": {
             "desc": "If set to true, it means that the variable was defined via script.",
             "instance": "Boolean",
+            "type": "primitive"
+        }
+    },
+    "GenericObjectProperties": {
+        "qInfo": {
+            "desc": "Identifier and type of the object.\nThis parameter is mandatory.\n",
+            "instance": "NxInfo",
+            "type": "object"
+        },
+        "qExtendsId": {
+            "desc": "Should beset to create an object that is linked to another object. Enter the identifier of the linking object (i.e the object you want to link to).\nThis parameter is mandatory.\nIf you do not want to link your object, set this parameter to an empty string.\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qMetaDef": {
+            "desc": "Definition of the dynamic properties.\n",
+            "instance": "Dynamic properties",
             "type": "primitive"
         }
     },
@@ -1794,53 +1799,6 @@
             "type": "array"
         }
     },
-    "ListObjectDef": {
-        "qStateName": {
-            "desc": "Name of the alternate state.\nDefault is current selections $.\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qLibraryId": {
-            "desc": "Refers to a dimension stored in the library.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qDef": {
-            "desc": "Refers to a dimension stored in the list object.",
-            "instance": "NxInlineDimensionDef",
-            "type": "object"
-        },
-        "qAutoSortByState": {
-            "desc": "Defines the sorting by state.",
-            "instance": "NxAutoSortByStateDef",
-            "type": "object"
-        },
-        "qFrequencyMode ": {
-            "desc": "Defines the frequency mode. The frequency mode is used to calculate the frequency of a value in a list object.\nThis parameter is optional.\nDefault is NX_FREQUENCY_NONE.\n",
-            "values": {
-                "NX_FREQUENCY_NONE": "",
-                "NX_FREQUENCY_VALUE": "",
-                "NX_FREQUENCY_PERCENT. The percentage is between 0 and 100.": "",
-                "NX_FREQUENCY_RELATIVE. Same as percent except that the relative value is between 0 and 1.": ""
-            },
-            "type": "primitive"
-        },
-        "qShowAlternatives": {
-            "desc": "If set to true, alternative values are allowed in qData.\nThis parameter is optional. The default value is false.\nIf set to false, no alternative values are displayed in qData. Values are excluded instead.\nNote that on the contrary, the qStateCounts parameter counts the excluded values as alternative values.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qInitialDataFetch": {
-            "desc": "Fetches an initial data set.",
-            "instance": "NxPage",
-            "type": "array"
-        },
-        "qExpressions": {
-            "desc": "Lists the expressions in the list object.\nThis parameter is optional.\n",
-            "instance": "NxListObjectExpressionDef",
-            "type": "array"
-        }
-    },
     "LocaleInfo": {
         "qDecimalSep": {
             "desc": "Decimal separator.",
@@ -1923,6 +1881,13 @@
             "type": "primitive"
         }
     },
+    "MeasureList": {
+        "qItems": {
+            "desc": "Information about the list of measures",
+            "instance": "NxContainerEntry",
+            "type": "array"
+        }
+    },
     "MeasureListDef": {
         "qType": {
             "desc": "Type of the list",
@@ -1942,7 +1907,6 @@
             "type": "array"
         }
     },
-    "MediaListDef": {},
     "MediaListItem": {
         "qUrlDef": {
             "desc": "Relative path to the media file. The URL is static.\nMedia files located:\n• in the /content/default/ folder are outside the qvf file.\n• in the/media/ folder are embedded in the qvf file.\n",
@@ -1982,11 +1946,68 @@
             "type": "primitive"
         }
     },
-    "MeasureList": {
-        "qItems": {
-            "desc": "Information about the list of measures",
-            "instance": "NxContainerEntry",
+    "ListObjectDef": {
+        "qStateName": {
+            "desc": "Name of the alternate state.\nDefault is current selections $.\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qLibraryId": {
+            "desc": "Refers to a dimension stored in the library.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qDef": {
+            "desc": "Refers to a dimension stored in the list object.",
+            "instance": "NxInlineDimensionDef",
+            "type": "object"
+        },
+        "qAutoSortByState": {
+            "desc": "Defines the sorting by state.",
+            "instance": "NxAutoSortByStateDef",
+            "type": "object"
+        },
+        "qFrequencyMode ": {
+            "desc": "Defines the frequency mode. The frequency mode is used to calculate the frequency of a value in a list object.\nThis parameter is optional.\nDefault is NX_FREQUENCY_NONE.\n",
+            "values": {
+                "NX_FREQUENCY_NONE": "",
+                "NX_FREQUENCY_VALUE": "",
+                "NX_FREQUENCY_PERCENT. The percentage is between 0 and 100.": "",
+                "NX_FREQUENCY_RELATIVE. Same as percent except that the relative value is between 0 and 1.": ""
+            },
+            "type": "primitive"
+        },
+        "qShowAlternatives": {
+            "desc": "If set to true, alternative values are allowed in qData.\nThis parameter is optional. The default value is false.\nIf set to false, no alternative values are displayed in qData. Values are excluded instead.\nNote that on the contrary, the qStateCounts parameter counts the excluded values as alternative values.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qInitialDataFetch": {
+            "desc": "Fetches an initial data set.",
+            "instance": "NxPage",
             "type": "array"
+        },
+        "qExpressions": {
+            "desc": "Lists the expressions in the list object.\nThis parameter is optional.\n",
+            "instance": "NxListObjectExpressionDef",
+            "type": "array"
+        }
+    },
+    "NxAttrDimDef": {
+        "qDef": {
+            "desc": "Expression or field name.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qLibraryId": {
+            "desc": "LibraryId for dimension.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qSortBy": {
+            "desc": "Sorting.",
+            "instance": "SortCriteria",
+            "type": "primitive"
         }
     },
     "NxAppLayout": {
@@ -2051,50 +2072,6 @@
             "type": "object"
         }
     },
-    "NxAttrDimDef": {
-        "qDef": {
-            "desc": "Expression or field name.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qLibraryId": {
-            "desc": "LibraryId for dimension.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qSortBy": {
-            "desc": "Sorting.",
-            "instance": "SortCriteria",
-            "type": "primitive"
-        }
-    },
-    "NxAttrDimInfo": {
-        "qCardinal": {
-            "desc": "Cardinality of the attribute expression. ",
-            "instance": "Int",
-            "type": "primitive"
-        },
-        "qSize": {
-            "desc": "Number of rows.",
-            "instance": "Size",
-            "type": "primitive"
-        },
-        "qFallbackTitle": {
-            "desc": "The title for the attribute dimension.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qLocked": {
-            "desc": "The Locked value of the dimension.",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qError": {
-            "desc": "Validation error.",
-            "instance": "REF(NxValidationError)",
-            "type": "primitive"
-        }
-    },
     "NxAttrExprDef": {
         "qExpression": {
             "desc": "Definition of the attribute expression.\nExample: \"Max(OrderID)\"\n",
@@ -2134,17 +2111,45 @@
             "type": "primitive"
         }
     },
-    "NxAttributeExpressionValues": {
-        "qValues": {
-            "desc": "List of attribute expressions values.",
-            "instance": "NxSimpleValue",
-            "type": "array"
-        }
-    },
+    "MediaListDef": {},
     "NxAttributeDimValues": {
         "qValues": {
             "desc": "List of values.\n",
             "instance": "NxSimpleDimValue",
+            "type": "array"
+        }
+    },
+    "NxAttrDimInfo": {
+        "qCardinal": {
+            "desc": "Cardinality of the attribute expression. ",
+            "instance": "Int",
+            "type": "primitive"
+        },
+        "qSize": {
+            "desc": "Number of rows.",
+            "instance": "Size",
+            "type": "primitive"
+        },
+        "qFallbackTitle": {
+            "desc": "The title for the attribute dimension.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qLocked": {
+            "desc": "The Locked value of the dimension.",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qError": {
+            "desc": "Validation error.",
+            "instance": "REF(NxValidationError)",
+            "type": "primitive"
+        }
+    },
+    "NxAttributeExpressionValues": {
+        "qValues": {
+            "desc": "List of attribute expressions values.",
+            "instance": "NxSimpleValue",
             "type": "array"
         }
     },
@@ -2153,6 +2158,13 @@
             "desc": "This parameter applies to list objects.\nIf the number of selected values in the list object is greater than the value set in qDisplayNumberOfRows, the selected lines are promoted at the top of the list object.\nIf qDisplayNumberOfRows is set to a negative value or to 0, the sort by state is disabled.\n",
             "instance": "Integer",
             "type": "primitive"
+        }
+    },
+    "NxAxisData": {
+        "qAxis": {
+            "desc": "List of Axis data.",
+            "instance": "NxAxisTicks",
+            "type": "array"
         }
     },
     "NxAxisTicks": {
@@ -2186,32 +2198,6 @@
         "qVariableItems": {
             "desc": "List of the variables in the app at the time the bookmark was created. ",
             "instance": "BookmarkVariableItem",
-            "type": "array"
-        }
-    },
-    "NxAxisData": {
-        "qAxis": {
-            "desc": "List of Axis data.",
-            "instance": "NxAxisTicks",
-            "type": "array"
-        }
-    },
-    "NxCellPosition": {
-        "qx": {
-            "desc": "Position of the cell on the x-axis.",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qy": {
-            "desc": "Position of the cell on the y-axis.",
-            "instance": "Integer",
-            "type": "primitive"
-        }
-    },
-    "NxCellRows": {
-        "NxCellRows": {
-            "desc": "Array of data.",
-            "instance": "NxCell",
             "type": "array"
         }
     },
@@ -2286,6 +2272,18 @@
             "type": "object"
         }
     },
+    "NxCellPosition": {
+        "qx": {
+            "desc": "Position of the cell on the x-axis.",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qy": {
+            "desc": "Position of the cell on the y-axis.",
+            "instance": "Integer",
+            "type": "primitive"
+        }
+    },
     "NxContainerEntry": {
         "qInfo": {
             "desc": "Information about the object",
@@ -2328,8 +2326,9 @@
     "NxContinuousRangeSelectInfo": {
         "qRange": {
             "desc": "Range information.\n",
-            "instance": {},
-            "type": "primitive"
+            "instance": "Range",
+            "type": "primitive",
+            "values": {}
         },
         "qDimIx": {
             "desc": "Dimension index.\n",
@@ -2436,6 +2435,13 @@
             "type": "primitive"
         }
     },
+    "NxCellRows": {
+        "NxCellRows": {
+            "desc": "Array of data.",
+            "instance": "NxCell",
+            "type": "array"
+        }
+    },
     "NxDataPage": {
         "qMatrix": {
             "desc": "Array of data.",
@@ -2492,80 +2498,6 @@
             "type": "array"
         }
     },
-    "NxDerivedFieldsData": {
-        "qDerivedDefinitionName": {
-            "desc": "Name of the derived definition.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qFieldDefs": {
-            "desc": "List of the derived fields.",
-            "instance": "NxDerivedField",
-            "type": "array"
-        },
-        "qGroupDefs": {
-            "desc": "List of the derived groups.",
-            "instance": "NxDerivedGroup",
-            "type": "array"
-        },
-        "qTags": {
-            "desc": "List of tags on the derived fields.",
-            "instance": "String",
-            "type": "array"
-        }
-    },
-    "NxDimension": {
-        "qLibraryId": {
-            "desc": "Refers to a dimension stored in the library.\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qDef": {
-            "desc": "Refers to a dimension stored in the hypercube.",
-            "instance": "NxInlineDimensionDef",
-            "type": "object"
-        },
-        "qNullSuppression": {
-            "desc": "If set to true, no null values are returned.",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qOtherTotalSpec": {
-            "desc": "Sets the dimension limits. Each dimension of a hypercube is configured separately.\nDefines if some values (grouped as Others) should be grouped together in the visualization.\nFor example in a pie chart all values lower than 200 could be grouped together.\n",
-            "instance": "OtherTotalSpecProp",
-            "type": "object"
-        },
-        "qShowAll": {
-            "desc": "If set to true, all dimension values are shown.",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qOtherLabel": {
-            "desc": "This property is used when some dimension limits are set.\nLabel of the Others group. The default label is Others.\nExample:\"qOtherLabel\":\"=&lt;label&gt;\"\nor\"qOtherLabel\":{\"qExpr\":\"=&lt;label&gt;\"}\nWhere\n\n&lt;label&gt; is the label of the Others group.\n\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qTotalLabel": {
-            "desc": "If this property is set, the total of the calculated values is returned.\nThe default label is Total.\nExample:\n\"qTotalLabel\":\"=&lt;label&gt;\"\n\nor\n\"qTotalLabel\":{\"qExpr\":\"=&lt;label&gt;\"}\n\nWhere\n\n&lt;label&gt; is the label of the Totalgroup.\n\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qCalcCond": {
-            "desc": "Specifies a calculation condition, which must be fulfilled for the dimension to be calculated.\nIf the calculation condition is not met, the dimension is excluded from the calculation.\nThis property is optional. By default, there is no calculation condition.\n",
-            "instance": "ValueExpr",
-            "type": "object"
-        },
-        "qAttributeExpressions": {
-            "desc": "List of attribute expressions.\n",
-            "instance": "NxAttrExprDef",
-            "type": "array"
-        },
-        "qAttributeDimensions": {
-            "desc": "List of attribute dimensions.",
-            "instance": "NxAttrDimDef",
-            "type": "array"
-        }
-    },
     "NxDerivedGroup": {
         "qId": {
             "desc": "Identifier of the group.",
@@ -2588,6 +2520,28 @@
         },
         "qFieldDefs": {
             "desc": "List of the derived fields in the group.",
+            "instance": "String",
+            "type": "array"
+        }
+    },
+    "NxDerivedFieldsData": {
+        "qDerivedDefinitionName": {
+            "desc": "Name of the derived definition.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qFieldDefs": {
+            "desc": "List of the derived fields.",
+            "instance": "NxDerivedField",
+            "type": "array"
+        },
+        "qGroupDefs": {
+            "desc": "List of the derived groups.",
+            "instance": "NxDerivedGroup",
+            "type": "array"
+        },
+        "qTags": {
+            "desc": "List of tags on the derived fields.",
             "instance": "String",
             "type": "array"
         }
@@ -2733,6 +2687,58 @@
             "type": "primitive"
         }
     },
+    "NxDimension": {
+        "qLibraryId": {
+            "desc": "Refers to a dimension stored in the library.\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qDef": {
+            "desc": "Refers to a dimension stored in the hypercube.",
+            "instance": "NxInlineDimensionDef",
+            "type": "object"
+        },
+        "qNullSuppression": {
+            "desc": "If set to true, no null values are returned.",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qOtherTotalSpec": {
+            "desc": "Sets the dimension limits. Each dimension of a hypercube is configured separately.\nDefines if some values (grouped as Others) should be grouped together in the visualization.\nFor example in a pie chart all values lower than 200 could be grouped together.\n",
+            "instance": "OtherTotalSpecProp",
+            "type": "object"
+        },
+        "qShowAll": {
+            "desc": "If set to true, all dimension values are shown.",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qOtherLabel": {
+            "desc": "This property is used when some dimension limits are set.\nLabel of the Others group. The default label is Others.\nExample:\"qOtherLabel\":\"=&lt;label&gt;\"\nor\"qOtherLabel\":{\"qExpr\":\"=&lt;label&gt;\"}\nWhere\n\n&lt;label&gt; is the label of the Others group.\n\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qTotalLabel": {
+            "desc": "If this property is set, the total of the calculated values is returned.\nThe default label is Total.\nExample:\n\"qTotalLabel\":\"=&lt;label&gt;\"\n\nor\n\"qTotalLabel\":{\"qExpr\":\"=&lt;label&gt;\"}\n\nWhere\n\n&lt;label&gt; is the label of the Totalgroup.\n\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qCalcCond": {
+            "desc": "Specifies a calculation condition, which must be fulfilled for the dimension to be calculated.\nIf the calculation condition is not met, the dimension is excluded from the calculation.\nThis property is optional. By default, there is no calculation condition.\n",
+            "instance": "ValueExpr",
+            "type": "object"
+        },
+        "qAttributeExpressions": {
+            "desc": "List of attribute expressions.\n",
+            "instance": "NxAttrExprDef",
+            "type": "array"
+        },
+        "qAttributeDimensions": {
+            "desc": "List of attribute dimensions.",
+            "instance": "NxAttrDimDef",
+            "type": "array"
+        }
+    },
     "NxFieldDescription": {
         "qIsSemantic": {
             "desc": "If set to true, it means that the field is a semantic.",
@@ -2797,7 +2803,22 @@
             "type": "primitive"
         }
     },
-    "NxFieldSelectionMode": {},
+    "NxFieldSelectionInfo": {
+        "qName": {
+            "desc": "Name of the field.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qFieldSelectionMode": {
+            "desc": "Selection mode.",
+            "values": {
+                "NORMAL": "a selection in normal mode.",
+                "AND": "a selection in AND&nbsp;mode.",
+                "NOT": "a selection NOT in AND mode."
+            },
+            "type": "primitive"
+        }
+    },
     "NxGetBookmarkOptions": {
         "qTypes": {
             "desc": "List of object types.\n",
@@ -2807,18 +2828,6 @@
         "qData": {
             "desc": "Set of data.",
             "instance": "JSON",
-            "type": "primitive"
-        }
-    },
-    "NxGroupTail": {
-        "qUp": {
-            "desc": "Number of elements that are part of the previous tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight\nThis parameter is optional.Is not shown if the value is 0.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qDown": {
-            "desc": "Number of elements that are part of the next tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight\nThis parameter is optional. Is not shown if the value is 0.\n",
-            "instance": "Integer",
             "type": "primitive"
         }
     },
@@ -2839,20 +2848,24 @@
             "type": "primitive"
         }
     },
-    "NxFieldSelectionInfo": {
-        "qName": {
-            "desc": "Name of the field.",
-            "instance": "String",
+    "NxFieldSelectionMode": {},
+    "NxGroupTail": {
+        "qUp": {
+            "desc": "Number of elements that are part of the previous tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight\nThis parameter is optional.Is not shown if the value is 0.\n",
+            "instance": "Integer",
             "type": "primitive"
         },
-        "qFieldSelectionMode": {
-            "desc": "Selection mode.",
-            "values": {
-                "NORMAL": "a selection in normal mode.",
-                "AND": "a selection in AND&nbsp;mode.",
-                "NOT": "a selection NOT in AND mode."
-            },
+        "qDown": {
+            "desc": "Number of elements that are part of the next tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight\nThis parameter is optional. Is not shown if the value is 0.\n",
+            "instance": "Integer",
             "type": "primitive"
+        }
+    },
+    "NxHighlightRanges": {
+        "qRanges": {
+            "desc": "Ranges of highlighted values",
+            "instance": "CharRange",
+            "type": "array"
         }
     },
     "NxInfo": {
@@ -2864,6 +2877,59 @@
         "qType": {
             "desc": "Type of the object.\nThis parameter is mandatory.\n",
             "instance": "String",
+            "type": "primitive"
+        }
+    },
+    "NxInlineDimensionDef": {
+        "qGrouping": {
+            "desc": "Used to define a cyclic group or drill-down group.\nThis parameter is optional.\nDefault value is no grouping.\n",
+            "values": {
+                "N": "no grouping",
+                "H": "drill-down",
+                "C": "cyclic"
+            },
+            "type": "primitive"
+        },
+        "qFieldDefs": {
+            "desc": "Array of field names.\nWhen creating a grouped dimension, more than one field name is defined.\nThis parameter is optional.\n",
+            "instance": "String",
+            "type": "array"
+        },
+        "qFieldLabels": {
+            "desc": "Array of field labels.\nThis parameter is optional.\n",
+            "instance": "String",
+            "type": "array"
+        },
+        "qLabelExpression": {
+            "desc": "Label expression.\nThis parameter is optional.\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qNumberPresentations": {
+            "desc": "Defines the format of the value.\nThis parameter is optional.\n",
+            "instance": "FieldAttributes",
+            "type": "array"
+        },
+        "qReverseSort": {
+            "desc": "If set to true, it inverts the sort criteria in the field.",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qSortCriterias": {
+            "desc": "Defines the sorting criteria in the field.\nThis parameter is optional.\nDefault is to sort by alphabetical order, ascending.\n",
+            "instance": "SortCriteria",
+            "type": "array"
+        },
+        "qActiveField": {
+            "desc": "Index of the active field in a cyclic dimension.\nThis parameter is optional. The default value is 0.\nThis parameter is used in case of cyclic dimensions (qGrouping is C).\n",
+            "instance": "Integer",
+            "type": "primitive"
+        }
+    },
+    "NxLayoutErrors": {
+        "ErrorCode": {
+            "desc": "Error code.",
+            "instance": "Integer",
             "type": "primitive"
         }
     },
@@ -2943,66 +3009,6 @@
             "type": "array"
         }
     },
-    "NxInlineDimensionDef": {
-        "qGrouping": {
-            "desc": "Used to define a cyclic group or drill-down group.\nThis parameter is optional.\nDefault value is no grouping.\n",
-            "values": {
-                "N": "no grouping",
-                "H": "drill-down",
-                "C": "cyclic"
-            },
-            "type": "primitive"
-        },
-        "qFieldDefs": {
-            "desc": "Array of field names.\nWhen creating a grouped dimension, more than one field name is defined.\nThis parameter is optional.\n",
-            "instance": "String",
-            "type": "array"
-        },
-        "qFieldLabels": {
-            "desc": "Array of field labels.\nThis parameter is optional.\n",
-            "instance": "String",
-            "type": "array"
-        },
-        "qLabelExpression": {
-            "desc": "Label expression.\nThis parameter is optional.\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qNumberPresentations": {
-            "desc": "Defines the format of the value.\nThis parameter is optional.\n",
-            "instance": "FieldAttributes",
-            "type": "array"
-        },
-        "qReverseSort": {
-            "desc": "If set to true, it inverts the sort criteria in the field.",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qSortCriterias": {
-            "desc": "Defines the sorting criteria in the field.\nThis parameter is optional.\nDefault is to sort by alphabetical order, ascending.\n",
-            "instance": "SortCriteria",
-            "type": "array"
-        },
-        "qActiveField": {
-            "desc": "Index of the active field in a cyclic dimension.\nThis parameter is optional. The default value is 0.\nThis parameter is used in case of cyclic dimensions (qGrouping is C).\n",
-            "instance": "Integer",
-            "type": "primitive"
-        }
-    },
-    "NxHighlightRanges": {
-        "qRanges": {
-            "desc": "Ranges of highlighted values",
-            "instance": "CharRange",
-            "type": "array"
-        }
-    },
-    "NxLayoutErrors": {
-        "ErrorCode": {
-            "desc": "Error code.",
-            "instance": "Integer",
-            "type": "primitive"
-        }
-    },
     "NxLibraryDimensionDef": {
         "qGrouping": {
             "desc": "Information about the grouping.",
@@ -3053,6 +3059,18 @@
             "desc": "Index to the active expression in a measure.",
             "instance": "Integer",
             "type": "primitive"
+        }
+    },
+    "NxLinkedObjectInfo": {
+        "qRootId": {
+            "desc": "Identifier of the root object.\nIf the linked object is a child, the root identifier is the identifier of the parent.\nIf the linked object is an app object, the root identifier is the same than the identifier of the linked object since the linked object is a root object.\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qInfo": {
+            "desc": "Information about the linked object.",
+            "instance": "NxInfo",
+            "type": "object"
         }
     },
     "NxListObjectExpression": {
@@ -3224,18 +3242,6 @@
         }
     },
     "NxMetaDef": {},
-    "NxLinkedObjectInfo": {
-        "qRootId": {
-            "desc": "Identifier of the root object.\nIf the linked object is a child, the root identifier is the identifier of the parent.\nIf the linked object is an app object, the root identifier is the same than the identifier of the linked object since the linked object is a root object.\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qInfo": {
-            "desc": "Information about the linked object.",
-            "instance": "NxInfo",
-            "type": "object"
-        }
-    },
     "NxMultiRangeSelectInfo": {
         "qRange": {
             "desc": "Range of values.",
@@ -3315,6 +3321,72 @@
             "type": "primitive"
         }
     },
+    "NxPivotDimensionCell": {
+        "qText": {
+            "desc": "Some text",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qElemNo": {
+            "desc": "Rank number of the value\nIf set to -1, it means that the value is not an element number.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qValue": {
+            "desc": "Value of the cell\nIs set to NaN, if the value is not a number.\n",
+            "instance": "Double precision floating point",
+            "type": "primitive"
+        },
+        "qCanExpand": {
+            "desc": "If set to true, it means that the cell can be expanded.\nThis parameter is not returned if it is set to false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qCanCollapse": {
+            "desc": "If set to true, it means that the cell can be collapsed.\nThis parameter is not returned if it is set to false.\n",
+            "instance": "Boolean",
+            "type": "primitive"
+        },
+        "qType": {
+            "desc": "Type of the cell",
+            "values": {
+                "V": "NX_DIM_CELL_VALUE. Applies to values in the data matrix.",
+                "E": "NX_DIM_CELL_EMPTY. Applies to empty cells in the top and left dimensions.",
+                "G": "NX_DIM_CELL_GENERATED. Applies to generated nodes that are inserted into the returned tree when there is no actual value (qAllValues in NxPageTreeNode set to true).",
+                "N": "NX_DIM_CELL_NORMAL. Applies to left and top dimensions cells.",
+                "T": "NX_DIM_CELL_TOTAL. Applies to cells marked with Total.",
+                "P": "NX_DIM_CELL_PSEUDO. Applies to pseudo dimensions.",
+                "R": "NX_DIM_CELL_ROOT. Applies to root node.",
+                "U": "NX_DIM_CELL_NULL. Applies to Null values in the data matrix."
+            },
+            "type": "primitive"
+        },
+        "qUp": {
+            "desc": "Number of elements that are part of the previous tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qDown": {
+            "desc": "Number of elements that are part of the next tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qSubNodes": {
+            "desc": "Information about sub nodes (or sub cells)\nThe array is empty [ ] when there is no sub nodes.\n",
+            "instance": "NxPivotDimensionCell",
+            "type": "array"
+        },
+        "qAttrExps": {
+            "desc": "Information about attribute expressions.\nThe array is empty [ ] when there is no attribute expressions.\n",
+            "instance": "NxAttributeExpressionValues",
+            "type": "array"
+        },
+        "qAttrDims": {
+            "desc": "Information about attribute dimensions.",
+            "instance": "NxAttributeDimValues",
+            "type": "array"
+        }
+    },
     "NxPivotPage": {
         "qLeft": {
             "desc": "Information about the left dimension values of a pivot table.",
@@ -3385,84 +3457,6 @@
             "type": "object"
         }
     },
-    "NxPivotDimensionCell": {
-        "qText": {
-            "desc": "Some text",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qElemNo": {
-            "desc": "Rank number of the value\nIf set to -1, it means that the value is not an element number.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qValue": {
-            "desc": "Value of the cell\nIs set to NaN, if the value is not a number.\n",
-            "instance": "Double precision floating point",
-            "type": "primitive"
-        },
-        "qCanExpand": {
-            "desc": "If set to true, it means that the cell can be expanded.\nThis parameter is not returned if it is set to false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qCanCollapse": {
-            "desc": "If set to true, it means that the cell can be collapsed.\nThis parameter is not returned if it is set to false.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        },
-        "qType": {
-            "desc": "Type of the cell",
-            "values": {
-                "V": "NX_DIM_CELL_VALUE. Applies to values in the data matrix.",
-                "E": "NX_DIM_CELL_EMPTY. Applies to empty cells in the top and left dimensions.",
-                "G": "NX_DIM_CELL_GENERATED. Applies to generated nodes that are inserted into the returned tree when there is no actual value (qAllValues in NxPageTreeNode set to true).",
-                "N": "NX_DIM_CELL_NORMAL. Applies to left and top dimensions cells.",
-                "T": "NX_DIM_CELL_TOTAL. Applies to cells marked with Total.",
-                "P": "NX_DIM_CELL_PSEUDO. Applies to pseudo dimensions.",
-                "R": "NX_DIM_CELL_ROOT. Applies to root node.",
-                "U": "NX_DIM_CELL_NULL. Applies to Null values in the data matrix."
-            },
-            "type": "primitive"
-        },
-        "qUp": {
-            "desc": "Number of elements that are part of the previous tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qDown": {
-            "desc": "Number of elements that are part of the next tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qSubNodes": {
-            "desc": "Information about sub nodes (or sub cells)\nThe array is empty [ ] when there is no sub nodes.\n",
-            "instance": "NxPivotDimensionCell",
-            "type": "array"
-        },
-        "qAttrExps": {
-            "desc": "Information about attribute expressions.\nThe array is empty [ ] when there is no attribute expressions.\n",
-            "instance": "NxAttributeExpressionValues",
-            "type": "array"
-        },
-        "qAttrDims": {
-            "desc": "Information about attribute dimensions.",
-            "instance": "NxAttributeDimValues",
-            "type": "array"
-        }
-    },
-    "NxRangeSelectInfo": {
-        "qRange": {
-            "desc": "Range of values.",
-            "instance": "Range",
-            "type": "object"
-        },
-        "qMeasureIx": {
-            "desc": "Number of the measure to select.\nNumbering starts from 0.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        }
-    },
     "NxSelectionCell": {
         "qType": {
             "desc": "Type of cells to select",
@@ -3484,6 +3478,30 @@
             "type": "primitive"
         }
     },
+    "NxRangeSelectInfo": {
+        "qRange": {
+            "desc": "Range of values.",
+            "instance": "Range",
+            "type": "object"
+        },
+        "qMeasureIx": {
+            "desc": "Number of the measure to select.\nNumbering starts from 0.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        }
+    },
+    "NxSimpleDimValue": {
+        "qText": {
+            "desc": "Text related to the attribute expression value.\nThis property is optional. No text is returned if the attribute expression value is a numeric.\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qElemNo": {
+            "desc": "Element number.\n",
+            "instance": "Int",
+            "type": "primitive"
+        }
+    },
     "NxSelectionInfo": {
         "qInSelections": {
             "desc": "Is set to true if the visualization is in selection mode. \nFor more information about the selection mode, see BeginSelections method.\n",
@@ -3493,18 +3511,6 @@
         "qMadeSelections": {
             "desc": "Is set to true if the visualization is in selection mode and if some selections have been made while in selection mode.\nFor more information about the selection mode, see BeginSelections method.\n",
             "instance": "Boolean",
-            "type": "primitive"
-        }
-    },
-    "NxSimpleValue": {
-        "qText": {
-            "desc": "Text related to the attribute expression value.\nThis property is optional. No text is returned if the attribute expression value is a numeric.\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qNum": {
-            "desc": "Numeric value of the attribute expression.\nThis property is set to NaN (Not a Number) if the attribute expression value is not a numeric.\nNumerical values are not returned as text.\n",
-            "instance": "Double precision floating point",
             "type": "primitive"
         }
     },
@@ -3589,44 +3595,15 @@
             "type": "object"
         }
     },
-    "NxSimpleDimValue": {
+    "NxSimpleValue": {
         "qText": {
             "desc": "Text related to the attribute expression value.\nThis property is optional. No text is returned if the attribute expression value is a numeric.\n",
             "instance": "String",
             "type": "primitive"
         },
-        "qElemNo": {
-            "desc": "Element number.\n",
-            "instance": "Int",
-            "type": "primitive"
-        }
-    },
-    "NxTickCell": {
-        "qText": {
-            "desc": "Tick's label.\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qStart": {
-            "desc": "Start value.\n",
-            "instance": "Double",
-            "type": "primitive"
-        },
-        "qEnd": {
-            "desc": "End value.",
-            "instance": "Double",
-            "type": "primitive"
-        }
-    },
-    "NxStreamListEntry": {
-        "qName": {
-            "desc": "Name of the stream\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qId": {
-            "desc": "Identifier of the stream\n",
-            "instance": "String",
+        "qNum": {
+            "desc": "Numeric value of the attribute expression.\nThis property is set to NaN (Not a Number) if the attribute expression value is not a numeric.\nNumerical values are not returned as text.\n",
+            "instance": "Double precision floating point",
             "type": "primitive"
         }
     },
@@ -3672,64 +3649,27 @@
             "type": "primitive"
         }
     },
-    "NxTreeNode": {
-        "qText": {
-            "desc": "The text version of the value, if available.",
+    "NxStreamListEntry": {
+        "qName": {
+            "desc": "Name of the stream\n",
             "instance": "String",
             "type": "primitive"
         },
-        "qElemNo": {
-            "desc": "Element number\n",
-            "instance": "Integer",
+        "qId": {
+            "desc": "Identifier of the stream\n",
+            "instance": "String",
             "type": "primitive"
-        },
-        "qRow": {
-            "desc": "Row index in the data matrix.\nThe indexing starts from 0.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qNodeNr": {
-            "desc": "A generated number applicable to this page only. Used so that children can easily identify who their parents are.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qParentNode": {
-            "desc": "The qNodeNr of this node's parent for the current page.",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qType": {
-            "desc": "Type of the cell.",
-            "values": {
-                "V": "NX_DIM_CELL_VALUE. Applies to values in the data matrix.",
-                "E": "NX_DIM_CELL_EMPTY. Applies to empty cells in the top and left dimensions.",
-                "G": "NX_DIM_CELL_GENERATED. Applies to generated nodes that are inserted into the returned tree when there is no actual value (qAllValues in NxPageTreeNode set to true).",
-                "N": "NX_DIM_CELL_NORMAL. Applies to left and top dimensions cells.",
-                "T": "NX_DIM_CELL_TOTAL. Applies to cells marked with Total.",
-                "P": "NX_DIM_CELL_PSEUDO. Applies to pseudo dimensions.",
-                "R": "NX_DIM_CELL_ROOT. Applies to root node.",
-                "U": "NX_DIM_CELL_NULL. Applies to Null values in the data matrix."
-            },
-            "type": "primitive"
-        },
-        "qValues": {
-            "desc": "The measures for this node.",
-            "instance": "NxTreeValue",
+        }
+    },
+    "NxStackPage": {
+        "qData": {
+            "desc": "Array of data.",
+            "instance": "NxStackedPivotCell",
             "type": "array"
         },
-        "qNodes": {
-            "desc": "The children of this node in the tree structure.",
-            "instance": "NxTreeNode",
-            "type": "array"
-        },
-        "qAttrExps": {
-            "desc": "Attribute expression values.",
-            "instance": "NxAttributeExpressionValues",
-            "type": "object"
-        },
-        "qAttrDims": {
-            "desc": "Attribute dimension values.",
-            "instance": "NxAttributeDimValues",
+        "qArea": {
+            "desc": "Size and offset of the data in the matrix.",
+            "instance": "Rect",
             "type": "object"
         }
     },
@@ -3748,6 +3688,23 @@
             "desc": "Filters out complete dimensions from the fetched tree.",
             "instance": "NxPageTreeLevel",
             "type": "object"
+        }
+    },
+    "NxTickCell": {
+        "qText": {
+            "desc": "Tick's label.\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qStart": {
+            "desc": "Start value.\n",
+            "instance": "Double",
+            "type": "primitive"
+        },
+        "qEnd": {
+            "desc": "End value.",
+            "instance": "Double",
+            "type": "primitive"
         }
     },
     "NxTreeValue": {
@@ -3819,23 +3776,6 @@
             "type": "primitive"
         }
     },
-    "NxValidationError": {
-        "qErrorCode": {
-            "desc": "Error code.\nThis parameter is always displayed in case of error.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qContext": {
-            "desc": "Context related to the error, from the user app domain. \nIt can be the identifier of an object, a field name, a table name.\nThis parameter is optional.\n",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qExtendedMessage": {
-            "desc": "Internal information from the server.\nThis parameter is optional.\n",
-            "instance": "String",
-            "type": "primitive"
-        }
-    },
     "NxVariableProperties": {
         "qName": {
             "desc": "Name of the variable.",
@@ -3861,6 +3801,23 @@
             "desc": "List of enumerations.\nThis property is used if qUsePredefListedValues is set to true.\n",
             "instance": "String",
             "type": "array"
+        }
+    },
+    "NxValidationError": {
+        "qErrorCode": {
+            "desc": "Error code.\nThis parameter is always displayed in case of error.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qContext": {
+            "desc": "Context related to the error, from the user app domain. \nIt can be the identifier of an object, a field name, a table name.\nThis parameter is optional.\n",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qExtendedMessage": {
+            "desc": "Internal information from the server.\nThis parameter is optional.\n",
+            "instance": "String",
+            "type": "primitive"
         }
     },
     "NxViewPort": {
@@ -3898,23 +3855,6 @@
         },
         "qUserOnly": {
             "desc": "This parameter is optional. Default is false.\nIs set to true if the connection is User DSN. The connection works only for a specific user.\n",
-            "instance": "Boolean",
-            "type": "primitive"
-        }
-    },
-    "OleDbProvider": {
-        "qName": {
-            "desc": "Name of the OLEDB provider.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qDescription": {
-            "desc": "Description of the OLEDB provider.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qBit32": {
-            "desc": "This parameter is optional. Default is false.\nIs set to true if the version of the OLEDB provider is32-bit.\n",
             "instance": "Boolean",
             "type": "primitive"
         }
@@ -4012,18 +3952,6 @@
             "type": "primitive"
         }
     },
-    "NxStackPage": {
-        "qData": {
-            "desc": "Array of data.",
-            "instance": "NxStackedPivotCell",
-            "type": "array"
-        },
-        "qArea": {
-            "desc": "Size and offset of the data in the matrix.",
-            "instance": "Rect",
-            "type": "object"
-        }
-    },
     "ProgressMessage": {
         "qMessageCode": {
             "desc": "Code number to the corresponding localized message string.",
@@ -4034,6 +3962,23 @@
             "desc": "Parameters to be inserted in the localized message string.",
             "instance": "String",
             "type": "array"
+        }
+    },
+    "OleDbProvider": {
+        "qName": {
+            "desc": "Name of the OLEDB provider.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qDescription": {
+            "desc": "Description of the OLEDB provider.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qBit32": {
+            "desc": "This parameter is optional. Default is false.\nIs set to true if the version of the OLEDB provider is32-bit.\n",
+            "instance": "Boolean",
+            "type": "primitive"
         }
     },
     "Range": {
@@ -4097,6 +4042,51 @@
             "type": "primitive"
         }
     },
+    "SearchAssociationResult": {
+        "qFieldNames": {
+            "desc": "List of the fields that contains search associations.",
+            "instance": "String",
+            "type": "array"
+        },
+        "qSearchTerms": {
+            "desc": "List of the search terms.",
+            "instance": "String",
+            "type": "array"
+        },
+        "qFieldDictionaries": {
+            "desc": "Information about the fields containing search hits.",
+            "instance": "SearchFieldDictionary",
+            "type": "array"
+        },
+        "qSearchTermsMatched": {
+            "desc": "List of search results.\nThe maximum number of search results in this list is set by qPage/qCount.\n",
+            "instance": "SearchMatchCombinations",
+            "type": "array",
+            "values": {}
+        },
+        "qTotalSearchResults": {
+            "desc": "Total number of search results. \nThis number is not limited by qPage/qCount.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        }
+    },
+    "SearchCharRange": {
+        "qCharPos": {
+            "desc": "Starting position of the match in the search result, starting from 0.",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qCharCount": {
+            "desc": "Length of the match in the search result.",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qTerm": {
+            "desc": "Position of the term in the list of search terms, starting from 0.",
+            "instance": "Integer",
+            "type": "primitive"
+        }
+    },
     "ScriptSyntaxError": {
         "qErrLen": {
             "desc": "Length of the word where the error is located",
@@ -4129,50 +4119,6 @@
             "type": "primitive"
         }
     },
-    "SearchAssociationResult": {
-        "qFieldNames": {
-            "desc": "List of the fields that contains search associations.",
-            "instance": "String",
-            "type": "array"
-        },
-        "qSearchTerms": {
-            "desc": "List of the search terms.",
-            "instance": "String",
-            "type": "array"
-        },
-        "qFieldDictionaries": {
-            "desc": "Information about the fields containing search hits.",
-            "instance": "SearchFieldDictionary",
-            "type": "array"
-        },
-        "qSearchTermsMatched": {
-            "desc": "List of search results.\nThe maximum number of search results in this list is set by qPage/qCount.\n",
-            "instance": {},
-            "type": "array"
-        },
-        "qTotalSearchResults": {
-            "desc": "Total number of search results. \nThis number is not limited by qPage/qCount.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        }
-    },
-    "SearchCharRange": {
-        "qCharPos": {
-            "desc": "Starting position of the match in the search result, starting from 0.",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qCharCount": {
-            "desc": "Length of the match in the search result.",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qTerm": {
-            "desc": "Position of the term in the list of search terms, starting from 0.",
-            "instance": "Integer",
-            "type": "primitive"
-        }
-    },
     "SearchCombinationOptions": {
         "qSearchFields": {
             "desc": "List of the search fields.\nIf empty, the search is performed in all fields of the app.\n",
@@ -4199,6 +4145,18 @@
             "type": "array"
         }
     },
+    "SearchFieldDictionary": {
+        "qField": {
+            "desc": "Position of the field in the list of fields, starting from 0. \nThe list of fields is defined in qResults/qFieldNames and contains the search associations.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qResult": {
+            "desc": "List of the matching values.\nThe maximum number of values in this list is set by qMaxNbrFieldMatches.\n",
+            "instance": "SearchTermResult",
+            "type": "array"
+        }
+    },
     "SearchFieldMatch": {
         "qField": {
             "desc": "Position of the field in the list of fields, starting from 0. \nThe list of fields is defined in qResults/qFieldNames and contains the search associations.\n",
@@ -4219,18 +4177,6 @@
             "desc": "Number of search hits in the field.\nThe number of values in qValues and the value of qNoOfMatches are equal if qMaxNbrFieldMatches is -1.\n",
             "instance": "Integer",
             "type": "primitive"
-        }
-    },
-    "SearchFieldDictionary": {
-        "qField": {
-            "desc": "Position of the field in the list of fields, starting from 0. \nThe list of fields is defined in qResults/qFieldNames and contains the search associations.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qResult": {
-            "desc": "List of the matching values.\nThe maximum number of values in this list is set by qMaxNbrFieldMatches.\n",
-            "instance": "SearchTermResult",
-            "type": "array"
         }
     },
     "SearchGroup": {
@@ -4301,15 +4247,33 @@
         },
         "qAttributes": {
             "desc": "Provides detail of the match as requested by the user in SearchObjectsOptions.qAttributes or SearchCombinationOptions.qAttributes\nIf the user requests SearchObjects or SearchResults with an empty qAttributes option, the outputted qAttributes is returned empty.\nFor SearchObjects requested with qProperty, the SearchGroupItemMatch.qAttributes return value contains [“qProperty”, \"qMetaDef/title”] if the match has been found in the title of the item. For dimension values, the returned qProperty will be “*”.\nFor SearchResults requested with qNum, the SearchGroupItemMatch.qAttributes return value contains [\"qNum\", N] where N is the numeric value of the element or NaN if the value is not numeric.\nFor SearchResults requested with qElemNum, the SearchGroupItemMatch.qAttributes return value contains [\"qElemNum\", N] where N is the value index of the element.\n",
-            "instance": {
+            "instance": "SearchAttribute",
+            "type": "array",
+            "values": {
                 "String corresponding to SearchObjectOptions.qAttributes": ""
-            },
-            "type": "array"
+            }
         },
         "qRanges": {
             "desc": "List of ranges.\nFor example, if the search terms are Price and Make, and the search group item value is Make by Price vs Mileage, then there are two ranges: one for Price and one for Make.\n",
             "instance": "SearchCharRange",
             "type": "array"
+        }
+    },
+    "SearchGroupItemOptions": {
+        "qGroupItemType": {
+            "desc": "Type of the group item. Can be\n\nGenericObject: the type of the search group item is a generic object. Group items have this type when you are calling SearchObjects.\nField: the type of the search group item is a field. Group items have this type when you are calling SearchResults.\n\n",
+            "instance": "GenericObjectField",
+            "type": "primitive"
+        },
+        "qOffset": {
+            "desc": "Positionstarting from 0.\nThe default value is 0.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qCount": {
+            "desc": "Maximum number of matches per item (in qItemMatches[ ]).\nThe default value is -1: all values are returned.\n",
+            "instance": "Integer",
+            "type": "primitive"
         }
     },
     "SearchGroupOptions": {
@@ -4329,20 +4293,27 @@
             "type": "primitive"
         }
     },
-    "SearchGroupItemOptions": {
-        "qGroupItemType": {
-            "desc": "Type of the group item. Can be\n\nGenericObject: the type of the search group item is a generic object. Group items have this type when you are calling SearchObjects.\nField: the type of the search group item is a field. Group items have this type when you are calling SearchResults.\n\n",
-            "instance": "GenericObjectField",
-            "type": "primitive"
-        },
-        "qOffset": {
-            "desc": "Positionstarting from 0.\nThe default value is 0.\n",
+    "SearchMatchCombination": {
+        "qId": {
+            "desc": "Index of the search result, starting from 0.",
             "instance": "Integer",
             "type": "primitive"
         },
-        "qCount": {
-            "desc": "Maximum number of matches per item (in qItemMatches[ ]).\nThe default value is -1: all values are returned.\n",
-            "instance": "Integer",
+        "qFieldMatches": {
+            "desc": "Information about the search matches.",
+            "instance": "SearchFieldMatch",
+            "type": "array"
+        }
+    },
+    "SearchObjectOptions": {
+        "qAttributes": {
+            "desc": "This array is either empty or contains qProperty. \n",
+            "instance": "String",
+            "type": "array"
+        },
+        "qCharEncoding": {
+            "desc": "Encoding used to compute qRanges of type SearchCharRange.\nOnly affects the computation of the ranges. It does not impact the encoding of the text.\n",
+            "instance": "Utf8Utf16",
             "type": "primitive"
         }
     },
@@ -4373,18 +4344,6 @@
             "type": "array"
         }
     },
-    "SearchMatchCombination": {
-        "qId": {
-            "desc": "Index of the search result, starting from 0.",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qFieldMatches": {
-            "desc": "Information about the search matches.",
-            "instance": "SearchFieldMatch",
-            "type": "array"
-        }
-    },
     "SearchResult": {
         "qSearchTerms": {
             "desc": "List of the search terms.",
@@ -4399,35 +4358,6 @@
         "qSearchGroupArray": {
             "desc": "List of search groups.\nThe groups are numbered from the value of SearchPage.qOffset to the value of SearchPage.qOffset + SearchPage.qCount.\n",
             "instance": "SearchGroup",
-            "type": "array"
-        }
-    },
-    "SearchObjectOptions": {
-        "qAttributes": {
-            "desc": "This array is either empty or contains qProperty. \n",
-            "instance": "String",
-            "type": "array"
-        },
-        "qCharEncoding": {
-            "desc": "Encoding used to compute qRanges of type SearchCharRange.\nOnly affects the computation of the ranges. It does not impact the encoding of the text.\n",
-            "instance": "Utf8Utf16",
-            "type": "primitive"
-        }
-    },
-    "SearchTermResult": {
-        "qText": {
-            "desc": "Text of the associated value.",
-            "instance": "String",
-            "type": "primitive"
-        },
-        "qElemNumber": {
-            "desc": "Element number of theassociated value.",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qRanges": {
-            "desc": "List of ranges.\nFor example, if the user searches the term read and the associative value is Reading, then the corresponding range would be Read in Reading.\n",
-            "instance": "SearchCharRange",
             "type": "array"
         }
     },
@@ -4455,20 +4385,20 @@
             "type": "primitive"
         }
     },
-    "SelectionObject": {
-        "BackCount": {
-            "desc": "Number of steps back",
+    "SearchTermResult": {
+        "qText": {
+            "desc": "Text of the associated value.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qElemNumber": {
+            "desc": "Element number of theassociated value.",
             "instance": "Integer",
             "type": "primitive"
         },
-        "ForwardCount": {
-            "desc": "Number of steps forward",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "Selections": {
-            "desc": "Lists the fields that are selected",
-            "instance": "NxCurrentSelectionItem",
+        "qRanges": {
+            "desc": "List of ranges.\nFor example, if the user searches the term read and the associative value is Reading, then the corresponding range would be Read in Reading.\n",
+            "instance": "SearchCharRange",
             "type": "array"
         }
     },
@@ -4505,6 +4435,35 @@
         }
     },
     "SelectionObjectDef": {},
+    "SelectionObject": {
+        "BackCount": {
+            "desc": "Number of steps back",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "ForwardCount": {
+            "desc": "Number of steps forward",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "Selections": {
+            "desc": "Lists the fields that are selected",
+            "instance": "NxCurrentSelectionItem",
+            "type": "array"
+        }
+    },
+    "Size": {
+        "qcx": {
+            "desc": "Number of pixels on the x axis.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qcy": {
+            "desc": "Number of pixels on the y axis.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        }
+    },
     "SortCriteria": {
         "qSortByState": {
             "desc": "Sorts the field values according to their logical state (selected, optional, alternative or excluded).",
@@ -4566,18 +4525,6 @@
             "type": "primitive"
         }
     },
-    "Size": {
-        "qcx": {
-            "desc": "Number of pixels on the x axis.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qcy": {
-            "desc": "Number of pixels on the y axis.\n",
-            "instance": "Integer",
-            "type": "primitive"
-        }
-    },
     "SourceKeyRecord": {
         "qKeyFields": {
             "desc": "Name of the key field.",
@@ -4610,6 +4557,13 @@
         }
     },
     "StaticContentUrl": {
+        "qUrl": {
+            "desc": "Relative path of the thumbnail.",
+            "instance": "String",
+            "type": "primitive"
+        }
+    },
+    "StaticContentUrlDef": {
         "qUrl": {
             "desc": "Relative path of the thumbnail.",
             "instance": "String",
@@ -4659,20 +4613,6 @@
             "type": "primitive"
         }
     },
-    "StaticContentUrlDef": {
-        "qUrl": {
-            "desc": "Relative path of the thumbnail.",
-            "instance": "String",
-            "type": "primitive"
-        }
-    },
-    "TableRow": {
-        "qValue": {
-            "desc": "Array of field values.\n",
-            "instance": "FieldValue",
-            "type": "array"
-        }
-    },
     "TableViewBroomPointSaveInfo": {
         "qPos": {
             "desc": "Information about the position of the broom point.",
@@ -4712,6 +4652,13 @@
             "desc": "Source view mode.",
             "instance": "TableViewSaveInfo",
             "type": "object"
+        }
+    },
+    "TableRow": {
+        "qValue": {
+            "desc": "Array of field values.\n",
+            "instance": "FieldValue",
+            "type": "array"
         }
     },
     "TableViewDlgSaveInfo": {
@@ -4768,19 +4715,6 @@
             "type": "primitive"
         }
     },
-    "UndoInfo": {
-        "qUndoCount": {
-            "desc": "Number of possible undos",
-            "instance": "Integer",
-            "type": "primitive"
-        },
-        "qRedoCount": {
-            "desc": "Number of possible redos",
-            "instance": "Integer",
-            "type": "primitive"
-        }
-    },
-    "UndoInfoDef": {},
     "TextMacro": {
         "qTag": {
             "desc": "Name of the variable.",
@@ -4813,6 +4747,19 @@
             "type": "primitive"
         }
     },
+    "UndoInfo": {
+        "qUndoCount": {
+            "desc": "Number of possible undos",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qRedoCount": {
+            "desc": "Number of possible redos",
+            "instance": "Integer",
+            "type": "primitive"
+        }
+    },
+    "UndoInfoDef": {},
     "ValueExpr": {},
     "ValueExpression": {},
     "VariableList": {
@@ -4842,6 +4789,67 @@
             "desc": "Data",
             "instance": "JSON",
             "type": "primitive"
+        }
+    },
+    "NxTreeNode": {
+        "qText": {
+            "desc": "The text version of the value, if available.",
+            "instance": "String",
+            "type": "primitive"
+        },
+        "qElemNo": {
+            "desc": "Element number\n",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qRow": {
+            "desc": "Row index in the data matrix.\nThe indexing starts from 0.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qNodeNr": {
+            "desc": "A generated number applicable to this page only. Used so that children can easily identify who their parents are.\n",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qParentNode": {
+            "desc": "The qNodeNr of this node's parent for the current page.",
+            "instance": "Integer",
+            "type": "primitive"
+        },
+        "qType": {
+            "desc": "Type of the cell.",
+            "values": {
+                "V": "NX_DIM_CELL_VALUE. Applies to values in the data matrix.",
+                "E": "NX_DIM_CELL_EMPTY. Applies to empty cells in the top and left dimensions.",
+                "G": "NX_DIM_CELL_GENERATED. Applies to generated nodes that are inserted into the returned tree when there is no actual value (qAllValues in NxPageTreeNode set to true).",
+                "N": "NX_DIM_CELL_NORMAL. Applies to left and top dimensions cells.",
+                "T": "NX_DIM_CELL_TOTAL. Applies to cells marked with Total.",
+                "P": "NX_DIM_CELL_PSEUDO. Applies to pseudo dimensions.",
+                "R": "NX_DIM_CELL_ROOT. Applies to root node.",
+                "U": "NX_DIM_CELL_NULL. Applies to Null values in the data matrix."
+            },
+            "type": "primitive"
+        },
+        "qValues": {
+            "desc": "The measures for this node.",
+            "instance": "NxTreeValue",
+            "type": "array"
+        },
+        "qNodes": {
+            "desc": "The children of this node in the tree structure.",
+            "instance": "NxTreeNode",
+            "type": "array"
+        },
+        "qAttrExps": {
+            "desc": "Attribute expression values.",
+            "instance": "NxAttributeExpressionValues",
+            "type": "object"
+        },
+        "qAttrDims": {
+            "desc": "Attribute dimension values.",
+            "instance": "NxAttributeDimValues",
+            "type": "object"
         }
     }
 }

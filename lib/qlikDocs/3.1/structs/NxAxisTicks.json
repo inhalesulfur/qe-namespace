@@ -1,0 +1,17 @@
+{
+    "qName": {
+        "desc": "Name of the derived definition.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qTicks": {
+        "desc": "List of ticks.",
+        "instance": "NxTickCell",
+        "type": "array"
+    },
+    "qTags": {
+        "desc": "List of tags.",
+        "instance": "String",
+        "type": "array"
+    }
+}

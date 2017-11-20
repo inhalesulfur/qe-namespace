@@ -1,0 +1,52 @@
+{
+    "qDocName": {
+        "desc": "Name of the app.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qConnectedUsers": {
+        "desc": "Not used.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qFileTime": {
+        "desc": " Last modified time stamp of the app.\nThis property is only used with Qlik Sense desktop.\nIs set to 0 for Qlik Sense server.\n",
+        "instance": "Double",
+        "type": "primitive"
+    },
+    "qFileSize": {
+        "desc": "Size of remote app.\nThis property is only used with Qlik Sense desktop.\nIs set to 0 for Qlik Sense server.\n",
+        "instance": "Double",
+        "type": "primitive"
+    },
+    "qDocId": {
+        "desc": "Identifier of the app.\n\nIn local installation mode, the identifier is the path and name of the app\nIn server mode, the identifier is the app's GUID.\n\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qMeta": {
+        "desc": "Meta data related to the app.\n",
+        "instance": "NxMeta",
+        "type": "object"
+    },
+    "qLastReloadTime": {
+        "desc": "Last reload time of the app.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qReadOnly": {
+        "desc": "If set to true, it means that the app is read-only.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qTitle": {
+        "desc": "Title of the app.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qThumbnail": {
+        "desc": "Thumbnail of the app.",
+        "instance": "StaticContentUrl",
+        "type": "object"
+    }
+}

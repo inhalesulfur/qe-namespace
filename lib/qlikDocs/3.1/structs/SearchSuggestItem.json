@@ -1,0 +1,12 @@
+{
+    "qValue": {
+        "desc": "Value of the suggestion.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qTerm": {
+        "desc": "Index of the suggestion value.\nThe indexing starts from 0 and from the left.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

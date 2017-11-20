@@ -1,0 +1,26 @@
+{
+    "qId": {
+        "desc": "Identifier of the group.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qName": {
+        "desc": "Name of the derived group.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qGrouping": {
+        "desc": "Grouping type.\nThe grouping should be either H or C (Grouping is mandatory for derived definitions).\nIs mandatory.\n",
+        "values": {
+            "N": "no grouping",
+            "H": "drill-down",
+            "C": "cyclic"
+        },
+        "type": "primitive"
+    },
+    "qFieldDefs": {
+        "desc": "List of the derived fields in the group.",
+        "instance": "String",
+        "type": "array"
+    }
+}

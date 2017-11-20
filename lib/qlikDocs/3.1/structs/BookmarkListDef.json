@@ -1,0 +1,12 @@
+{
+    "qType": {
+        "desc": "Type of the list",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qData": {
+        "desc": "Data\n",
+        "instance": "JSON",
+        "type": "primitive"
+    }
+}

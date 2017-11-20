@@ -1,0 +1,62 @@
+{
+    "qTitle": {
+        "desc": "Title of the app.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qFileName": {
+        "desc": "In server mode, this property corresponds to the app identifier (GUID).\nIn desktop mode, this property corresponds to the full path of the app.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qLastReloadTime": {
+        "desc": "Date and time of the last reload of the app in ISO format.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qModified": {
+        "desc": "Is set to true if the app has been updated since the last save.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qHasScript": {
+        "desc": "Is set to true if a script is defined in the app.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qStateNames": {
+        "desc": "Array of alternate states.",
+        "instance": "String",
+        "type": "array"
+    },
+    "qMeta": {
+        "desc": "Information on publishing and permissions.",
+        "instance": "NxMeta",
+        "type": "object"
+    },
+    "qLocaleInfo": {
+        "desc": "Information about the locale.",
+        "instance": "LocaleInfo",
+        "type": "object"
+    },
+    "qHasData": {
+        "desc": "Is set to true if the app contains data following a script reload.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qReadOnly": {
+        "desc": "If set to true, it means that the app is read-only.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qIsOpenedWithoutData": {
+        "desc": "If set to true, it means that the app was opened without loading its data.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qThumbnail": {
+        "desc": "App thumbnail.",
+        "instance": "StaticContentUrl",
+        "type": "object"
+    }
+}

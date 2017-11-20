@@ -1,0 +1,22 @@
+{
+    "qType": {
+        "desc": "Type of the list.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qShowReserved": {
+        "desc": "Shows the reserved variables if set to true.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qShowConfig": {
+        "desc": "Shows the system variables if set to true.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qData": {
+        "desc": "Data",
+        "instance": "JSON",
+        "type": "primitive"
+    }
+}

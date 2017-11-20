@@ -1,0 +1,16 @@
+{
+    "qName": {
+        "desc": "Name of the folder item.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qType": {
+        "desc": "Type of the folder item.",
+        "values": {
+            "FOLDER": "",
+            "FILE": "",
+            "OTHER": ""
+        },
+        "type": "primitive"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "qName": {
+        "desc": "Name of the field",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qType": {
+        "desc": "Type of data entity",
+        "values": {
+            "0": "for NOT_PRESENT: the field does not exist",
+            "1": "for PRESENT: plain field",
+            "2": "for IS_EXPR: calculated dimension"
+        },
+        "type": "primitive"
+    }
+}

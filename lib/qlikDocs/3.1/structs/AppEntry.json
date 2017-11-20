@@ -1,0 +1,37 @@
+{
+    "qID": {
+        "desc": "Identifier of the app.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qTitle": {
+        "desc": "Title of the app.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qPath": {
+        "desc": "Path of the app.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qLastReloadTime": {
+        "desc": "Last reload time of the app.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qReadOnly": {
+        "desc": "Is set to true if the app is read-only.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qMeta": {
+        "desc": "Meta data.",
+        "instance": "NxMeta",
+        "type": "object"
+    },
+    "qThumbnail": {
+        "desc": "App thumbnail.",
+        "instance": "StaticContentUrl",
+        "type": "object"
+    }
+}

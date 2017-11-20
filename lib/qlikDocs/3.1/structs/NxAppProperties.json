@@ -1,0 +1,27 @@
+{
+    "qTitle": {
+        "desc": "App title.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qLastReloadTime": {
+        "desc": "Last reload time of the app.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qThumbnail": {
+        "desc": "App thumbnail.",
+        "instance": "StaticContentUrlDef",
+        "type": "object"
+    },
+    "qMigrationHash": {
+        "desc": "Internal property reserved for app migration.\n Patch version of the app.\nDo not update.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qSavedInProductVersion": {
+        "desc": "Internal property reserved for app migration.\nThe app is saved in this version of the product.\nDo not update.\n",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "qRange": {
+        "desc": "Range information.\n",
+        "instance": "Range",
+        "type": "primitive"
+    },
+    "qDimIx": {
+        "desc": "Dimension index.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "qMessageCode": {
+        "desc": "Code number to the corresponding localized message string.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qMessageParameters": {
+        "desc": "Parameters to be inserted in the localized message string.",
+        "instance": "String",
+        "type": "array"
+    }
+}

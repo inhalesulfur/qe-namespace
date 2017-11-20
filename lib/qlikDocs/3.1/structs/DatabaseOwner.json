@@ -1,0 +1,7 @@
+{
+    "qName": {
+        "desc": "Name of the owner",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

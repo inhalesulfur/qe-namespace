@@ -6,10 +6,11 @@
     },
     "qAttributes": {
         "desc": "Provides detail of the match as requested by the user in SearchObjectsOptions.qAttributes or SearchCombinationOptions.qAttributes\nIf the user requests SearchObjects or SearchResults with an empty qAttributes option, the outputted qAttributes is returned empty.\nFor SearchObjects requested with qProperty, the SearchGroupItemMatch.qAttributes return value contains [“qProperty”, \"qMetaDef/title”] if the match has been found in the title of the item. For dimension values, the returned qProperty will be “*”.\nFor SearchResults requested with qNum, the SearchGroupItemMatch.qAttributes return value contains [\"qNum\", N] where N is the numeric value of the element or NaN if the value is not numeric.\nFor SearchResults requested with qElemNum, the SearchGroupItemMatch.qAttributes return value contains [\"qElemNum\", N] where N is the value index of the element.\n",
-        "instance": {
+        "instance": "SearchAttribute",
+        "type": "array",
+        "values": {
             "String corresponding to SearchObjectOptions.qAttributes": ""
-        },
-        "type": "array"
+        }
     },
     "qRanges": {
         "desc": "List of ranges.\nFor example, if the search terms are Price and Make, and the search group item value is Make by Price vs Mileage, then there are two ranges: one for Price and one for Make.\n",

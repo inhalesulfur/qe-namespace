@@ -1,0 +1,12 @@
+{
+    "qType": {
+        "desc": "Type of the app object",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qId": {
+        "desc": "Identifier of the app object",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "qRanges": {
+        "desc": "Ranges of highlighted values",
+        "instance": "CharRange",
+        "type": "array"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "BackCount": {
+        "desc": "Number of steps back",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "ForwardCount": {
+        "desc": "Number of steps forward",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "Selections": {
+        "desc": "Lists the fields that are selected",
+        "instance": "NxCurrentSelectionItem",
+        "type": "array"
+    }
+}

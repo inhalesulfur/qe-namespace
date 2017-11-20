@@ -1,0 +1,32 @@
+{
+    "qTextSearch": {
+        "desc": "Text search string.\nEverything that matches the text is selected.\nThis parameter is optional.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qRangeLo ": {
+        "desc": "Lower value of the search range.\nThis parameter is used when performing range selections or text searches in dimensions.\nDefault is Null.\n",
+        "instance": "Double",
+        "type": "primitive"
+    },
+    "qRangeHi ": {
+        "desc": "Highest value of the search range.\nThis parameter is used when performing range selections or text searches in dimensions.\nDefault is Null.\n",
+        "instance": "Double",
+        "type": "primitive"
+    },
+    "qNumberFormat": {
+        "desc": "Gives information about the formatting of the range.\nThis parameter is used when performing range selections or text searches in dimensions.\n",
+        "instance": "FieldAttributes",
+        "type": "object"
+    },
+    "qRangeInfo": {
+        "desc": "This parameter is used when performing range selections or text searches in measures.\nGives information about the range of selections.\nbool SoftLock = false;\n",
+        "instance": "RangeSelectInfo",
+        "type": "array"
+    },
+    "qContinuousRangeInfo": {
+        "desc": "List of information about ranges for selections.",
+        "instance": "Range",
+        "type": "array"
+    }
+}
