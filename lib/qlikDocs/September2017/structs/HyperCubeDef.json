@@ -1,9 +1,4 @@
 {
-    "qStateName": {
-        "desc": "Name of the alternate state.\nDefault is current selections $.\n",
-        "instance": "String",
-        "type": "primitive"
-    },
     "qDimensions": {
         "desc": "Array of dimensions.",
         "instance": "NxDimension",
@@ -12,11 +7,6 @@
     "qMeasures": {
         "desc": "Array of measures.",
         "instance": "NxMeasure",
-        "type": "array"
-    },
-    "qInterColumnSortOrder": {
-        "desc": "Defines the sort order of the columns in the hypercube. \nColumn numbers are separated by a comma.\nExample: [1,0,2] means that the first column to be sorted should be the column 1, followed by the column 0 and the column 2.\nThe default sort order is the order in which the dimensions and measures have been defined in the hypercube. By default, the pseudo-dimension (if any) is the most to the right in the array.\nThe index of the pseudo-dimension (if any) is -1.\nPseudo dimensions only apply for pivot tables with more than one measure.\nA pseudo dimension groups together the measures defined in a pivot table. You can neither collapse/expand a pseudo dimension nor make any selections in it.\n Stacked pivot tables can only contain one measure.\n",
-        "instance": "Integer",
         "type": "array"
     },
     "qSuppressZero": {
@@ -43,41 +33,6 @@
             "T": "for tree representation; DATA_MODE_TREE"
         },
         "type": "primitive"
-    },
-    "qNoOfLeftDims": {
-        "desc": "Number of left dimensions.\nDefault value is -1. In that case, all dimensions are left dimensions.\nThe index related to each left dimension depends on the position of the pseudo dimension (if any).\nFor example, a pivot table with:\n\n 4 dimensions in the following order: Country, City, Product and Category\n\none pseudo dimension in position 1 (the position is defined in qInterColumnSortOrder)\nqInterColumnSortOrder is (0,-1,1,2,3)\n\n3 left dimensions (qNoOfLeftDims is set to 3).\n\nimplies that:\n\nThe index 0 corresponds to the left dimension Country\nThe index 1 corresponds to the pseudo dimension\nThe index 2 corresponds to the left dimension City\nProduct and Category are top dimensions. \n\nAnother example:\n\n 4 dimensions in the following order: Country, City, Product and Category\n3 left dimensions (qNoOfLeftDims is set to 3).\none pseudo dimension\nthe property qInterColumnSortOrder is left empty.\n\nimplies that:\n\nThe index 0 corresponds to the left dimension Country\nThe index 1 corresponds to the left dimension City\nThe index 2 corresponds to the left dimension Product\nCategory is a top dimension.\nThe pseudo dimension is a top dimension\n\n",
-        "instance": "Integer",
-        "type": "primitive"
-    },
-    "qAlwaysFullyExpanded": {
-        "desc": "If this property is set to true, the cells are always expanded. It implies that it is not possible to collapse any cells.\nThe default value is false.\n",
-        "instance": "Boolean",
-        "type": "primitive"
-    },
-    "qMaxStackedCells": {
-        "desc": "Maximum number of cells for an initial data fetch (set in qInitialDataFetch) when in stacked mode (qMode is K).\nThe default value is 5000.\n",
-        "instance": "Integer",
-        "type": "primitive"
-    },
-    "qPopulateMissing": {
-        "desc": "If this property is set to true, the missing symbols (if any) are replaced by 0 if the value is a numeric and by an empty string if the value is a string.\nThe default value is false.\n",
-        "instance": "Boolean",
-        "type": "primitive"
-    },
-    "qShowTotalsAbove": {
-        "desc": "If set to true, the total (if any) is shown on the first row.\nThe default value is false.\n",
-        "instance": "Boolean",
-        "type": "primitive"
-    },
-    "qIndentMode": {
-        "desc": "This property applies for pivot tables and allows to change the layout of the table. An indentation is added to the beginning of each row.\nThe default value is false.\n",
-        "instance": "Boolean",
-        "type": "primitive"
-    },
-    "qCalcCond": {
-        "desc": "Specifies a calculation condition, which must be fulfilled for the hypercube to be (re)calculated.\nAs long as the condition is not met, the engine does not perform a new calculation.\nThis property is optional. By default, there is no calculation condition.\n",
-        "instance": "ValueExpr",
-        "type": "object"
     },
     "qSortbyYValue": {
         "desc": "To enable the sorting by ascending or descending order in the values of a measure. \nThis property applies to pivot tables and stacked pivot tables.\nIn the case of a pivot table, the measure or pseudo dimension should be defined as a top dimension. The sorting is restricted to the values of the first measure in a pivot table.\n",
