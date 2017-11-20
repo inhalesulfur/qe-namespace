@@ -10,7 +10,6 @@
 `npm install qe-namespace`
 
 ### Uploading and parsing Qlik Engine Documentation
-
  
 ```js
 const qen = require("qe-namespace");
@@ -22,7 +21,7 @@ qen.loadStructs("September2017");
 * At the end all structures are merged into `./lib/qlikDocs/${version}/structs.json`
 
 
-Here is an example of some attributes extracted from [HyperCubeDef Page](http://help.qlik.com/en-US/sense-developer/September2017/Subsystems/EngineAPI/Content/Structs/HyperCubeDef.htm) and saved into HyperCubeDef.json
+Here is an example of some properties extracted from [HyperCubeDef Page](http://help.qlik.com/en-US/sense-developer/September2017/Subsystems/EngineAPI/Content/Structs/HyperCubeDef.htm) and saved into [HyperCubeDef.json](https://github.com/inhalesulfur/qe-namespace/blob/master/lib/qlikDocs/September2017/structs/HyperCubeDef.json)
 ```json
 {
     "qDimensions": {
@@ -59,6 +58,33 @@ Here is an example of some attributes extracted from [HyperCubeDef Page](http://
         },
         "type": "primitive"
     }
-	...
 }
+```
+
+Attributes `instance` and `values` could be used for instance and possible value checking in setter functions
+
+### Building Qlik Engine Struct namespace
+
+#### node.js case
+```js
+const fs = require("fs");
+const qen = require("qe-namespace");
+
+var json = fs.readFileSync("./node_modules/qe-namespace/lib/qlikDocs/September2017/structs.json");
+var n = qen.buildNamespace(json);
+var hyperCubeDef = new n.HyperCubeDef;
+```
+
+#### require.js case
+```js
+define([
+	"text!structs.json",
+	"qe-namespace"
+], function(
+	json,
+	qen
+){
+	var n = qen.buildNamespace(json);
+	var hyperCubeDef = new n.HyperCubeDef;
+})
 ```
