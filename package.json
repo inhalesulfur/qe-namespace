@@ -1,0 +1,26 @@
+{
+  "name": "qe-namespace",
+  "version": "1.0.0",
+  "description": "Qlik Engine structs documentation parser and class builder",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inhalesulfur/qe-namespace.git"
+  },
+  "keywords": [
+    "Qlik",
+    "Engine"
+  ],
+  "author": {
+	"name":"Alexandr Petukhov",
+	"email":"inhalesulfur@yandex.ru"
+  }
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inhalesulfur/qe-namespace/issues"
+  },
+  "homepage": "https://github.com/inhalesulfur/qe-namespace#readme"
+}
