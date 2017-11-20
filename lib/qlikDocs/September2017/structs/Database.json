@@ -1,0 +1,12 @@
+{
+    "qName": {
+        "desc": "Name of the database.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qIsDefault": {
+        "desc": "Is set to true if the database is set by default.",
+        "instance": "Boolean",
+        "type": "primitive"
+    }
+}

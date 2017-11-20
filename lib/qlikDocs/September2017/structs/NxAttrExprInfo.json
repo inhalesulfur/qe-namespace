@@ -1,0 +1,27 @@
+{
+    "qMin": {
+        "desc": "Minimum value.\n",
+        "instance": "Double",
+        "type": "primitive"
+    },
+    "qMax": {
+        "desc": "Maximum value.\n",
+        "instance": "Double",
+        "type": "primitive"
+    },
+    "qContinuousAxes": {
+        "desc": "&nbsp;",
+        "instance": "Bool",
+        "type": "primitive"
+    },
+    "qIsCyclic": {
+        "desc": "&nbsp;",
+        "instance": "Bool",
+        "type": "primitive"
+    },
+    "qFallbackTitle": {
+        "desc": "&nbsp;",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

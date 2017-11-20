@@ -1,0 +1,12 @@
+{
+    "qName": {
+        "desc": "Name of the variable.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qValue": {
+        "desc": "Value of the variable.",
+        "instance": "FieldValue",
+        "type": "object"
+    }
+}

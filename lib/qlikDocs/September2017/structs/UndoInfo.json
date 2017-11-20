@@ -1,0 +1,12 @@
+{
+    "qUndoCount": {
+        "desc": "Number of possible undos",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qRedoCount": {
+        "desc": "Number of possible redos",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

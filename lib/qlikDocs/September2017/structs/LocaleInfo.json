@@ -1,0 +1,82 @@
+{
+    "qDecimalSep": {
+        "desc": "Decimal separator.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qThousandSep": {
+        "desc": "Thousand separator.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qListSep": {
+        "desc": "List separator.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qMoneyDecimalSep": {
+        "desc": "Money decimal separator.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qMoneyThousandSep": {
+        "desc": "Money thousand separator.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qCurrentYear": {
+        "desc": "Current year.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qMoneyFmt": {
+        "desc": "Money format.\nExample: #.##0,00 kr;-#.##0,00 kr\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qTimeFmt": {
+        "desc": "Time format.\nExample: hh:mm:ss\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qDateFmt": {
+        "desc": "Date format.\nExample: YYYY-MM-DD\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qTimestampFmt": {
+        "desc": "Time stamp format.\nExample: YYYY-MM-DD hh:mm:ss[.fff]\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qCalendarStrings": {
+        "desc": "Information about the calendar.",
+        "instance": "CalendarStrings",
+        "type": "object"
+    },
+    "qFirstWeekDay": {
+        "desc": "First day of the week, starting from 0.\nAccording to ISO 8601, Monday is the first day of the week.\n\n0 = Monday\n1 = Tuesday\n..\n6 =&nbsp;Sunday\n\nIf this property has not been set in a script, the returned value comes from the Windows operating system.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qBrokenWeeks": {
+        "desc": "Is set to true if broken weeks are allowed in a year.\nAccording to ISO 8601, no broken weeks should be allowed.\nThis property is not shown if set to false.\nIf qBrokenWeeks is set to true, qReferenceDay is irrelevant.\nIf this property has not been set in a script, the returned value comes from the Windows operating system.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qReferenceDay": {
+        "desc": "Day in the year that is always in week 1.\nAccording to ISO 8601, January 4th should always be part of the first week of the year (qReferenceDay=4).\nRecommended values are in the range 1 and 7.\nIf this property has not been set in a script, the returned value comes from the Windows operating system.\nThis property is not relevant if there are broken weeks in the year.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qFirstMonthOfYear": {
+        "desc": "First month of the year, starting from 1.\nAccording to ISO 8601, Januaryis the first month of the year.\n\n1 = January\n2 = February\n 12 = January\n\nIf this property has not been set in a script, the returned value comes from the Windows operating system.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qCollation": {
+        "desc": " Locale name (following language tagging convention RFC 4646): \n&lt;language&gt;-&lt;REGION&gt;\n\nWhere\n\nlanguage is a lowercase ISO&nbsp;639 language code\nREGION specifies an uppercase ISO 3166 country code.\n\nIf this property has not been set in a script, the returned value comes from the Windows operating system.\n",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

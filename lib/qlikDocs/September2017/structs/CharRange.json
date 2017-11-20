@@ -1,0 +1,12 @@
+{
+    "qCharPos": {
+        "desc": "Position of the first search occurrence",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qCharCount": {
+        "desc": "Number of occurrences found",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "qSortByState": {
+        "desc": "Sorts the field values according to their logical state (selected, optional, alternative or excluded).",
+        "values": {
+            "0": "for no sorting",
+            "1": "for sorting ascending",
+            "-1": "for sorting descending"
+        },
+        "type": "primitive"
+    },
+    "qSortByFrequency": {
+        "desc": "Sorts the field values by frequency (number of occurrences in the field).",
+        "values": {
+            "0": "for no sorting",
+            "1": "for sorting descending",
+            "-1": "for sorting ascending"
+        },
+        "type": "primitive"
+    },
+    "qSortByNumeric": {
+        "desc": "Sorts the field values by numeric value.",
+        "values": {
+            "0": "for no sorting",
+            "1": "for sorting ascending",
+            "-1": "for sorting descending"
+        },
+        "type": "primitive"
+    },
+    "qSortByAscii": {
+        "desc": "Sorts the field by alphabetical order.",
+        "values": {
+            "0": "for no sorting",
+            "1": "for sorting ascending",
+            "-1": "for sorting descending"
+        },
+        "type": "primitive"
+    },
+    "qSortByLoadOrder": {
+        "desc": "Sorts the field values by the initial load order.",
+        "values": {
+            "0": "for no sorting",
+            "1": "for sorting ascending",
+            "-1": "for sorting descending"
+        },
+        "type": "primitive"
+    },
+    "qSortByExpression": {
+        "desc": "Sorts the field by expression.",
+        "values": {
+            "0": "for no sorting",
+            "1": "for sorting ascending",
+            "-1": "for sorting descending"
+        },
+        "type": "primitive"
+    },
+    "qExpression": {
+        "desc": "Sort by expression.\n",
+        "instance": "<div class=\"API_syntax\">\"qv\": \"&lt;expression&gt;\"</div>\n                            <p>Where</p>\n                            <p><span class=\"API_syntax_input\">&lt;expression&gt;</span> is a string.</p>",
+        "type": "primitive"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "qExpr": {
+        "desc": "Value of the expression.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qError": {
+        "desc": "This parameter is optional.\nGives information on the error.\n",
+        "instance": "NxLayoutErrors",
+        "type": "object"
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "qOtherMode": {
+        "desc": "Determines how many dimension values are displayed.\nThe default value is OTHER_OFF.\n",
+        "values": {
+            "OTHER_OFF": "do not limit the number of dimension values",
+            "OTHER_COUNTED": "limit the dimension values to a specified number defined in OtherTotalSpecProp.",
+            "OTHER_ABS_LIMITED": "limit the dimension values to an absolute value defined in OtherTotalSpecProp.",
+            "OTHER_ABS_ACC_TARGET": "return the   dimension values that accumulate to an absolute value. All rows up to the current row are accumulated and the result is compared to the specified absolute value. The absolute value is defined in OtherTotalSpecProp.",
+            "OTHER_REL_LIMITED": "limit the dimension values based on a percentage of the total. The total is the sum of all the dimension values. The percentage is defined in OtherTotalSpecProp.",
+            "OTHER_REL_ACC_TARGET": "return the   dimension values that accumulate to a percentage of the total. All rows up to the current row are accumulated and the result is compared to the total of the dimension values. A percentage is calculated. This percentage is compared to the specified percentage, defined in OtherTotalSpecProp."
+        },
+        "type": "primitive"
+    },
+    "qOtherCounted": {
+        "desc": "Number of values to display. The number of values can be entered as a calculated formula.\nThis parameter is used when qOtherMode is set to OTHER_COUNTED.\n",
+        "instance": "<div class=\"API_syntax\">\"qv\": \"&lt;expression&gt;\"</div>\n                            <p>Where</p>\n                            <p><span class=\"API_syntax_input\">&lt;expression&gt;</span> is a string.</p>",
+        "type": "primitive"
+    },
+    "qOtherLimit": {
+        "desc": "Value used to limit the dimension values. The limit can be entered as a calculated formula.\nThis parameter is used when qOtherMode is set to:\n\nOTHER_ABS_LIMITED\nOTHER_REL_LIMITED\n\nOTHER_ABS_ACC_TARGET\nOTHER_REL_ACC_TARGET\n\n\n&nbsp;\n",
+        "instance": "<div class=\"API_syntax\">\"qv\": \"&lt;expression&gt;\"</div>\n                            <p>Where</p>\n                            <p><span class=\"API_syntax_input\">&lt;expression&gt;</span> is a string.</p>",
+        "type": "primitive"
+    },
+    "qOtherLimitMode": {
+        "desc": "Sets the limit for the Others mode.\nThis parameter is used when qOtherMode is set to:\n\nOTHER_ABS_LIMITED\nOTHER_REL_LIMITED\n\nOTHER_ABS_ACC_TARGET\nOTHER_REL_ACC_TARGET\n\n\n",
+        "values": {
+            "OTHER_GE_LIMIT": "include the values greater or equal",
+            "OTHER_LE_LIMIT": "include the values lower or equal",
+            "OTHER_GT_LIMIT": "include the values strictly greater than",
+            "OTHER_LT_LIMIT": "include the values strictly lower than"
+        },
+        "type": "primitive"
+    },
+    "qSuppressOther": {
+        "desc": "If set to true, the group Others is not displayed as a dimension value.\nThe default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qForceBadValueKeeping": {
+        "desc": "This parameter is used when qOtherMode is set to:\n\nOTHER_ABS_LIMITED\nOTHER_REL_LIMITED\n\nOTHER_ABS_ACC_TARGET\nOTHER_REL_ACC_TARGET\n\n\nand when the dimension values include not numeric values.\nSet this parameter to true to include text values in the returned values. \nThe default value is true.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qApplyEvenWhenPossiblyWrongResult": {
+        "desc": "Set this parameter to true to allow the calculation of Others even if the engine detects some potential mistakes. \nFor example the country Russia is part of the continent Europe and Asia. If you have an hypercube with two dimensions Country and Continent and one measure Population, the engine can detect that the population of Russia is included in both the continent Asia and Europe. \nThe default value is true.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qGlobalOtherGrouping": {
+        "desc": "This parameter applies to inner dimensions. \nIf this parameter is set to true, the restrictions are calculated on the selected dimension only. All previous dimensions are ignored.\nThe default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qOtherCollapseInnerDimensions": {
+        "desc": "If set to true, it collapses the inner dimensions (if any) in the group Others.\nThe default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qOtherSortMode": {
+        "desc": "Defines the sort order of the dimension values.\nThe default value is OTHER_SORT_DESCENDING.\n",
+        "values": {
+            "OTHER_SORT_DEFAULT": "sort by load order",
+            "OTHER_SORT_DESCENDING": "sort by descending values",
+            "OTHER_SORT_ASCENDING": "sort by ascending values"
+        },
+        "type": "primitive"
+    },
+    "qTotalMode": {
+        "desc": "If set to TOTAL_EXPR, the total of the dimension values is returned.\nThe default value is TOTAL_OFF.\n",
+        "values": {
+            "TOTAL_OFF": "",
+            "TOTAL_EXPR": ""
+        },
+        "type": "primitive"
+    },
+    "qReferencedExpression": {
+        "desc": "This parameter applies when there are several measures.\nName of the measure to use for the calculation of Others for a specific dimension.\n",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

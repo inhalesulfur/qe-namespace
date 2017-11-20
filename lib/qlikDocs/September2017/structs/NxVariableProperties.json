@@ -1,0 +1,27 @@
+{
+    "qName": {
+        "desc": "Name of the variable.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qNumberPresentation": {
+        "desc": "Defines the format of the value of a variable.",
+        "instance": "FieldAttributes",
+        "type": "object"
+    },
+    "qIncludeInBookmark": {
+        "desc": "Set this property to true to update the variable when applying a bookmark.\nThe value of a variable can affect the state of the selections.\nThe default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qUsePredefListedValues": {
+        "desc": "The value of a variable can be an enumeration.\nSet this property to true to reflect the predefined values in an enumeration.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qPreDefinedList": {
+        "desc": "List of enumerations.\nThis property is used if qUsePredefListedValues is set to true.\n",
+        "instance": "String",
+        "type": "array"
+    }
+}

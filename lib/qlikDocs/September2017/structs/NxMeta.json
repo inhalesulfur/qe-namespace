@@ -1,0 +1,7 @@
+{
+    "qName": {
+        "desc": "Name.\nThis property is optional.\n",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

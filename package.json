@@ -15,12 +15,18 @@
     "Engine"
   ],
   "author": {
-	"name":"Alexandr Petukhov",
-	"email":"inhalesulfur@yandex.ru"
-  }
+    "name": "Alexandr Petukhov",
+    "email": "inhalesulfur@yandex.ru"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/inhalesulfur/qe-namespace/issues"
   },
-  "homepage": "https://github.com/inhalesulfur/qe-namespace#readme"
+  "homepage": "https://github.com/inhalesulfur/qe-namespace#readme",
+  "dependencies": {
+    "d3": "^4.11.0",
+    "fs-extra": "^4.0.2",
+    "jsdom": "^11.4.0",
+    "path": "^0.12.7"
+  }
 }

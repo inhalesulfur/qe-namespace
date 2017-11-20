@@ -1,0 +1,17 @@
+{
+    "qInfo": {
+        "desc": "Information about the object.",
+        "instance": "NxInfo",
+        "type": "object"
+    },
+    "qMeasure": {
+        "desc": "Information about the measure.",
+        "instance": "NxLibraryMeasureDef",
+        "type": "object"
+    },
+    "qMeta": {
+        "desc": "Information on publishing and permissions.",
+        "instance": "Null or <span class=\"path\">NxMeta</span>",
+        "type": "primitive"
+    }
+}

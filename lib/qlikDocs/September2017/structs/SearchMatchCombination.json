@@ -1,0 +1,12 @@
+{
+    "qId": {
+        "desc": "Index of the search result, starting from 0.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qFieldMatches": {
+        "desc": "Information about the search matches.",
+        "instance": "SearchFieldMatch",
+        "type": "array"
+    }
+}

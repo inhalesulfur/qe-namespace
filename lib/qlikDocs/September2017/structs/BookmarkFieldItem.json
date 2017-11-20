@@ -1,0 +1,37 @@
+{
+    "qDef": {
+        "desc": "Name and type of the field",
+        "instance": "FieldDefEx",
+        "type": "object"
+    },
+    "qLocked": {
+        "desc": "Indicates if the field is locked.\nDefault is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qSelectInfo": {
+        "desc": "Information on the selections criteria",
+        "instance": {},
+        "type": "primitive"
+    },
+    "qValues": {
+        "desc": "List of the selected values\nEither the list of selected values or the list of excluded values is displayed.\n",
+        "instance": "FieldValue",
+        "type": "array"
+    },
+    "qExcludedValues": {
+        "desc": "List of excluded values.\nEither the list of selected values or the list of excluded values is displayed.\n",
+        "instance": "FieldValue",
+        "type": "array"
+    },
+    "qAndMode": {
+        "desc": "If set to true, selections within a list object are made in AND mode; If you have a list object that lists all customers, by selecting Customer 1 and Customer 2 while in and-mode, all records that are associated with Customer 1 and Customer 2 are selected.\nThe default value is false; selections within a list object are made in OR mode.If you have a list object that lists all customers, by selecting Customer 1 and Customer 2 while in or-mode, all records that are associated with either Customer 1 or Customer 2 are selected.\nThis parameter is not returned if set to false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qOneAndOnlyOne": {
+        "desc": "If set to true, the field has always one selection (not 0 and not more than 1). If another value is selected, the previous one is unselected.\nThe default value is false. This parameter is not returned if set to false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    }
+}

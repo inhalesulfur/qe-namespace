@@ -1,0 +1,42 @@
+{
+    "qLocked": {
+        "desc": "Number of values in locked state",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qSelected": {
+        "desc": "Number of values in selected state",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qOption": {
+        "desc": "Number of values in optional state",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qDeselected": {
+        "desc": "Number of values in deselected state",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qAlternative": {
+        "desc": "Number of values in alternative state",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qExcluded": {
+        "desc": "Number of values in excluded state",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qSelectedExcluded": {
+        "desc": "Number of values in selected excluded state",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qLockedExcluded": {
+        "desc": "Number of values in locked excluded state",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

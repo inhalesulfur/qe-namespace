@@ -1,0 +1,77 @@
+{
+    "qType": {
+        "desc": "Type of the file.\n",
+        "instance": {
+            "CSV": "Delimited",
+            "FIX": "Fixed Record",
+            "DIF": "Data Interchange Format",
+            "EXCEL_BIFF": "Microsoft Excel (XLS)",
+            "EXCEL_OOXML": "Microsoft Excel (XLSX)",
+            "HTMLfor HTML": "",
+            "QVD": "QVD file",
+            "XML": "XML",
+            "QVX": "QVX file",
+            "JSON": "JSON&nbsp;format",
+            "KML": "KML file"
+        },
+        "type": "primitive"
+    },
+    "qLabel": {
+        "desc": "One of:\n\nembedded labels (field names are present in the file)\nno labels\nexplicit labels (for DIFfiles)\n\n",
+        "values": {
+            "embedded labels": "field names are present in the file",
+            "no labels": "",
+            "explicit labels": "for DIFfiles"
+        },
+        "type": "primitive"
+    },
+    "qQuote": {
+        "desc": "One of:\n\nNone (no quotes)\nMSQ (Modern Style Quoting)\n\nStandard (quotes \" \" or ' ' can be used, but only if they are the first and last non blank characters of a field value.)\n\n\nThis property is used for delimited files.\n",
+        "values": {
+            "None": "no quotes",
+            "MSQ": "Modern Style Quoting",
+            "Standard": "quotes \" \" or ' ' can be used, but only if they are the first and last non blank characters of a field value."
+        },
+        "type": "primitive"
+    },
+    "qComment": {
+        "desc": "String that marks the beginning of the comment line.\nExample: “#” or “//”\nThe engine ignores the commented lines during the data load.\nThis property is only used for delimited files.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qDelimiter": {
+        "desc": "Information about the delimiter.\nThis property is used for delimited files.\n",
+        "instance": "DelimiterInfo",
+        "type": "object"
+    },
+    "qCodePage": {
+        "desc": "Character set used in the file.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qHeaderSize": {
+        "desc": "Size of the header.\nExample: If the header size is 2, the first two rows in the file are considered as header and not as data. The header can contain the field names.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qRecordSize": {
+        "desc": "Record length.\nEach record (row of data) contains a number of columns with a fixed field size.\nThis property is used for fixed record data files.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qTabSize": {
+        "desc": "Number of spaces that one tab character represents in the table file.\nThis property is used for fixed record data files.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qIgnoreEOF": {
+        "desc": "Is set to true, the end-of-file character is not taken into account during reload.\nThis property is used for delimited files and fixed record data files.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qFixedWidthDelimiters": {
+        "desc": "Positions of the field breaks in the table.\nThis property is used for fixed record data files.\n",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

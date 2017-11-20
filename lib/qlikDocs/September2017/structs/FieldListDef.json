@@ -1,0 +1,37 @@
+{
+    "qShowSystem": {
+        "desc": "Shows the system tables if set to true.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qShowHidden": {
+        "desc": "Shows the hidden fields if set to true.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qShowSemantic": {
+        "desc": "Show the semantic fields if set to true.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qShowSrcTables": {
+        "desc": "Shows the tables and fields present in the data model viewer if set to true.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qShowDefinitionOnly": {
+        "desc": "Shows the fields defined on the fly if set to true.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qShowDerivedFields": {
+        "desc": "Shows the fields and derived fields if set to true.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qShowImplicit": {
+        "desc": "Shows the Direct Discovery measure fields if set to true.",
+        "instance": "Boolean",
+        "type": "primitive"
+    }
+}

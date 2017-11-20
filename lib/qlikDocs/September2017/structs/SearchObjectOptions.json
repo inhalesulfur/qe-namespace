@@ -1,0 +1,12 @@
+{
+    "qAttributes": {
+        "desc": "This array is either empty or contains qProperty. \n",
+        "instance": "String",
+        "type": "array"
+    },
+    "qCharEncoding": {
+        "desc": "Encoding used to compute qRanges of type SearchCharRange.\nOnly affects the computation of the ranges. It does not impact the encoding of the text.\n",
+        "instance": "Utf8Utf16",
+        "type": "primitive"
+    }
+}

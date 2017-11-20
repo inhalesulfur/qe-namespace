@@ -1,0 +1,17 @@
+{
+    "qText": {
+        "desc": "Text of the associated value.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qElemNumber": {
+        "desc": "Element number of theassociated value.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qRanges": {
+        "desc": "List of ranges.\nFor example, if the user searches the term read and the associative value is Reading, then the corresponding range would be Read in Reading.\n",
+        "instance": "SearchCharRange",
+        "type": "array"
+    }
+}

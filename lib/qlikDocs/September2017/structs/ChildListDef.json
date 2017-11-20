@@ -1,0 +1,7 @@
+{
+    "qData": {
+        "desc": "Data that you want to include in the child list definition.\nYou need to enter the paths to the information you want to retrieve.\n",
+        "instance": "JSON",
+        "type": "primitive"
+    }
+}

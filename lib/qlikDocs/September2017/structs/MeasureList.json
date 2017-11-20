@@ -1,0 +1,7 @@
+{
+    "qItems": {
+        "desc": "Information about the list of measures",
+        "instance": "NxContainerEntry",
+        "type": "array"
+    }
+}

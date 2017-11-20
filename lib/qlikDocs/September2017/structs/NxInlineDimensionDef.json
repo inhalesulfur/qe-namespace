@@ -1,0 +1,46 @@
+{
+    "qGrouping": {
+        "desc": "Used to define a cyclic group or drill-down group.\nThis parameter is optional.\nDefault value is no grouping.\n",
+        "values": {
+            "N": "no grouping",
+            "H": "drill-down",
+            "C": "cyclic"
+        },
+        "type": "primitive"
+    },
+    "qFieldDefs": {
+        "desc": "Array of field names.\nWhen creating a grouped dimension, more than one field name is defined.\nThis parameter is optional.\n",
+        "instance": "String",
+        "type": "array"
+    },
+    "qFieldLabels": {
+        "desc": "Array of field labels.\nThis parameter is optional.\n",
+        "instance": "String",
+        "type": "array"
+    },
+    "qLabelExpression": {
+        "desc": "Label expression.\nThis parameter is optional.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qNumberPresentations": {
+        "desc": "Defines the format of the value.\nThis parameter is optional.\n",
+        "instance": "FieldAttributes",
+        "type": "array"
+    },
+    "qReverseSort": {
+        "desc": "If set to true, it inverts the sort criteria in the field.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qSortCriterias": {
+        "desc": "Defines the sorting criteria in the field.\nThis parameter is optional.\nDefault is to sort by alphabetical order, ascending.\n",
+        "instance": "SortCriteria",
+        "type": "array"
+    },
+    "qActiveField": {
+        "desc": "Index of the active field in a cyclic dimension.\nThis parameter is optional. The default value is 0.\nThis parameter is used in case of cyclic dimensions (qGrouping is C).\n",
+        "instance": "Integer",
+        "type": "primitive"
+    }
+}

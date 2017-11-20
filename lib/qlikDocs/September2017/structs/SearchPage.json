@@ -1,0 +1,27 @@
+{
+    "qOffset": {
+        "desc": "Position from the top, starting from 0.\n\n\nIf the offset is set to 0, the first search result to be returned is at position 0.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qCount": {
+        "desc": "Number of search groups to return (in qSearchGroupArray).\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qMaxNbrFieldMatches": {
+        "desc": "Maximum number of matching values to return per search result.\nThe default value is -1; all values are returned.\nThis property is to be used with the SearchAssociations method.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qGroupOptions": {
+        "desc": "Options of the search groups.\nIf this property is not set, all values are returned.\nThis property is to be used with the SearchResults method or the SearchObjects method.\n",
+        "instance": "SearchGroupOptions",
+        "type": "array"
+    },
+    "qGroupItemOptions": {
+        "desc": "Options of the search group items.\nIf this property is not set, all values are returned.\nThis property is to be used with the SearchResults method or the SearchObjects method.\n",
+        "instance": "SearchGroupItemOptions",
+        "type": "array"
+    }
+}

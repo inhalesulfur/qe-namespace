@@ -1,0 +1,81 @@
+{
+    "qText": {
+        "desc": "Some text.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qElemNo": {
+        "desc": "Rank number of the value.\nIf set to -1, it means that the value is not an element number.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qValue": {
+        "desc": "Value of the cell.\nIs set to NaN, if the value is not a number.\n",
+        "instance": "Double precision floating point",
+        "type": "primitive"
+    },
+    "qCanExpand": {
+        "desc": "If set to true, it means that the cell can be expanded.\nThis parameter isnot returned if it is set to false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qCanCollapse": {
+        "desc": "If set to true, it means that the cell can be collapsed.\nThis parameter isnot returned if it is set to false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qType": {
+        "desc": "Type of the cell.",
+        "values": {
+            "V": "NX_DIM_CELL_VALUE. Applies to values in the data matrix.",
+            "E": "NX_DIM_CELL_EMPTY. Applies to empty cells in the top and left dimensions.",
+            "G": "NX_DIM_CELL_GENERATED. Applies to generated nodes that are inserted into the returned tree when there is no actual value (qAllValues in NxPageTreeNode set to true).",
+            "N": "NX_DIM_CELL_NORMAL. Applies to left and top dimensions cells.",
+            "T": "NX_DIM_CELL_TOTAL. Applies to cells marked with Total.",
+            "P": "NX_DIM_CELL_PSEUDO. Applies to pseudo dimensions.",
+            "R": "NX_DIM_CELL_ROOT. Applies to root node.",
+            "U": "NX_DIM_CELL_NULL. Applies to Null values in the data matrix."
+        },
+        "type": "primitive"
+    },
+    "qMaxPos": {
+        "desc": "Total of the positive values in the current group of cells.",
+        "instance": "Double precision floating point",
+        "type": "primitive"
+    },
+    "qMinNeg": {
+        "desc": "Total of the negative values in the current group of cells.",
+        "instance": "Double precision floating point",
+        "type": "primitive"
+    },
+    "qUp": {
+        "desc": "Number of elements that are part of the previous tail.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qDown": {
+        "desc": "Number of elements that are part of the next tail.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qRow": {
+        "desc": "Row index in the data matrix.\nThe indexing starts from 0.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qSubNodes": {
+        "desc": "Information about sub nodes (or sub cells).\nThe array is empty [ ] when there are no sub nodes.\n",
+        "instance": "NxStackedPivotCell",
+        "type": "array"
+    },
+    "qAttrExps": {
+        "desc": "Attribute expressions values.",
+        "instance": "NxAttributeExpressionValues",
+        "type": "object"
+    },
+    "qAttrDims": {
+        "desc": "Attribute dimensions values.",
+        "instance": "NxAttributeDimValues",
+        "type": "object"
+    }
+}

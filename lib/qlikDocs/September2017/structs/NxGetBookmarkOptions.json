@@ -1,0 +1,12 @@
+{
+    "qTypes": {
+        "desc": "List of object types.\n",
+        "instance": "Array of strings",
+        "type": "array"
+    },
+    "qData": {
+        "desc": "Set of data.",
+        "instance": "JSON",
+        "type": "primitive"
+    }
+}

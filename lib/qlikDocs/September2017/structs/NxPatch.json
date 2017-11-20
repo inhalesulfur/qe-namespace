@@ -1,0 +1,21 @@
+{
+    "qOp": {
+        "desc": "Operation to perform.",
+        "values": {
+            "Add": "",
+            "Remove": "",
+            "Replace": ""
+        },
+        "type": "primitive"
+    },
+    "qPath": {
+        "desc": "Path to the property to add, remove or replace.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qValue": {
+        "desc": "This parameter is not used in a remove operation.\nCorresponds to the value of the property to add or to the new value of the property to update.\nExamples:\n\"false\", \"2\", \"\\\"New title\\\"\"\n",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

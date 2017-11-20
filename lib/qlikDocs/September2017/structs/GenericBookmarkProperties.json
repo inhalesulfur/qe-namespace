@@ -1,0 +1,12 @@
+{
+    "qInfo": {
+        "desc": "Information about the bookmark.\nThis parameter is mandatory.\n",
+        "instance": {},
+        "type": "primitive"
+    },
+    "qMetaDef": {
+        "desc": "Definition of the dynamic properties.",
+        "instance": "Dynamic properties",
+        "type": "primitive"
+    }
+}

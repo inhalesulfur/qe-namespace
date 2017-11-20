@@ -1,0 +1,21 @@
+{
+    "qGrouping": {
+        "desc": "Information about the grouping.",
+        "values": {
+            "N": "no grouping",
+            "H": "drill-down",
+            "C": "cyclic"
+        },
+        "type": "primitive"
+    },
+    "qFieldDefs": {
+        "desc": "Array of dimension names.",
+        "instance": "String",
+        "type": "array"
+    },
+    "qFieldLabels": {
+        "desc": "Array of dimension labels.",
+        "instance": "String",
+        "type": "array"
+    }
+}

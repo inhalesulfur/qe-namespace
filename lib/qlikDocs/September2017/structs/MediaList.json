@@ -1,0 +1,7 @@
+{
+    "qItems": {
+        "desc": "Information about the list of media files.\nIn Qlik Sense Desktop, the media files are retrieved from:\n%userprofile%\\Documents\\Qlik\\Sense\\Content\\Default\n\nIn Qlik Sense Enterprise, the media files are retrieved from:\n&lt;installation_directory&gt;\\Qlik\\Sense\\Repository\\Content\\Default\nThe default installation directory is ProgramData.\n",
+        "instance": "MediaListItem",
+        "type": "array"
+    }
+}

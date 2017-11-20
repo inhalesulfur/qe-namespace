@@ -1,0 +1,30 @@
+{
+    "qId": {
+        "desc": "Identifier of the search group.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qGroupType": {
+        "desc": "Type of the search group.",
+        "values": {
+            "1": "for DatasetType: the type of the group is a data set. This group contains search matches that are related to fields in the app.",
+            "2": "for GenericObjectsType: the type of the group is a generic object. This group contains search matches that are related to generic objects in the app."
+        },
+        "type": "primitive"
+    },
+    "qSearchTermsMatched": {
+        "desc": "Indexes of the search terms that are included in the group. These search terms are related to the list of terms defined in SearchResult.qSearchTerms.",
+        "instance": "Integer",
+        "type": "array"
+    },
+    "qTotalNumberOfItems": {
+        "desc": "Total number of distinct items in the search group.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qItems": {
+        "desc": "List of items in the search group. \nThe group items are numbered from the value of SearchGroupOptions.qOffset to the value of SearchGroupOptions.qOffset + SearchGroupOptions.qCount\n",
+        "instance": "SearchGroupItem",
+        "type": "array"
+    }
+}

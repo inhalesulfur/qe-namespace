@@ -1,0 +1,26 @@
+{
+    "qErrorString": {
+        "desc": "Detailed information about the error message.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qLineEnd": {
+        "desc": "Line termination characters.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qLine": {
+        "desc": "Script statement where the error occurs.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qErrorDataCode": {
+        "desc": "Type of the error messages.",
+        "values": {
+            "0": "EDC_ERROR",
+            "1": "EDC_WARNING",
+            "2": "EDC_CIRCULAR_REFERENCE (Warning related to circular references)"
+        },
+        "type": "primitive"
+    }
+}

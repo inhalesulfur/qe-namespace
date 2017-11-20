@@ -1,0 +1,7 @@
+{
+    "qComponentVersion": {
+        "desc": "Version number of the Qlik engine component.",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

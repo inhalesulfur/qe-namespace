@@ -1,0 +1,61 @@
+{
+    "qText": {
+        "desc": "The text version of the value, if available.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qElemNo": {
+        "desc": "Element number\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qRow": {
+        "desc": "Row index in the data matrix.\nThe indexing starts from 0.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qNodeNr": {
+        "desc": "A generated number applicable to this page only. Used so that children can easily identify who their parents are.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qParentNode": {
+        "desc": "The qNodeNr of this node's parent for the current page.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qType": {
+        "desc": "Type of the cell.",
+        "values": {
+            "V": "NX_DIM_CELL_VALUE. Applies to values in the data matrix.",
+            "E": "NX_DIM_CELL_EMPTY. Applies to empty cells in the top and left dimensions.",
+            "G": "NX_DIM_CELL_GENERATED. Applies to generated nodes that are inserted into the returned tree when there is no actual value (qAllValues in NxPageTreeNode set to true).",
+            "N": "NX_DIM_CELL_NORMAL. Applies to left and top dimensions cells.",
+            "T": "NX_DIM_CELL_TOTAL. Applies to cells marked with Total.",
+            "P": "NX_DIM_CELL_PSEUDO. Applies to pseudo dimensions.",
+            "R": "NX_DIM_CELL_ROOT. Applies to root node.",
+            "U": "NX_DIM_CELL_NULL. Applies to Null values in the data matrix."
+        },
+        "type": "primitive"
+    },
+    "qValues": {
+        "desc": "The measures for this node.",
+        "instance": "NxTreeValue",
+        "type": "array"
+    },
+    "qNodes": {
+        "desc": "The children of this node in the tree structure.",
+        "instance": "NxTreeNode",
+        "type": "array"
+    },
+    "qAttrExps": {
+        "desc": "Attribute expression values.",
+        "instance": "NxAttributeExpressionValues",
+        "type": "object"
+    },
+    "qAttrDims": {
+        "desc": "Attribute dimension values.",
+        "instance": "NxAttributeDimValues",
+        "type": "object"
+    }
+}

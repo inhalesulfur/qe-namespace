@@ -1,0 +1,7 @@
+{
+    "qItems": {
+        "desc": "Information about the list of content files.\n",
+        "instance": "StaticContentListItem",
+        "type": "object"
+    }
+}

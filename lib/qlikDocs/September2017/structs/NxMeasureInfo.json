@@ -1,0 +1,66 @@
+{
+    "qFallbackTitle": {
+        "desc": "Corresponds to the label of the measure.\nIf the label is not defined then the measure name is used.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qApprMaxGlyphCount": {
+        "desc": "Length of the longest value in the field.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qCardinal": {
+        "desc": "Number of distinct field values. ",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qSortIndicator": {
+        "desc": "Sort indicator.\nThis parameter is optional. The default value is no sorting.\n",
+        "values": {
+            "N": "no sorting",
+            "A": "sorting ascending",
+            "D": "sorting descending"
+        },
+        "type": "primitive"
+    },
+    "qNumFormat": {
+        "desc": "Format of the field.\n\nThis parameter is optional.\n",
+        "instance": "FieldAttributes",
+        "type": "object"
+    },
+    "qIsAutoFormat": {
+        "desc": "This parameter is set to true if qNumFormat is set to U (unknown). The engine guesses the type of the field based on the field's expression.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qMin": {
+        "desc": "Lowest value in the range.",
+        "instance": "Double precision floating point",
+        "type": "primitive"
+    },
+    "qMax": {
+        "desc": "Highest value in the range.",
+        "instance": "Double precision floating point",
+        "type": "primitive"
+    },
+    "qError": {
+        "desc": "This parameter is optional.\nGives information on the error.\n",
+        "instance": "NxValidationError",
+        "type": "object"
+    },
+    "qReverseSort": {
+        "desc": "If set to true, it inverts the sort criteria in the field.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qAttrExprInfo": {
+        "desc": "List of attribute expressions.",
+        "instance": "NxAttrExprInfo",
+        "type": "array"
+    },
+    "qAttrDimInfo": {
+        "desc": "List of attribute dimensions.",
+        "instance": "NxMeasureInfo",
+        "type": "array"
+    }
+}

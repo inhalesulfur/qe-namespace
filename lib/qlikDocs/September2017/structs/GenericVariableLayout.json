@@ -1,0 +1,27 @@
+{
+    "qInfo": {
+        "desc": "Identifier and type of the object.\nThis parameter is mandatory.\n",
+        "instance": "NxInfo",
+        "type": "object"
+    },
+    "qMeta": {
+        "desc": "Information about publishing and permissions.\nThis parameter is optional.\n",
+        "instance": "NxMeta",
+        "type": "object"
+    },
+    "qText": {
+        "desc": "Some text.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qNum": {
+        "desc": "A value.",
+        "instance": "Double",
+        "type": "primitive"
+    },
+    "qIsScriptCreated": {
+        "desc": "If set to true, it means that the variable was defined via script.",
+        "instance": "Boolean",
+        "type": "primitive"
+    }
+}

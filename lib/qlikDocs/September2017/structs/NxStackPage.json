@@ -1,0 +1,12 @@
+{
+    "qData": {
+        "desc": "Array of data.",
+        "instance": "NxStackedPivotCell",
+        "type": "array"
+    },
+    "qArea": {
+        "desc": "Size and offset of the data in the matrix.",
+        "instance": "Rect",
+        "type": "object"
+    }
+}

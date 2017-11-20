@@ -1,0 +1,12 @@
+{
+    "qExpr": {
+        "desc": "Value of the expression",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qLibraryId": {
+        "desc": "Refers to an expression stored in the library.",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

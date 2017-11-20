@@ -1,0 +1,12 @@
+{
+    "qInternalView": {
+        "desc": "Internal view mode.\n",
+        "instance": "TableViewSaveInfo",
+        "type": "object"
+    },
+    "qSourceView": {
+        "desc": "Source view mode.",
+        "instance": "TableViewSaveInfo",
+        "type": "object"
+    }
+}

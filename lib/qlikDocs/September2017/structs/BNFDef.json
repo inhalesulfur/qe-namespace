@@ -1,0 +1,118 @@
+{
+    "qBnf": {
+        "desc": "Array of token references that all together build up the definition of the current token.\nGenerally, if the array is not empty, the definition is a BNF rule (qIsBnfRule is set to true). However, someBNF&nbsp;rules do have an empty array (qIsBnfRule is set to true, but qBnf is empty).\n",
+        "instance": "Integer",
+        "type": "array"
+    },
+    "qNbr": {
+        "desc": "Number of the current token definition.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qPNbr": {
+        "desc": "Number of the parent rule definition.",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qHelpId": {
+        "desc": "Reference identifier to a function described in the documentation. The identifier is stored in the definition of the token containing the function name.\nIs not used in Qlik Sense.\n",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qName": {
+        "desc": "Token name.\nOne of:\n\na rule name\nan identifier\na literal value\n\n",
+        "values": {
+            "a rule name": "",
+            "an identifier": "",
+            "a literal value": ""
+        },
+        "type": "primitive"
+    },
+    "qStr": {
+        "desc": "Literal string of the token.\nExamples: 'Round' and '('.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qIsBnfRule": {
+        "desc": "If set to true,a list of related rule tokens is assigned to qBnf .\nThis parameter is optional. The default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qScriptStatement": {
+        "desc": "If set to true,the definition specifies a script statement.\nThis parameter is optional. The default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qControlStatement": {
+        "desc": "If set to true,the definition specifies a control statement.\nThis parameter is optional. The default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qBnfLiteral": {
+        "desc": "If set to true,the definition specifies a literal token.\nThis parameter is optional. The default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qQvFunc": {
+        "desc": "If set to true,the definition is related to a Qlik Sense function. It cannot be an aggregation function.\nThis parameter is optional. The default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qAggrFunc": {
+        "desc": "If set to true,the definition is related to an aggregation function.\nThis parameter is optional. The default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qFG": {
+        "desc": "Group of the function.",
+        "values": {
+            "ALL": "FUNC_GROUP_ALL",
+            "U": "FUNC_GROUP_UNKNOWN",
+            "NONE": "FUNC_GROUP_NONE",
+            "AGGR": "FUNC_GROUP_AGGR",
+            "NUM": "FUNC_GROUP_NUMERIC",
+            "RNG": "FUNC_GROUP_RANGE",
+            "EXP": "FUNC_GROUP_EXPONENTIAL_AND_LOGARITHMIC",
+            "TRIG": "FUNC_GROUP_TRIGONOMETRIC_AND_HYPERBOLIC",
+            "FIN": "FUNC_GROUP_FINANCIAL",
+            "MATH": "FUNC_GROUP_MATH_CONSTANT_AND_PARAM_FREE",
+            "COUNT": "FUNC_GROUP_COUNTER",
+            "STR": "FUNC_GROUP_STRING",
+            "MAPP": "FUNC_GROUP_MAPPING",
+            "RCRD": "FUNC_GROUP_INTER_RECORD",
+            "CND": "FUNC_GROUP_CONDITIONAL",
+            "LOG": "FUNC_GROUP_LOGICAL",
+            "NULL": "FUNC_GROUP_NULL",
+            "SYS": "FUNC_GROUP_SYSTEM",
+            "FILE": "FUNC_GROUP_FILE",
+            "TBL": "FUNC_GROUP_TABLE",
+            "DATE": "FUNC_GROUP_DATE_AND_TIME",
+            "NUMI": "FUNC_GROUP_NUMBER_INTERPRET",
+            "FRMT": "FUNC_GROUP_FORMATTING",
+            "CLR": "FUNC_GROUP_COLOR",
+            "RNK": "FUNC_GROUP_RANKING",
+            "GEO": "FUNC_GROUP_GEO",
+            "EXT": "FUNC_GROUP_EXTERNAL"
+        },
+        "type": "primitive"
+    },
+    "qFieldFlag": {
+        "desc": "If set to true,the definition is related to a field.\nThis parameter is optional. The default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qMT": {
+        "desc": "Type of the data.",
+        "values": {
+            "N": "NOT_META",
+            "D": "META_DOC_NAME",
+            "R": "META_RET_TYPE"
+        },
+        "type": "primitive"
+    },
+    "qDepr": {
+        "desc": "Indicates whether a script statement, a chart or a script function is deprecated (not recommended for use).\nIf set to true,the script statement or thefunction is not recommended for use in Qlik Sense. \nThis parameter is optional. The default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    }
+}

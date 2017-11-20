@@ -1,0 +1,7 @@
+{
+    "qItems": {
+        "desc": "Array of items",
+        "instance": "NxFieldDescription",
+        "type": "array"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "qName": {
+        "desc": "Name of the stream\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qId": {
+        "desc": "Identifier of the stream\n",
+        "instance": "String",
+        "type": "primitive"
+    }
+}

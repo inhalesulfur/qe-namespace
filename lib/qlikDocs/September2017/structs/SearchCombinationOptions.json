@@ -1,0 +1,26 @@
+{
+    "qSearchFields": {
+        "desc": "List of the search fields.\nIf empty, the search is performed in all fields of the app.\n",
+        "instance": "String",
+        "type": "array"
+    },
+    "qContext": {
+        "desc": "Search context.\nThe default value is LockedFieldsOnly.\n",
+        "values": {
+            "Cleared": "In this mode, the first step is to clear any current selections in the app. The second step is to search for one or more terms in the values of the app.",
+            "LockedFieldsOnly": "In this mode, the search applies only to the values associated with the selections made in locked fields, ignoring selections in any unlocked field. If no locked fields, the behavior is identical to the Cleared context. You cannot make any new selections in a locked field. You can get search hits for the associated values of a locked field but you cannot get the search hits for the non associative values.",
+            "CurrentSelections": "In this mode, the current selections are kept (if any). Search for one or more terms in the values of the app. New selections are made on top of the current selections. If no selections were made before the search, this mode is identical to the Cleared context."
+        },
+        "type": "primitive"
+    },
+    "qCharEncoding": {
+        "desc": "Encoding used to compute qRanges of type SearchCharRange.\nOnly affects the computation of the ranges. It does not impact the encoding of the text.\n",
+        "instance": "Utf8Utf16",
+        "type": "primitive"
+    },
+    "qAttributes": {
+        "desc": "Optional.\n\nFor SearchSuggest method, this array is empty.\nFor SearchResults method, this array is empty, or contains qNum and/or qElemNum. It allows the user to request details in the outputted SearchGroupItemMatch. For more information, see SearchGroupItemMatch\n\n",
+        "instance": "String",
+        "type": "array"
+    }
+}

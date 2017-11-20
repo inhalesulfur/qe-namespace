@@ -1,0 +1,57 @@
+{
+    "qIsSemantic": {
+        "desc": "If set to true, it means that the field is a semantic.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qIsHidden": {
+        "desc": "If set to true, it means that the field is hidden.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "q IsSystem": {
+        "desc": "If set to true, it means that the field is a system field.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qAndMode": {
+        "desc": "If set to true a logical AND (instead of a logical OR) is used when making selections in a field.\nThe default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qName": {
+        "desc": "Name of the field",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qCardinal": {
+        "desc": "Number of distinct field values",
+        "instance": "Integer",
+        "type": "primitive"
+    },
+    "qTags": {
+        "desc": "Gives information on a field. For example, it can return the type of the field.\nExamples: key, text, ASCII\n",
+        "instance": "String",
+        "type": "array"
+    },
+    "qIsDefinitionOnly": {
+        "desc": "If set to true, it means that the field is a field on the fly.",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qDerivedFieldData": {
+        "desc": "Lists the derived fields if any.",
+        "instance": "NxDerivedFieldDescriptionList",
+        "type": "object"
+    },
+    "qIsDetail": {
+        "desc": "Is used for Direct Discovery.\nIf set to true, it means that the type of the field is detail.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qIsImplicit": {
+        "desc": "Is used for Direct Discovery.\nIf set to true, it means that the type of the field is measure.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "qInfo": {
+        "desc": "Identifier and type of the generic object.",
+        "instance": "NxInfo",
+        "type": "object"
+    },
+    "qMeta": {
+        "desc": "Information about publishing and permissions.\nThis parameter is optional.\n",
+        "instance": "Null or <span class=\"path\">NxMeta</span>",
+        "type": "primitive"
+    },
+    "qExtendsId": {
+        "desc": "Should beset to create an object that is linked to another object. Enter the identifier of the object you want to link to.\nIf you do not want to link your object, set this parameter to an empty string.\n",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qHasSoftPatches": {
+        "desc": "Is set to true if the generic object contains some properties that are not persistent (a soft patch was applied).",
+        "instance": "Boolean",
+        "type": "primitive"
+    },
+    "qError": {
+        "desc": "This parameter is optional.\nGives information on the error.\n",
+        "instance": "Null NxLayoutErrors",
+        "type": "primitive"
+    },
+    "qSelectionInfo": {
+        "desc": "Information about the selections.",
+        "instance": "NxSelectionInfo",
+        "type": "object"
+    }
+}

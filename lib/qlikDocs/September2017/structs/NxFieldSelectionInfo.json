@@ -1,0 +1,16 @@
+{
+    "qName": {
+        "desc": "Name of the field.",
+        "instance": "String",
+        "type": "primitive"
+    },
+    "qFieldSelectionMode": {
+        "desc": "Selection mode.",
+        "values": {
+            "NORMAL": "a selection in normal mode.",
+            "AND": "a selection in AND&nbsp;mode.",
+            "NOT": "a selection NOT in AND mode."
+        },
+        "type": "primitive"
+    }
+}

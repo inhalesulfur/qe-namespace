@@ -1,0 +1,22 @@
+{
+    "qMatrix": {
+        "desc": "Array of data.",
+        "instance": "NxCellRows",
+        "type": "array"
+    },
+    "qTails": {
+        "desc": "Array of tails.\nIs used for hypercube objects with multiple dimensions. It might happen that due to the window size some elements in a group cannot be displayed in the same page as the other elements of the group. Elements of a group of dimensions can be part of the previous or the next tail.\nIf there is no tail, the array is empty [ ].\n",
+        "instance": "NxGroupTail",
+        "type": "array"
+    },
+    "qArea": {
+        "desc": "Size and offset of the data in the matrix.",
+        "instance": "Rect",
+        "type": "object"
+    },
+    "qIsReduced": {
+        "desc": "Is set to true, if the data have been reduced.\nThe default value is false.\n",
+        "instance": "Boolean",
+        "type": "primitive"
+    }
+}

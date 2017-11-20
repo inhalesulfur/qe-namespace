@@ -1,0 +1,7 @@
+{
+    "qDriveType": {
+        "desc": "Type of the drive. Can be:\n\nREMOVABLE\nFIXED\nNETWORK\nCD_ROM\nRAM\nUNKNOWN_TYPE\n\nFIXED means physical drive.\n",
+        "instance": "String",
+        "type": "primitive"
+    }
+}
