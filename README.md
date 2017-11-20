@@ -17,7 +17,7 @@ const qen = require("qe-namespace");
 qen.loadStructs("September2017");
 ```
 
-Function `loadStructs(${version})` will extract struct list from [Struct Overview](http://help.qlik.com/en-US/sense-developer/September2017/Subsystems/EngineAPI/Content/Structs/OverviewStruct.htm) page from Qlik Engine API Documentation
-Then each struct page will be parsed into `./lib/qlikDocs/${version}/structs/${structName}.json`
-Finally all structs concated into `./lib/qlikDocs/${version}/structs.json`
+* Function `loadStructs(${version})` will extract struct list from [Struct Overview](http://help.qlik.com/en-US/sense-developer/September2017/Subsystems/EngineAPI/Content/Structs/OverviewStruct.htm) page from Qlik Engine API Documentation
+* Then each struct page will be parsed into `./lib/qlikDocs/${version}/structs/${structName}.json`
+* At the end all structures are merged into `./lib/qlikDocs/${version}/structs.json`
 
