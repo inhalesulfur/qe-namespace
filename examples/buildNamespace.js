@@ -8,15 +8,12 @@ var st = builder.buildNamespace(json);
 
 var cube = new st.HyperCubeDef;
 var dim = cube.qDimensions.push();
-
+//dim.set.qDef({});
 dim.init.qDef().qFieldDefs.push("field_expression");
 console.log(dim.stringify());
 console.log(cube.stringify());
 
 var format = new st.FileDataFormat;
-format.set.qType("CSV")
-	.set.qLabel("embedded labels")
-	.set.qQuote("MSQ")
-	//.set.qDelimiter()
-	.init.qDelimiter();
+format.set.qType("123")
+
 console.log(format.stringify());

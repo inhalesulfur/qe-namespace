@@ -16,12 +16,12 @@ const qen = require("qe-namespace");
 qen.loadStructs("September2017");
 ```
 
-* Function `loadStructs(${version})` will extract struct list from [Struct Overview](http://help.qlik.com/en-US/sense-developer/September2017/Subsystems/EngineAPI/Content/Structs/OverviewStruct.htm) page from Qlik Engine API Documentation
+* Function `loadStructs(${version})` will extract struct list from [Struct Overview](http://help.qlik.com/en-US/sense-developer/September2017/Subsystems/EngineAPI/Content/Structs/OverviewStruct.htm) page
 * Then each struct page will be parsed into `./lib/qlikDocs/${version}/structs/${structName}.json`
 * At the end all structures are merged into `./lib/qlikDocs/${version}/structs.json`
 
 
-Here is an example of some properties extracted from [HyperCubeDef Page](http://help.qlik.com/en-US/sense-developer/September2017/Subsystems/EngineAPI/Content/Structs/HyperCubeDef.htm) and saved into [HyperCubeDef.json](https://github.com/inhalesulfur/qe-namespace/blob/master/lib/qlikDocs/September2017/structs/HyperCubeDef.json)
+Here is an example of some properties extracted from [HyperCubeDef](http://help.qlik.com/en-US/sense-developer/September2017/Subsystems/EngineAPI/Content/Structs/HyperCubeDef.htm) page and saved into [HyperCubeDef.json](https://github.com/inhalesulfur/qe-namespace/blob/master/lib/qlikDocs/September2017/structs/HyperCubeDef.json)
 ```json
 {
     "qDimensions": {
@@ -78,13 +78,61 @@ var hyperCubeDef = new n.HyperCubeDef;
 #### require.js case
 ```js
 define([
-	"text!structs.json",
-	"qe-namespace"
+    "text!structs.json",
+    "qe-namespace"
 ], function(
-	json,
-	qen
+    json,
+    qen
 ){
-	var n = qen.buildNamespace(json);
-	var hyperCubeDef = new n.HyperCubeDef;
+    var n = qen.buildNamespace(json);
+    var hyperCubeDef = new n.HyperCubeDef;
 })
+```
+
+In this implementation each constructor adds to result object Function-like collections for setting and initialisation functions (JSON.parse ingore this collections)
+```js
+var format = new st.FileDataFormat;
+format.set("qType", "CSV") 	//need to look into documentation for possible properties
+format.set.qType("CSV")		//no need to look into documentation for possible properties
+```
+
+For properties, which instance presented in namespace, constructor adds initialisation function into `.init` collection
+```js
+var dim = new st.NxDimension;
+dim.init.qDef() // equal to dim.set.qDef(new st.NxInlineDimensionDef)
+```
+
+Also setters check instance of setting value
+```js
+dim.set.qDef({});
+//TypeError: setted object is not an instance of the NxInlineDimensionDef
+```
+
+You can awoid instance checking by assigning value directly to the property
+```js
+dim.qDef = { qFieldDefs:[] };
+```
+
+If property has `values` attribute, setter will check for possible values
+```js
+dim.qDef = { qFieldDefs:[] };
+var format = new st.FileDataFormat;
+format.set.qType("123")
+/*
+TypeError: wrong value setted. posible values:
+{
+    "CSV": "Delimited",
+    "FIX": "Fixed Record",
+    "DIF": "Data Interchange Format",
+    "EXCEL_BIFF": "Microsoft Excel (XLS)",
+    "EXCEL_OOXML": "Microsoft Excel (XLSX)",
+    "HTMLfor HTML": "",
+    "QVD": "QVD file",
+    "XML": "XML",
+    "QVX": "QVX file",
+    "JSON": "JSON&nbsp;format",
+    "KML": "KML file"
+}
+
+*/
 ```
