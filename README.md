@@ -21,7 +21,7 @@ qen.loadStructs("September2017");
 * At the end all structures are merged into `./lib/qlikDocs/${version}/structs.json`
 
 
-Here is an example of some properties extracted from [HyperCubeDef](http://help.qlik.com/en-US/sense-developer/September2017/Subsystems/EngineAPI/Content/Structs/HyperCubeDef.htm) page and saved into [HyperCubeDef.json](https://github.com/inhalesulfur/qe-namespace/blob/master/lib/qlikDocs/September2017/structs/HyperCubeDef.json)
+Here is an example of some properties extracted from [HyperCubeDef](http://help.qlik.com/en-US/sense-developer/September2017/Subsystems/EngineAPI/Content/Structs/HyperCubeDef.htm) page and saved into [HyperCubeDef.json](https://github.com/inhalesulfur/qe-namespace/blob/master/lib/qlikDocs/September2017/structs/HyperCubeDef.json):
 ```json
 {
     "qDimensions": {
@@ -61,11 +61,11 @@ Here is an example of some properties extracted from [HyperCubeDef](http://help.
 }
 ```
 
-Attributes `class` and `values` could be used for instance and possible value checking in setter functions
+Attributes `class` and `values` could be used for instance and possible value checking in setter functions.
 
 ### Building Qlik Engine Struct namespace
 
-#### node.js case
+#### node.js case:
 ```js
 const fs = require("fs");
 const qen = require("qe-namespace");
@@ -75,7 +75,7 @@ var n = qen.buildNamespace(json);
 var hyperCubeDef = new n.HyperCubeDef;
 ```
 
-#### require.js case
+#### require.js case:
 ```js
 define([
     "text!structs.json",
@@ -90,7 +90,7 @@ define([
 ```
 
 In this implementation each constructor adds to result object `.set` and `.init` collections for setting and initialisation functions. 
-This collections are costructed with Function expression, so `JSON.parse` ingore them
+This collections are costructed with Function expression, so `JSON.parse` ingore them.
 ```js
 var format = new st.FileDataFormat;
 format.set("qType", "CSV") 	//need to surf through documentation for possible properties
@@ -98,25 +98,25 @@ format.set.qType("CSV")		//no need to surf through documentation for possible pr
 //format.qType === "CSV"
 ```
 
-For properties, which class presented in namespace, constructor adds initialisation function into `.init` collection
+For properties, which class presented in namespace, constructor adds initialisation function into `.init` collection:
 ```js
 var dim = new st.NxDimension;
 dim.init.qDef() // equal to dim.set.qDef(new st.NxInlineDimensionDef)
 //format.qDef instanseof NxInlineDimensionDef
 ```
 
-Also setters check `instanceof` for setting value
+Also setters check `instanceof` for setting value:
 ```js
 dim.set.qDef({});
 //TypeError: setted object is not an instance of the NxInlineDimensionDef
 ```
 
-You can awoid `instanceof` checking by setting value directly to the property
+You can awoid `instanceof` checking by setting value directly to the property:
 ```js
 dim.qDef = { qFieldDefs:[] };
 ```
 
-If property has `values` attribute, setter will check for possible values
+If property has `values` attribute, setter will check for possible values:
 ```js
 dim.qDef = { qFieldDefs:[] };
 var format = new st.FileDataFormat;
@@ -139,7 +139,7 @@ TypeError: wrong value setted. posible values:
 */
 ```
 
-Function `.push` for properties `type:array` check class of pushed value
+Function `.push` for properties `type:array` check class of pushed value:
 ```js
 var cube = new st.HyperCubeDef;
 cube.qDimensions.push({})
@@ -148,14 +148,14 @@ cube.qDimensions.push({})
 
 #### Stringify
 
-Each constructor adds stringify function
+Each constructor adds stringify function:
 ```js
 this.stringify = JSON.stringify.bind(null, this);
 ```
 
 #### Fluent interface
 
-Functions from `.set` collection return initial object
+Functions from `.set` collection return initial object:
 ```js
 var format = new st.FileDataFormat;
 format.set.qType("CSV")
@@ -163,13 +163,13 @@ format.set.qType("CSV")
 	.set.qCodePage("utf8")
 ```
 
-Functions from `.init` collection return initialized object
+Functions from `.init` collection return initialized object:
 ```js
 var dim = new st.NxDimension;
 var dimDef = dim.init.qDef();
 ```
 
-Function `.push` for properties `type:array` returns initial array
+Function `.push` for properties `type:array` returns initial array:
 ```js
 var cube = new st.HyperCubeDef;
 cube.qDimensions.push(new st.NxDimension)
@@ -177,7 +177,7 @@ cube.qDimensions.push(new st.NxDimension)
 	.push(new st.NxDimension);
 ```
 
-If array items class presented in namespace, method `.pushNew` added. This method returns pushed object
+If array items class presented in namespace, method `.pushNew` added. This method returns pushed object:
 ```js
 var cube = new st.HyperCubeDef;
 cube.qInitialDataFetch.pushNew()

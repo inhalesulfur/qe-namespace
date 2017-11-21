@@ -26,4 +26,4 @@ format.set.qType("CSV")
 	.set.qCodePage("utf8")
 
 
-console.log(format.stringify());
+console.log(format.set);
