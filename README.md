@@ -90,7 +90,7 @@ define([
 ```
 
 In this implementation each constructor adds to result object `.set` and `.init` collections for setting and initialisation functions. 
-This collections are costructed with Function expression, so `JSON.parse` ingore them.
+This collections are costructed with `Function` expression, so `JSON.parse` ingore them.
 ```js
 var format = new st.FileDataFormat;
 format.set("qType", "CSV")     //need to surf through documentation for possible properties
@@ -138,7 +138,7 @@ TypeError: wrong value setted. posible values:
 */
 ```
 
-Function `.push` for properties `type:array` check class of pushed value:
+Function `.push` for properties with `type:array` checks class of pushed value:
 ```js
 var cube = new st.HyperCubeDef;
 cube.qDimensions.push({})
