@@ -1,22 +1,22 @@
 {
     "qStateName": {
         "desc": "Name of the alternate state.\nDefault is current selections $.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qLibraryId": {
         "desc": "Refers to a dimension stored in the library.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDef": {
         "desc": "Refers to a dimension stored in the list object.",
-        "instance": "NxInlineDimensionDef",
+        "class": "NxInlineDimensionDef",
         "type": "object"
     },
     "qAutoSortByState": {
         "desc": "Defines the sorting by state.",
-        "instance": "NxAutoSortByStateDef",
+        "class": "NxAutoSortByStateDef",
         "type": "object"
     },
     "qFrequencyMode ": {
@@ -31,17 +31,17 @@
     },
     "qShowAlternatives": {
         "desc": "If set to true, alternative values are allowed in qData.\nThis parameter is optional. The default value is false.\nIf set to false, no alternative values are displayed in qData. Values are excluded instead.\nNote that on the contrary, the qStateCounts parameter counts the excluded values as alternative values.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qInitialDataFetch": {
         "desc": "Fetches an initial data set.",
-        "instance": "NxPage",
+        "class": "NxPage",
         "type": "array"
     },
     "qExpressions": {
         "desc": "Lists the expressions in the list object.\nThis parameter is optional.\n",
-        "instance": "NxListObjectExpressionDef",
+        "class": "NxListObjectExpressionDef",
         "type": "array"
     }
 }

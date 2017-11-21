@@ -1,17 +1,17 @@
 {
     "qDefinitionName": {
         "desc": "Name of the derived definition.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qTags": {
         "desc": "List of tags.\n",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qActive": {
         "desc": "Is set to true is the derived field is in use.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

@@ -1,17 +1,17 @@
 {
     "qRangeLo": {
         "desc": "Lowest value in the range.",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     },
     "qRangeHi": {
         "desc": "Highest value in the range.",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     },
     "qMeasure": {
         "desc": "Label of the measure.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

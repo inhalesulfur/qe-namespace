@@ -1,27 +1,27 @@
 {
     "qMin": {
         "desc": "Minimum value.\n",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     },
     "qMax": {
         "desc": "Maximum value.\n",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     },
     "qContinuousAxes": {
         "desc": "&nbsp;",
-        "instance": "Bool",
+        "class": "Bool",
         "type": "primitive"
     },
     "qIsCyclic": {
         "desc": "&nbsp;",
-        "instance": "Bool",
+        "class": "Bool",
         "type": "primitive"
     },
     "qFallbackTitle": {
         "desc": "&nbsp;",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

@@ -1,22 +1,22 @@
 {
     "qFallbackTitle": {
         "desc": "Corresponds to the label of the dimension that is selected.\nIf the label is not defined then the field name is used.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qApprMaxGlyphCount": {
         "desc": "Length of the longest value in the field.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qCardinal": {
         "desc": "Number of distinct field values. ",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qLocked": {
         "desc": "Is set to true if the field is locked.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qSortIndicator": {
@@ -30,27 +30,27 @@
     },
     "qGroupFallbackTitles": {
         "desc": " Array of dimension labels.\nContains the labels of all dimensions in a hierarchy group (for example the labels of all dimensions in a drill down group).\n",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qGroupPos": {
         "desc": "Index of the dimension that is currently in use.\nqGroupPos is set to 0 if there are no hierarchical groups (drill-down groups) or cycle groups.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qStateCounts": {
         "desc": "Number of values in a particular state.",
-        "instance": "NxStateCounts",
+        "class": "NxStateCounts",
         "type": "object"
     },
     "qTags": {
         "desc": "Gives information on a field. For example, it can return the type of the field.\nExamples: key, text, ASCII\n",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qError": {
         "desc": "This parameter is optional.\nGives information on the error.\n",
-        "instance": "NxValidationError",
+        "class": "NxValidationError",
         "type": "object"
     },
     "qDimensionType": {
@@ -64,7 +64,7 @@
     },
     "qReverseSort": {
         "desc": "If set to true, it inverts the sort criteria in the field.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qGrouping": {
@@ -78,57 +78,57 @@
     },
     "qIsSemantic": {
         "desc": "If set to true, it means that the field is a semantic.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qNumFormat": {
         "desc": "Format of the field.\nThis parameter is optional.\n",
-        "instance": "FieldAttributes",
+        "class": "FieldAttributes",
         "type": "object"
     },
     "qIsAutoFormat": {
         "desc": "This parameter is set to true if qNumFormat is set to U (unknown). The engine guesses the type of the field based on the field's definition.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qGroupFieldDefs": {
         "desc": "Array of field names.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qAttrExprInfo": {
         "desc": "Array of attribute expressions.",
-        "instance": "NxAttrExprInfo",
+        "class": "NxAttrExprInfo",
         "type": "array"
     },
     "qMin": {
         "desc": "Minimum value.",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     },
     "qMax": {
         "desc": "Maximum value.",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     },
     "qContinuousAxes": {
         "desc": "Is continuous axis used.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qIsCyclic": {
         "desc": "Is a cyclic dimension used.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qDerivedField": {
         "desc": "Is derived field is used as a dimension.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qAttrDimInfo": {
         "desc": "Array of attribute dimensions.",
-        "instance": "NxAttrDimInfo",
+        "class": "NxAttrDimInfo",
         "type": "array"
     }
 }

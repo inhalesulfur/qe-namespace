@@ -1,22 +1,22 @@
 {
     "qText": {
         "desc": "The text version of the value, if available.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qValue": {
         "desc": "Value of the cell.\nIs set to NaN, if the value is not a number.\n",
-        "instance": "Double precision floating point",
+        "class": "Double precision floating point",
         "type": "primitive"
     },
     "qAttrExps": {
         "desc": "Attribute expression values.",
-        "instance": "NxAttributeExpressionValues",
+        "class": "NxAttributeExpressionValues",
         "type": "object"
     },
     "qAttrDims": {
         "desc": "Attribute dimension values.",
-        "instance": "NxAttributeDimValues",
+        "class": "NxAttributeDimValues",
         "type": "object"
     }
 }

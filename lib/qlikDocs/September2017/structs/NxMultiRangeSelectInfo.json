@@ -1,12 +1,12 @@
 {
     "qRange": {
         "desc": "Range of values.",
-        "instance": "Range",
+        "class": "Range",
         "type": "object"
     },
     "qColumnsToSelect": {
         "desc": "Number of the columns to select.\nNumbering starts from 0.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     }
 }

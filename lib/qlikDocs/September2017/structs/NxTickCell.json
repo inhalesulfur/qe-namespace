@@ -1,17 +1,17 @@
 {
     "qText": {
         "desc": "Tick's label.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qStart": {
         "desc": "Start value.\n",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     },
     "qEnd": {
         "desc": "End value.",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     }
 }

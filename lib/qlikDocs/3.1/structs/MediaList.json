@@ -1,7 +1,7 @@
 {
     "qItems": {
         "desc": "Information about the list of media files.\nIn local installation mode, the media files are retrieved from:\n%userprofile%\\Documents\\Qlik\\Sense\\Content\\Default\n\nIn server mode, the media files are retrieved from:\n&lt;installation_directory&gt;\\Qlik\\Sense\\Repository\\Content\\Default\nThe default installation directory is ProgramData.\n",
-        "instance": "MediaListItem",
+        "class": "MediaListItem",
         "type": "array"
     }
 }

@@ -1,17 +1,17 @@
 {
     "qName": {
         "desc": "Name of the field.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qIsKey": {
         "desc": "Is set to true if the field is a primary key.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qOriginalFieldName": {
         "desc": "Is shown for fixed records.\nqOriginalFieldName and qName are identical if no field names are used in the file.\nqOriginalFieldName differs from qName if embedded file names are used in the file.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

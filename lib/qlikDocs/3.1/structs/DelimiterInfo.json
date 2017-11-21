@@ -1,22 +1,22 @@
 {
     "qName": {
         "desc": "Name of the delimiter.\nExample:\n\"Tab_DELIMITER\"\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qScriptCode": {
         "desc": "Representation of the delimiter value that is used in the script.\nExample:\n\"'\\t'\"\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qNumber": {
         "desc": "Delimiter character number used by the engine to determine how to separate the values.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qIsMultiple": {
         "desc": "Is set to true if multiple spaces are used to separate the values.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

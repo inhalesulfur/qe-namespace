@@ -1,7 +1,7 @@
 {
     "qItems": {
         "desc": "Information about the content library.",
-        "instance": "ContentLibraryListItem",
+        "class": "ContentLibraryListItem",
         "type": "object"
     }
 }

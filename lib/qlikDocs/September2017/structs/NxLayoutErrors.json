@@ -1,7 +1,7 @@
 {
     "ErrorCode": {
         "desc": "Error code.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     }
 }

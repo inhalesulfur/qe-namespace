@@ -1,17 +1,17 @@
 {
     "qErrorString": {
         "desc": "Detailed information about the error message.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qLineEnd": {
         "desc": "Line termination characters.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qLine": {
         "desc": "Script statement where the error occurs.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qErrorDataCode": {

@@ -1,12 +1,12 @@
 {
     "qPos": {
         "desc": "Information about the position of the table.",
-        "instance": "Rect",
+        "class": "Rect",
         "type": "object"
     },
     "qCaption": {
         "desc": "Table name.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

@@ -1,52 +1,52 @@
 {
     "qLibraryId": {
         "desc": "Refers to a dimension stored in the library.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDef": {
         "desc": "Refers to a dimension stored in the hypercube.",
-        "instance": "NxInlineDimensionDef",
+        "class": "NxInlineDimensionDef",
         "type": "object"
     },
     "qNullSuppression": {
         "desc": "If set to true, no null values are returned.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qOtherTotalSpec": {
         "desc": "Sets the dimension limits. Each dimension of a hypercube is configured separately.\nDefines if some values (grouped as Others) should be grouped together in the visualization.\nFor example in a pie chart all values lower than 200 could be grouped together.\n",
-        "instance": "OtherTotalSpecProp",
+        "class": "OtherTotalSpecProp",
         "type": "object"
     },
     "qShowAll": {
         "desc": "If set to true, all dimension values are shown.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qOtherLabel": {
         "desc": "This property is used when some dimension limits are set.\nLabel of the Others group. The default label is Others.\nExample:\"qOtherLabel\":\"=&lt;label&gt;\"\nor\"qOtherLabel\":{\"qExpr\":\"=&lt;label&gt;\"}\nWhere\n\n&lt;label&gt; is the label of the Others group.\n\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qTotalLabel": {
         "desc": "If this property is set, the total of the calculated values is returned.\nThe default label is Total.\nExample:\n\"qTotalLabel\":\"=&lt;label&gt;\"\n\nor\n\"qTotalLabel\":{\"qExpr\":\"=&lt;label&gt;\"}\n\nWhere\n\n&lt;label&gt; is the label of the Totalgroup.\n\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qCalcCond": {
         "desc": "Specifies a calculation condition, which must be fulfilled for the dimension to be calculated.\nIf the calculation condition is not met, the dimension is excluded from the calculation.\nThis property is optional. By default, there is no calculation condition.\n",
-        "instance": "ValueExpr",
+        "class": "ValueExpr",
         "type": "object"
     },
     "qAttributeExpressions": {
         "desc": "List of attribute expressions.\n",
-        "instance": "NxAttrExprDef",
+        "class": "NxAttrExprDef",
         "type": "array"
     },
     "qAttributeDimensions": {
         "desc": "List of attribute dimensions.",
-        "instance": "NxAttrDimDef",
+        "class": "NxAttrDimDef",
         "type": "array"
     }
 }

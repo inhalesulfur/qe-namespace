@@ -1,32 +1,32 @@
 {
     "qStateName": {
         "desc": "Name of the alternate state.\nDefault is current selections $.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qSize": {
         "desc": "Defines the size of a list object.",
-        "instance": "Size",
+        "class": "Size",
         "type": "object"
     },
     "qError": {
         "desc": "This parameter is optional and is displayed in case of error.",
-        "instance": "NxValidationError",
+        "class": "NxValidationError",
         "type": "object"
     },
     "qDimensionInfo": {
         "desc": "Information about the dimension.",
-        "instance": "NxDimensionInfo",
+        "class": "NxDimensionInfo",
         "type": "object"
     },
     "qExpressions": {
         "desc": "Lists the expressions in the list object.",
-        "instance": "NxListObjectExpression",
+        "class": "NxListObjectExpression",
         "type": "array"
     },
     "qDataPages": {
         "desc": "Set of data.\nIs empty if nothing has been defined in qInitialDataFetch in ListObjectDef.\n",
-        "instance": "NxDataPage",
+        "class": "NxDataPage",
         "type": "array"
     }
 }

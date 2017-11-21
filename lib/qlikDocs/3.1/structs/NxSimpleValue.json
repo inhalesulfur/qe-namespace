@@ -1,12 +1,12 @@
 {
     "qText": {
         "desc": "Text related to the attribute expression value.\nThis property is optional. No text is returned if the attribute expression value is a numeric.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qNum": {
         "desc": "Numeric value of the attribute expression.\nThis property is set to NaN (Not a Number) if the attribute expression value is not a numeric.\nNumerical values are not returned as text.\n",
-        "instance": "Double precision floating point",
+        "class": "Double precision floating point",
         "type": "primitive"
     }
 }

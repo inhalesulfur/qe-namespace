@@ -6,17 +6,17 @@
     },
     "qCardinalRatio": {
         "desc": "Cardinality of a column/field divided by the number of rows in the table.\n If the cardinal ratio is 1, it means that the column is a candidate/primary key.\n",
-        "instance": "double",
+        "class": "double",
         "type": "primitive"
     },
     "qSymbolScore": {
         "desc": "Number of distinct matches between the two fieldsdefined in qFieldPairName divided by the number of distinct values in the fieldqFieldName.\nIf 0, it means that there are no common values between the two fields defined in qFieldPairName.\n",
-        "instance": "double",
+        "class": "double",
         "type": "primitive"
     },
     "qRowScore": {
         "desc": "Number of matches between the two fieldsdefined in qFieldPairName divided by the number of values in the field qFieldName.\nIf 0, it means that there are no common values between the two fields defined in qFieldPairName.\n",
-        "instance": "double",
+        "class": "double",
         "type": "primitive"
     }
 }

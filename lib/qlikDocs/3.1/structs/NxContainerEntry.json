@@ -1,17 +1,17 @@
 {
     "qInfo": {
         "desc": "Information about the object",
-        "instance": "NxInfo",
+        "class": "NxInfo",
         "type": "object"
     },
     "qMeta": {
         "desc": "Information on publishing and permissions",
-        "instance": "NxMeta",
+        "class": "NxMeta",
         "type": "object"
     },
     "qData": {
         "desc": "Set of data",
-        "instance": "JSON",
+        "class": "JSON",
         "type": "primitive"
     }
 }

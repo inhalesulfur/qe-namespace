@@ -1,7 +1,7 @@
 {
     "qFieldPairName": {
         "desc": "Pair of fields.\n&lt;FieldName1&gt; / &lt;FieldName2&gt;\nWhere:\n&lt;FieldName1&gt; is a field in the table 1 (defined in qTable1)\n &lt;FieldName2&gt; is a field in the table 2 (defined in qTable2)\nIf the field is a synthetic key, the name of the field is preceded by [Synthetic key]:.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qScoreSummary": {
@@ -18,12 +18,12 @@
     },
     "qField1Scores": {
         "desc": "Association information about the field FieldName1 defined in qFieldPairName.",
-        "instance": "FieldScores",
+        "class": "FieldScores",
         "type": "object"
     },
     "qField2Scores": {
         "desc": "Association information about the field FieldName2 defined in qFieldPairName.",
-        "instance": "FieldScores",
+        "class": "FieldScores",
         "type": "object"
     }
 }

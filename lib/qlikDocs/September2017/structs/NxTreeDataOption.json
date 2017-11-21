@@ -1,17 +1,17 @@
 {
     "MaxNbrOfNodes": {
         "desc": "Maximum number of nodes in the tree. If this limit is exceeded, no nodes are returned. All nodes are counted.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "TreeNodes": {
         "desc": "Definesareas of the tree to be fetched. Areas must be defined left to right.\n",
-        "instance": "NxPageTreeNode",
+        "class": "NxPageTreeNode",
         "type": "array"
     },
     "TreeLevels": {
         "desc": "Filters out complete dimensions from the fetched tree.",
-        "instance": "NxPageTreeLevel",
+        "class": "NxPageTreeLevel",
         "type": "object"
     }
 }

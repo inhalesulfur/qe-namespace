@@ -26,17 +26,17 @@ Here is an example of some properties extracted from [HyperCubeDef](http://help.
 {
     "qDimensions": {
         "desc": "Array of dimensions.",
-        "instance": "NxDimension",
+        "class": "NxDimension",
         "type": "array"
     },
     "qMeasures": {
         "desc": "Array of measures.",
-        "instance": "NxMeasure",
+        "class": "NxMeasure",
         "type": "array"
     },
     "qInitialDataFetch": {
         "desc": "Initial data set.",
-        "instance": "NxPage",
+        "class": "NxPage",
         "type": "array"
     },
     "qMode": {
@@ -61,7 +61,7 @@ Here is an example of some properties extracted from [HyperCubeDef](http://help.
 }
 ```
 
-Attributes `instance` and `values` could be used for instance and possible value checking in setter functions
+Attributes `class` and `values` could be used for instance and possible value checking in setter functions
 
 ### Building Qlik Engine Struct namespace
 
@@ -89,26 +89,29 @@ define([
 })
 ```
 
-In this implementation each constructor adds to result object Function-like collections for setting and initialisation functions (JSON.parse ingore this collections)
+In this implementation each constructor adds to result object `.set` and `.init` collections for setting and initialisation functions
+This collections are costructed with Function expression, so `JSON.parse` ingore them
 ```js
 var format = new st.FileDataFormat;
-format.set("qType", "CSV") 	//need to look into documentation for possible properties
-format.set.qType("CSV")		//no need to look into documentation for possible properties
+format.set("qType", "CSV") 	//need to surf through documentation for possible properties
+format.set.qType("CSV")		//no need to surf through documentation for possible properties
+//format.qType === "CSV"
 ```
 
-For properties, which instance presented in namespace, constructor adds initialisation function into `.init` collection
+For properties, which class presented in namespace, constructor adds initialisation function into `.init` collection
 ```js
 var dim = new st.NxDimension;
 dim.init.qDef() // equal to dim.set.qDef(new st.NxInlineDimensionDef)
+//format.qDef instanseof NxInlineDimensionDef
 ```
 
-Also setters check instance of setting value
+Also setters check `instanceof` for setting value
 ```js
 dim.set.qDef({});
 //TypeError: setted object is not an instance of the NxInlineDimensionDef
 ```
 
-You can awoid instance checking by assigning value directly to the property
+You can awoid `instanceof` checking by setting value directly to the property
 ```js
 dim.qDef = { qFieldDefs:[] };
 ```
@@ -133,6 +136,94 @@ TypeError: wrong value setted. posible values:
     "JSON": "JSON&nbsp;format",
     "KML": "KML file"
 }
-
 */
+```
+
+Function `.push` for properties `type:array` check class of pushed value
+```js
+var cube = new st.HyperCubeDef;
+cube.qDimensions.push({})
+//TypeError: pushed value is not an instance of the NxDimension
+```
+
+#### Stringify
+
+Each constructor adds stringify function
+```js
+this.stringify = JSON.stringify.bind(null, this);
+```
+
+#### Fluent interface
+
+Functions from `.set` collection return initial object
+```js
+var format = new st.FileDataFormat;
+format.set.qType("CSV")
+	.set.qComment("comment")
+	.set.qCodePage("utf8")
+```
+
+Functions from `.init` collection return initialized object
+```js
+var dim = new st.NxDimension;
+var dimDef = dim.init.qDef();
+```
+
+Function `.push` for properties `type:array` returns initial array
+```js
+var cube = new st.HyperCubeDef;
+cube.qDimensions.push(new st.NxDimension)
+	.push(new st.NxDimension)
+	.push(new st.NxDimension);
+```
+
+If array items class presented in namespace, method `.pushNew` added. This method returns pushed object
+```js
+var cube = new st.HyperCubeDef;
+cube.qInitialDataFetch.pushNew()
+	.set.qLeft(0)
+	.set.qTop(0)
+	.set.qWidth(4)
+	.set.qHeight(50);
+cube.qDimensions.pushNew()
+	.init.qDef()
+		.qFieldDefs
+			.push("field1")
+			.push("field2")
+			.push("field3")
+			.push("field4");
+console.log(cube.stringify(null, 4));		
+```
+
+Console:
+```json
+{
+    "qDimensions": [
+        {
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qDef": {
+                "qFieldDefs": [
+                    "field1",
+                    "field2",
+                    "field3",
+                    "field4"
+                ],
+                "qFieldLabels": [],
+                "qSortCriterias": [],
+                "qNumberPresentations": []
+            }
+        }
+    ],
+    "qMeasures": [],
+    "qInterColumnSortOrder": [],
+    "qInitialDataFetch": [
+        {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 4,
+            "qHeight": 50
+        }
+    ]
+}
 ```

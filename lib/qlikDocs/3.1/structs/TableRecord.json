@@ -1,42 +1,42 @@
 {
     "qName": {
         "desc": "Name of the table.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qLoose": {
         "desc": "This property is set to true if the table is loose. ",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qNoOfRows": {
         "desc": "Number of rows in the table.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qFields": {
         "desc": "Information about the fields in the table.",
-        "instance": "FieldInTableData",
+        "class": "FieldInTableData",
         "type": "array"
     },
     "qPos": {
         "desc": "Information about the position of the table.",
-        "instance": "Point",
+        "class": "Point",
         "type": "object"
     },
     "qComment": {
         "desc": "Comment related to the table.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qIsDirectDiscovery": {
         "desc": "If set to true, Direct Discovery is used. \nDirect Discovery fields are not loaded into memory and remain in the external database.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qIsSynthetic": {
         "desc": "This property is set to true if the table contains a synthetic key.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

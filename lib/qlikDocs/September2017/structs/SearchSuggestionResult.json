@@ -1,12 +1,12 @@
 {
     "qSuggestions": {
         "desc": "List of suggestions.\n",
-        "instance": "SearchSuggestItem",
+        "class": "SearchSuggestItem",
         "type": "array"
     },
     "qFieldNames": {
         "desc": "List of field names that contain search hits.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     }
 }

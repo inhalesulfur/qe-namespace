@@ -1,13 +1,13 @@
 {
     "qRange": {
         "desc": "Range information.\n",
-        "instance": "Range",
+        "class": "Range",
         "type": "primitive",
         "values": {}
     },
     "qDimIx": {
         "desc": "Dimension index.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     }
 }

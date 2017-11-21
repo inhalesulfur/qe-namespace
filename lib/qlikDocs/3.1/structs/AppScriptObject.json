@@ -1,17 +1,17 @@
 {
     "qScript": {
         "desc": "Name of the script.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qBreakpointList": {
         "desc": "Lists the breakpoints in the script of an app.",
-        "instance": "EditorBreakpoint",
+        "class": "EditorBreakpoint",
         "type": "array"
     },
     "qFavoriteVariables": {
         "desc": "Lists the favorite variables.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     }
 }

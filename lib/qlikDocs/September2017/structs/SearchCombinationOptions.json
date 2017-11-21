@@ -1,7 +1,7 @@
 {
     "qSearchFields": {
         "desc": "List of the search fields.\nIf empty, the search is performed in all fields of the app.\n",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qContext": {
@@ -15,12 +15,12 @@
     },
     "qCharEncoding": {
         "desc": "Encoding used to compute qRanges of type SearchCharRange.\nOnly affects the computation of the ranges. It does not impact the encoding of the text.\n",
-        "instance": "Utf8Utf16",
+        "class": "Utf8Utf16",
         "type": "primitive"
     },
     "qAttributes": {
         "desc": "Optional.\n\nFor SearchSuggest method, this array is empty.\nFor SearchResults method, this array is empty, or contains qNum and/or qElemNum. It allows the user to request details in the outputted SearchGroupItemMatch. For more information, see SearchGroupItemMatch\n\n",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     }
 }

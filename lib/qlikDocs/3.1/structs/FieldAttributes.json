@@ -17,7 +17,7 @@
     },
     "qnDec": {
         "desc": "Number of decimals.\nDefault is 10.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qUseThou": {
@@ -30,22 +30,22 @@
     },
     "qFmt": {
         "desc": "Defines the format pattern that applies to qText.\n Is used in connection to the type of the field (parameter qType).\nFor more information, see Struct FieldAttributes.\nExample: YYYY-MM-DD for a date\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDec": {
         "desc": "Defines the decimal separator.\nExample: .\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qThou": {
         "desc": "Defines the thousand separator (if any).\nIs used if qUseThou is set to 1.\nExample: ,\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qSAFEARRAY": {
         "desc": "&nbsp;",
-        "instance": "Array",
+        "class": "Array",
         "type": "primitive"
     }
 }

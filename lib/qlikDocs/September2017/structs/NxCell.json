@@ -1,17 +1,17 @@
 {
     "qText": {
         "desc": "Some text.\nThis parameter is optional.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qNum": {
         "desc": "A value.\nThis parameter is optional.\n",
-        "instance": "Double precision floating point",
+        "class": "Double precision floating point",
         "type": "primitive"
     },
     "qElemNumber": {
         "desc": "Rank number of the value, starting from 0.\nIf the element number is a negative number, it means that the returned value is not an element number.\nYou can get the following negative values:\n\n-1: the cell is a Total cell. It shows a total.\n-2: the cell is collapsed. Applies to pivot tables.\n-3: the cell belongs to the group Others.\n-4: the cell is empty. Applies to pivot tables.\n\n&nbsp;\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qState": {
@@ -30,42 +30,42 @@
     },
     "qIsEmpty": {
         "desc": "Is set to true, if qText and qNum are empty.\nThis parameter is optional. The default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qIsTotalCell": {
         "desc": "Is set to true if a total is displayed in the cell.\nThis parameter is optional. The default value is false.\nNot applicable to list objects.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qIsOtherCell": {
         "desc": "Is set to true if the cell belongs to the group Others.\nDimension values can be set as Others depending on what has been defined in OtherTotalSpecProp.\nThis parameter is optional. The default value is false.\nNot applicable to list objects.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qFrequency": {
         "desc": "Frequency of the value.\nThis parameter is optional.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qHighlightRanges": {
         "desc": "Search hits.\nThe search hits are highlighted.\nThis parameter is optional.\n",
-        "instance": "NxHighlightRanges",
+        "class": "NxHighlightRanges",
         "type": "object"
     },
     "qAttrExps": {
         "desc": "Attribute expression values.",
-        "instance": "NxAttributeExpressionValues",
+        "class": "NxAttributeExpressionValues",
         "type": "object"
     },
     "qIsNull": {
         "desc": "Is set to true if the value is Null.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qAttrDims": {
         "desc": "Attribute dimensions values.",
-        "instance": "NxAttributeDimValues",
+        "class": "NxAttributeDimValues",
         "type": "object"
     }
 }

@@ -1,17 +1,17 @@
 {
     "qInfo": {
         "desc": "Identifier and type of the dimension.\nThis parameter is mandatory.\n",
-        "instance": "NxInfo",
+        "class": "NxInfo",
         "type": "object"
     },
     "qDim": {
         "desc": "Definition of the dimension.\nThis parameter is mandatory.\n",
-        "instance": "NxLibraryDimensionDef",
+        "class": "NxLibraryDimensionDef",
         "type": "object"
     },
     "qMetaDef": {
         "desc": "Definition of the dynamic properties.",
-        "instance": "Dynamic properties",
+        "class": "Dynamic properties",
         "type": "primitive"
     }
 }

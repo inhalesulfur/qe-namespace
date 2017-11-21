@@ -1,12 +1,12 @@
 {
     "qProperties": {
         "desc": "Information about the properties of the bookmark.",
-        "instance": "GenericBookmarkProperties",
+        "class": "GenericBookmarkProperties",
         "type": "object"
     },
     "qBookmark": {
         "desc": "Information about the bookmark.",
-        "instance": "NxBookmark",
+        "class": "NxBookmark",
         "type": "object"
     }
 }

@@ -1,57 +1,57 @@
 {
     "qDBMSName": {
         "desc": "Name of the product accessed by the provider\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDBUsage": {
         "desc": "If set to true, it means that the data source contains some databases.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qOwnerUsage": {
         "desc": "If set to true, it means that the data source contains some owners.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qDBSeparator": {
         "desc": "Character string used after the database name\nExample with separator \".\":\nFROM LinkedTablesData.dbo.Months\nWhere:\n\nLinkedTablesData is the database name\ndbo is the owner name\nMonths is the table name\n\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qOwnerSeparator": {
         "desc": "Character string used after the owner name\nExample with separator \".\":\nFROM LinkedTablesData.dbo.Months\nWhere:\n\nLinkedTablesData is the database name\ndbo is the owner name\nMonths is the table name\n\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDBFirst": {
         "desc": "If set to true, it means that the database is displayed first, before the owners and tables.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qQuotePreffix": {
         "desc": "Prefix used with field, database or owner names that contain special characters or keywords.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qQuoteSuffix": {
         "desc": "Suffix used with field, database or owner names that contain special characters or keywords.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qSpecialChars": {
         "desc": "List of the special characters",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDefaultDatabase": {
         "desc": "Name of the default database",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qKeywords": {
         "desc": "List of the script keywords",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     }
 }

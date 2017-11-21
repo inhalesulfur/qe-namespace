@@ -1,17 +1,17 @@
 {
     "qInfo": {
         "desc": "Identifier and type of the object.\nThis parameter is mandatory.\n",
-        "instance": "NxInfo",
+        "class": "NxInfo",
         "type": "object"
     },
     "qExtendsId": {
         "desc": "Should beset to create an object that is linked to another object. Enter the identifier of the linking object (i.e the object you want to link to).\nThis parameter is mandatory.\nIf you do not want to link your object, set this parameter to an empty string.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qMetaDef": {
         "desc": "Definition of the dynamic properties.\n",
-        "instance": "Dynamic properties",
+        "class": "Dynamic properties",
         "type": "primitive"
     }
 }

@@ -1,12 +1,12 @@
 {
     "qKeyFields": {
         "desc": "Name of the key field.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qTables": {
         "desc": "Table the key belongs to.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     }
 }

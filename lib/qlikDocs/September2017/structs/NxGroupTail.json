@@ -1,12 +1,12 @@
 {
     "qUp": {
         "desc": "Number of elements that are part of the previous tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight\nThis parameter is optional.Is not shown if the value is 0.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qDown": {
         "desc": "Number of elements that are part of the next tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight\nThis parameter is optional. Is not shown if the value is 0.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     }
 }

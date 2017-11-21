@@ -1,27 +1,27 @@
 {
     "qId": {
         "desc": "Identifier of the derived field. \nThe identifier is unique.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qName": {
         "desc": "Combination of field name, definition and method.\nExample:\nOrderDate.MyDefinition.Year\n\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qMethod": {
         "desc": "Method name associated to the derived field.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qExpr": {
         "desc": "Expression of the derived field.\nExample:\nIf qName is OrderDate.MyDefinition.Year, the expression is as follows:\n=${Mydefinition(OrderDate).Year}\n\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qTags": {
         "desc": "List of tags.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     }
 }

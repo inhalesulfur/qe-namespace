@@ -1,17 +1,17 @@
 {
     "qErrorCode": {
         "desc": "Error code.\nThis parameter is always displayed in case of error.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qContext": {
         "desc": "Context related to the error, from the user app domain. \nIt can be the identifier of an object, a field name, a table name.\nThis parameter is optional.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qExtendedMessage": {
         "desc": "Internal information from the server.\nThis parameter is optional.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

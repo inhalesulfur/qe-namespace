@@ -1,32 +1,32 @@
 {
     "qErrLen": {
         "desc": "Length of the word where the error is located",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qTabIx": {
         "desc": "Number of the faulty section",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qLineInTab": {
         "desc": "Line number in the section where the error is located",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qColInLine": {
         "desc": "Position of the erroneous text from the beginning of the line",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qTextPos": {
         "desc": "Position of the erroneous text from the beginning of the script",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qSecondaryFailure": {
         "desc": "The default value is false.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

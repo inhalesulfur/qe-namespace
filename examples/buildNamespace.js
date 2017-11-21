@@ -7,13 +7,23 @@ var json = fs.readFileSync("./lib/qlikDocs/3.1/structs.json");
 var st = builder.buildNamespace(json);
 
 var cube = new st.HyperCubeDef;
-var dim = cube.qDimensions.push();
-//dim.set.qDef({});
-dim.init.qDef().qFieldDefs.push("field_expression");
-console.log(dim.stringify());
-console.log(cube.stringify());
+cube.qInitialDataFetch.pushNew()
+	.set.qLeft(0)
+	.set.qTop(0)
+	.set.qWidth(4)
+	.set.qHeight(50);
+cube.qDimensions.pushNew()
+	.init.qDef()
+		.qFieldDefs.push("field1")
+			.push("field2")
+			.push("field3")
+			.push("field4");
+console.log(cube.stringify(null, 4));
 
 var format = new st.FileDataFormat;
-format.set.qType("123")
+format.set.qType("CSV")
+	.set.qComment("comment")
+	.set.qCodePage("utf8")
+
 
 console.log(format.stringify());

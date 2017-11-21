@@ -55,7 +55,7 @@
     },
     "qExpression": {
         "desc": "Sort by expression.\n",
-        "instance": "<div class=\"API_syntax\">\"qv\": \"&lt;expression&gt;\"</div>\n                            <p>Where</p>\n                            <p><span class=\"API_syntax_input\">&lt;expression&gt;</span> is a string.</p>",
+        "class": "<div class=\"API_syntax\">\"qv\": \"&lt;expression&gt;\"</div>\n                            <p>Where</p>\n                            <p><span class=\"API_syntax_input\">&lt;expression&gt;</span> is a string.</p>",
         "type": "primitive"
     }
 }

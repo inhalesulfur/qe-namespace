@@ -1,12 +1,12 @@
 {
     "qUrlDef": {
         "desc": "Relative path to the content file. The URL is static.\nIn Qlik Sense Enterprise, content files located:\n• in the /content/&lt;content library name&gt;/ folder are part of a global content library.\n• in the /appcontent/ folder are part of the app specific library.\nThe content files are never embedded in the qvf file.\nIn Qlik Sense Desktop, content files located:\n• in the /content/default/ folder are outside the qvf file.\n• in the/media/ folder are embedded in the qvf file.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qUrl": {
         "desc": "Relative path to the content file. The URL is static.\nIn Qlik Sense Enterprise, content files located:\n• in the /content/&lt;content library name&gt;/ folder are part of a global content library.\n• in the /appcontent/ folder are part of the app specific library.\nThe content files are never embedded in the qvf file.\nIn Qlik Sense Desktop, content files located:\n• in the /content/default/ folder are outside the qvf file.\n• in the/media/ folder are embedded in the qvf file.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

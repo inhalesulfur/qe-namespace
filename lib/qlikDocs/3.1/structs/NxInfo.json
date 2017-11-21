@@ -1,12 +1,12 @@
 {
     "qId": {
         "desc": "Identifier of the object.\nIf the chosen identifier is already in use, the engine automatically sets another one.\nThis parameter is optional. If an identifier is not set, the engine automatically sets one.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qType": {
         "desc": "Type of the object.\nThis parameter is mandatory.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

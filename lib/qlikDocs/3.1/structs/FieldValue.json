@@ -1,17 +1,17 @@
 {
     "qText": {
         "desc": "Text related to the field value\nThis parameter is optional.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qIsNumeric": {
         "desc": "Is set to true if the value is a numeric.\nThis parameter is optional. Default is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qNumber": {
         "desc": "Numeric value of the field.\nThis parameter is displayed if qIsNumeric is set to true.\nThis parameter is optional.\n",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     }
 }

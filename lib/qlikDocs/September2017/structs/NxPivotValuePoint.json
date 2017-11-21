@@ -1,17 +1,17 @@
 {
     "qLabel": {
         "desc": "Label of the cell.\nThis parameter is optional.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qText": {
         "desc": "Some text related to the cell.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qNum": {
         "desc": "Value of the cell.",
-        "instance": "Double precision floating point",
+        "class": "Double precision floating point",
         "type": "primitive"
     },
     "qType": {
@@ -30,7 +30,7 @@
     },
     "qAttrExps": {
         "desc": "Attribute expressions values.",
-        "instance": "NxAttributeExpressionValues",
+        "class": "NxAttributeExpressionValues",
         "type": "object"
     }
 }

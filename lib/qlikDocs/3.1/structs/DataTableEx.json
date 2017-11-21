@@ -1,17 +1,17 @@
 {
     "qName": {
         "desc": "Name of the table.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qFields": {
         "desc": "List of the fields in the table.",
-        "instance": "DataField",
+        "class": "DataField",
         "type": "array"
     },
     "qFormatSpec": {
         "desc": "List of format specification items, within brackets.\nExamples of specification items:\n\n file type\nembedded labels, no labels\ntable is &lt;table name&gt;\n\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

@@ -1,27 +1,27 @@
 {
     "qText": {
         "desc": "The text version of the value, if available.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qElemNo": {
         "desc": "Element number\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qRow": {
         "desc": "Row index in the data matrix.\nThe indexing starts from 0.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qNodeNr": {
         "desc": "A generated number applicable to this page only. Used so that children can easily identify who their parents are.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qParentNode": {
         "desc": "The qNodeNr of this node's parent for the current page.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qType": {
@@ -40,22 +40,22 @@
     },
     "qValues": {
         "desc": "The measures for this node.",
-        "instance": "NxTreeValue",
+        "class": "NxTreeValue",
         "type": "array"
     },
     "qNodes": {
         "desc": "The children of this node in the tree structure.",
-        "instance": "NxTreeNode",
+        "class": "NxTreeNode",
         "type": "array"
     },
     "qAttrExps": {
         "desc": "Attribute expression values.",
-        "instance": "NxAttributeExpressionValues",
+        "class": "NxAttributeExpressionValues",
         "type": "object"
     },
     "qAttrDims": {
         "desc": "Attribute dimension values.",
-        "instance": "NxAttributeDimValues",
+        "class": "NxAttributeDimValues",
         "type": "object"
     }
 }

@@ -1,12 +1,12 @@
 {
     "qName": {
         "desc": "Name of the script function.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qGroup": {
         "desc": "Group of the script function.",
-        "instance": "FunctionGroup",
+        "class": "FunctionGroup",
         "type": "primitive",
         "values": {
             "ALL": "FUNC_GROUP_ALL",
@@ -38,7 +38,7 @@
     },
     "qSignature": {
         "desc": "Signature of the script function.\nGives general information about the function.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

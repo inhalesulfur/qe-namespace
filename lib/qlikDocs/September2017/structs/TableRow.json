@@ -1,7 +1,7 @@
 {
     "qValue": {
         "desc": "Array of field values.\n",
-        "instance": "FieldValue",
+        "class": "FieldValue",
         "type": "array"
     }
 }

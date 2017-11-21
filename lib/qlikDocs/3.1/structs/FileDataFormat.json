@@ -1,7 +1,7 @@
 {
     "qType": {
         "desc": "Type of the file.\n",
-        "instance": "FileType",
+        "class": "FileType",
         "type": "primitive",
         "values": {
             "CSV": "Delimited",
@@ -37,42 +37,42 @@
     },
     "qComment": {
         "desc": "String that marks the beginning of the comment line.\nExample: “#” or “//”\nThe engine ignores the commented lines during the data load.\nThis property is only used for delimited files.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDelimiter": {
         "desc": "Information about the delimiter.\nThis property is used for delimited files.\n",
-        "instance": "DelimiterInfo",
+        "class": "DelimiterInfo",
         "type": "object"
     },
     "qCodePage": {
         "desc": "Character set used in the file.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qHeaderSize": {
         "desc": "Size of the header.\nExample: If the header size is 2, the first two rows in the file are considered as header and not as data. The header can contain the field names.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qRecordSize": {
         "desc": "Record length.\nEach record (row of data) contains a number of columns with a fixed field size.\nThis property is used for fixed record data files.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qTabSize": {
         "desc": "Number of spaces that one tab character represents in the table file.\nThis property is used for fixed record data files.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qIgnoreEOF": {
         "desc": "Is set to true, the end-of-file character is not taken into account during reload.\nThis property is used for delimited files and fixed record data files.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qFixedWidthDelimiters": {
         "desc": "Positions of the field breaks in the table.\nThis property is used for fixed record data files.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

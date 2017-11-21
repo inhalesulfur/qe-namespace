@@ -1,22 +1,22 @@
 {
     "qDerivedDefinitionName": {
         "desc": "Name of the derived definition.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qFieldDefs": {
         "desc": "List of the derived fields.",
-        "instance": "NxDerivedField",
+        "class": "NxDerivedField",
         "type": "array"
     },
     "qGroupDefs": {
         "desc": "List of the derived groups.",
-        "instance": "NxDerivedGroup",
+        "class": "NxDerivedGroup",
         "type": "array"
     },
     "qTags": {
         "desc": "List of tags on the derived fields.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     }
 }

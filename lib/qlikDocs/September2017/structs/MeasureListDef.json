@@ -1,12 +1,12 @@
 {
     "qType": {
         "desc": "Type of the list",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qData": {
         "desc": "Data\n",
-        "instance": "JSON",
+        "class": "JSON",
         "type": "primitive"
     }
 }

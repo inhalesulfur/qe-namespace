@@ -11,12 +11,12 @@
     },
     "qTitle": {
         "desc": "Title used in the message box dialog. \nThis property is relevant if qType is IT_MSGBOX.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qMsg": {
         "desc": "Message used in the message box dialog. \nThis property is relevant if qType is IT_MSGBOX.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qButtons": {
@@ -29,37 +29,37 @@
     },
     "qLine": {
         "desc": "Next script statement to be executed.\nThis property is used if the type of interaction is IT_SCRIPTLINE.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qOldLineNr": {
         "desc": "First line number of the previously executed statement.\nThis property is used if the type of interaction is IT_SCRIPTLINE.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qNewLineNr": {
         "desc": "First line number of the next statement to be executed.\nThis property is used if the type of interaction is IT_SCRIPTLINE.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qPath": {
         "desc": "Path specified by the Include script variable.\nThis property is used if the type of interaction is IT_SCRIPTLINE.\nExample of an Include variable:\n$(Include=lib:\\\\MyDataFiles\\abc.txt);\n\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qHidden": {
         "desc": "This property is set to true if the returned statement is an hidden script statement.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qResult": {
         "desc": "Not relevant for describing the requested user interaction.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qInput": {
         "desc": "Is not used in Qlik Sense.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

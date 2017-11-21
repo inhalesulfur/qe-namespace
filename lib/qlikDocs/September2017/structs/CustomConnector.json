@@ -1,17 +1,17 @@
 {
     "qProvider": {
         "desc": "Name of the custom connector file.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qParent": {
         "desc": "Name of the parent folder that contains the custom connector file.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDisplayName": {
         "desc": "Name of the custom connector as displayed in the Qlik interface.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qMachineMode": {

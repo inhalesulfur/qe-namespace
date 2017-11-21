@@ -1,82 +1,82 @@
 {
     "qInternalNumber": {
         "desc": "Internal number of the field.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qName": {
         "desc": "Name of the field.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qSrcTables": {
         "desc": "List of table names.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qIsSystem": {
         "desc": "If set to true, it means that the field is a system field.\nThe default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qIsHidden": {
         "desc": "If set to true, it means that the field is hidden.\nThe default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qIsSemantic": {
         "desc": "If set to true, it means that the field is a semantic.\nThe default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qDistinctOnly": {
         "desc": "If set to true, only distinct field values are shown.\nThe default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qCardinal": {
         "desc": "Number of distinct field values.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qTotalCount": {
         "desc": "Total number of field values.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qIsLocked": {
         "desc": "If set to true, it means that the field is locked.\nThe default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qAlwaysOneSelected": {
         "desc": "If set to true, it means that the field has one and only one selection (not 0 and not more than 1).\nIf this property is set to true, the field cannot be cleared anymore and no more selections can be performed in that field.\nThe default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qAndMode": {
         "desc": "If set to true a logical AND (instead of a logical OR) is used when making selections in a field.\nThe default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qIsNumeric": {
         "desc": "Is set to true if the value is a numeric.\nThe default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qComment": {
         "desc": "Field comment.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qTags": {
         "desc": "Gives information on a field. For example, it can return the type of the field.\nExamples: key, text, ASCII\n",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qIsDefinitionOnly": {
         "desc": "If set to true, it means that the field is a field on the fly.\nThe default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

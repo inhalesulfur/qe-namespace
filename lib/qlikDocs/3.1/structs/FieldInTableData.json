@@ -1,67 +1,67 @@
 {
     "qName": {
         "desc": "Name of the field.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qOriginalFields": {
         "desc": "Is shown for fixed records.\nqOriginalFieldName and qName are identical if no field names are used in the file.\nqOriginalFieldName differs from qName if embedded file names are used in the file.\n",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qPresent": {
         "desc": "&nbsp;",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qHasNull": {
         "desc": "This property is set to true if the field contains some Null values.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qHasWild": {
         "desc": "&nbsp;",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qHasDuplicates": {
         "desc": "This property is set to true if the field contains some duplicate values.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qIsSynthetic": {
         "desc": "This property is set to true if the field contains a synthetic key.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qInformationDensity": {
         "desc": "Number of records that have values (i.e. not NULL) in the field as compared to the total\nnumber of records in the table.",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     },
     "qnNonNulls": {
         "desc": "Number of values that are non Null.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qnRows": {
         "desc": "Number of rows in the field",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qSubsetRatio": {
         "desc": "Number of distinct values in the field (in the current table) as compared to the total\nnumber of distinct values of this field (in all tables).",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     },
     "qnTotalDistinctValues": {
         "desc": "Number of distinct values in the field.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qnPresentDistinctValues": {
         "desc": "&nbsp;",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qKeyType": {
@@ -76,17 +76,17 @@
     },
     "qComment": {
         "desc": "Comment related to the field.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qTags": {
         "desc": "List of tags related to the field.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qDerivedFields": {
         "desc": "List of the derived fields.",
-        "instance": "DerivedFieldsInTableData",
+        "class": "DerivedFieldsInTableData",
         "type": "array"
     }
 }

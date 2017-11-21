@@ -1,7 +1,7 @@
 {
     "qValues": {
         "desc": "List of attribute expressions values.",
-        "instance": "NxSimpleValue",
+        "class": "NxSimpleValue",
         "type": "array"
     }
 }

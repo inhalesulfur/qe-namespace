@@ -1,57 +1,57 @@
 {
     "qStateName": {
         "desc": "Name of the alternate state.\nDefault is current selections $.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qSize": {
         "desc": "Defines the size of the hypercube.",
-        "instance": "Size",
+        "class": "Size",
         "type": "object"
     },
     "qError": {
         "desc": "This parameter is optional and is displayed in case of error.",
-        "instance": "NxValidationError",
+        "class": "NxValidationError",
         "type": "object"
     },
     "qDimensionInfo": {
         "desc": "Information on the dimension.",
-        "instance": "NxDimensionInfo",
+        "class": "NxDimensionInfo",
         "type": "array"
     },
     "qMeasureInfo": {
         "desc": "Information on the measure.",
-        "instance": "NxMeasureInfo",
+        "class": "NxMeasureInfo",
         "type": "array"
     },
     "qEffectiveInterColumnSortOrder": {
         "desc": "Sort order of the columns in the hypercube. \nColumn numbers are separated by a comma.\nExample: [1,0,2] means that the first column to be sorted was the column 1, followed by the column 0 and the column 2.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "array"
     },
     "qGrandTotalRow": {
         "desc": "Aggregate for measures of all values in the field.\nThe result value depends on the qAggrFunc defined in HyperCubeDef.\n",
-        "instance": "NxCell",
+        "class": "NxCell",
         "type": "array"
     },
     "qDataPages": {
         "desc": "Set of data.\nIs empty if nothing has been defined in qInitialDataFetch in HyperCubeDef.\n",
-        "instance": "NxDataPage",
+        "class": "NxDataPage",
         "type": "array"
     },
     "qPivotDataPages": {
         "desc": "Set of data for pivot tables.\nIs empty if nothing has been defined in qInitialDataFetch in HyperCubeDef.\n",
-        "instance": "NxPivotPage",
+        "class": "NxPivotPage",
         "type": "array"
     },
     "qStackedDataPages": {
         "desc": "Set of data for stacked tables.\nIs empty if nothing has been defined in qInitialDataFetch in HyperCubeDef.\n",
-        "instance": "NxStackPage",
+        "class": "NxStackPage",
         "type": "array"
     },
     "qTreeNodesOnDim": {
         "desc": " The total number of nodes on each dimension (only applicable when qMode = T).",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "array"
     },
     "qMode": {
@@ -66,22 +66,22 @@
     },
     "qNoOfLeftDims": {
         "desc": "Number of left dimensions \nDefault value is -1.\nThe index related to each left dimension depends on the position of the pseudo dimension (if any).\nFor example, a pivot table with:\n\n 4 dimensions in the following order: Country, City, Product and Category\none pseudo dimension in position 1\n3 left dimensions.\n\nimplies that:\n\nThe index 0 corresponds to the left dimension Country\nThe index 1 corresponds to the pseudo dimension\nThe index 2 corresponds to the left dimension City\nProduct and Category are top dimensions. \n\nAnother example:\n\n 4 dimensions in the following order: Country, City, Product and Category\none pseudo dimension in position -1\n3 left dimensions.\n\nimplies that:\n\nThe index -1 corresponds to the pseudo dimension; the pseudo dimension is the most to the right\nThe index 0 corresponds to the left dimension Country\nThe index 1 corresponds to the left dimension City\nThe index 2 corresponds to the left dimension Product\nCategory is a top dimension.\n\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qIndentMode": {
         "desc": "Is used for pivot tables only.\nIf set to true, the formatting of the results is slightly different.\nThis property is optional.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qLastExpandedPos": {
         "desc": "Is used for pivot tables only.\nPosition of the last expended cell.\nThis property is optional.\n",
-        "instance": "NxCellPosition",
+        "class": "NxCellPosition",
         "type": "object"
     },
     "qHasOtherValues": {
         "desc": "&nbsp;",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

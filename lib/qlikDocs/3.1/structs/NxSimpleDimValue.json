@@ -1,12 +1,12 @@
 {
     "qText": {
         "desc": "Text related to the attribute expression value.\nThis property is optional. No text is returned if the attribute expression value is a numeric.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qElemNo": {
         "desc": "Element number.\n",
-        "instance": "Int",
+        "class": "Int",
         "type": "primitive"
     }
 }

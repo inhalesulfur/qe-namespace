@@ -1,12 +1,12 @@
 {
     "qField": {
         "desc": "Position of the field in the list of fields, starting from 0. \nThe list of fields is defined in qResults/qFieldNames and contains the search associations.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qResult": {
         "desc": "List of the matching values.\nThe maximum number of values in this list is set by qMaxNbrFieldMatches.\n",
-        "instance": "SearchTermResult",
+        "class": "SearchTermResult",
         "type": "array"
     }
 }

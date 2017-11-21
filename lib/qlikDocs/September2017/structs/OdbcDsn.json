@@ -1,22 +1,22 @@
 {
     "qName": {
         "desc": "Name of the ODBC&nbsp;connection.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDescription": {
         "desc": "Description of the ODBC&nbsp;connection.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qBit32": {
         "desc": "This parameter is optional. Default is false.\nIs set to true if the version of ODBC is32-bit.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qUserOnly": {
         "desc": "This parameter is optional. Default is false.\nIs set to true if the connection is User DSN. The connection works only for a specific user.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

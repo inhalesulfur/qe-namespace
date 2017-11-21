@@ -1,7 +1,7 @@
 {
     "qSearchFields": {
         "desc": "List of the search fields.\nIf empty, the search is performed in all fields of the app.\n",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qContext": {

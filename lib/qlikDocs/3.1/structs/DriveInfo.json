@@ -1,17 +1,17 @@
 {
     "qDrive": {
         "desc": "Value of the drive\nExamples:\n C:\\\\, E:\\\\\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qType": {
         "desc": "Type of the drive.\nFixed means physical drive.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qName": {
         "desc": "Name of the drive.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

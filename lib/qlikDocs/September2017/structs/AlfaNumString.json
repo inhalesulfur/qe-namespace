@@ -1,12 +1,12 @@
 {
     "qString": {
         "desc": "Calculated value.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qIsNum": {
         "desc": "Is set to true if the value is a numeric.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

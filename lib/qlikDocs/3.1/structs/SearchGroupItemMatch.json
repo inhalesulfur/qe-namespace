@@ -1,12 +1,12 @@
 {
     "qText": {
         "desc": "Search match value.\nValue of the search group item.\nIf the match is found in a field, it corresponds to the value of the field.\nIf the match is found in a generic object property, it corresponds to the property value.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qAttributes": {
         "desc": "Property of the search group item.\nFor example, if the user requests SearchObjects with SearchObjectOptions.qAttributes = [], then the outputted qAttributes will be empty. \nOtherwise, if SearchObjectOptions.qAttributes = [“qProperty”], SearchGroupItemMatch.qAttributes = [“qProperty”, qMetaDef/title”] if the match has been found in the title of the item. \nFor dimension values, the returned “qProperty” will be “*”.\n",
-        "instance": "SearchAttribute",
+        "class": "SearchAttribute",
         "type": "array",
         "values": {
             "String corresponding to SearchObjectOptions.qAttributes": ""
@@ -14,7 +14,7 @@
     },
     "qRanges": {
         "desc": "List of ranges.\nFor example, if the search terms are Price and Make, and the search group item value is Make by Price vs Mileage, then there are two ranges: one for Price and one for Make.\n",
-        "instance": "SearchCharRange",
+        "class": "SearchCharRange",
         "type": "array"
     }
 }

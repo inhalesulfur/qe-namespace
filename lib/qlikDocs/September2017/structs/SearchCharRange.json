@@ -1,17 +1,17 @@
 {
     "qCharPos": {
         "desc": "Starting position of the match in the search result, starting from 0.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qCharCount": {
         "desc": "Length of the match in the search result.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qTerm": {
         "desc": "Position of the term in the list of search terms, starting from 0.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     }
 }

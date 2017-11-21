@@ -1,32 +1,32 @@
 {
     "qLibraryId": {
         "desc": "Refers to a measure stored in the library.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDef": {
         "desc": "Refers to a measure stored in the hypercube.",
-        "instance": "NxInlineMeasureDef",
+        "class": "NxInlineMeasureDef",
         "type": "object"
     },
     "qSortBy": {
         "desc": "Defines the sort criteria.\nThis property is optional. The default value is sort by ascending alphabetic order.\n",
-        "instance": "SortCriteria",
+        "class": "SortCriteria",
         "type": "object"
     },
     "qAttributeExpressions": {
         "desc": "List of attribute expressions.",
-        "instance": "NxAttrExprDef",
+        "class": "NxAttrExprDef",
         "type": "array"
     },
     "qCalcCond": {
         "desc": "Specifies a calculation condition, which must be fulfilled for the measure to be calculated.\nIf the calculation condition is not met, the measure is excluded from the calculation.\nThis property is optional. By default, there is no calculation condition.\n",
-        "instance": "ValueExpr",
+        "class": "ValueExpr",
         "type": "object"
     },
     "qAttributeDimensions": {
         "desc": "List of attribute dimensions.",
-        "instance": "NxAttrDimDef",
+        "class": "NxAttrDimDef",
         "type": "array"
     }
 }

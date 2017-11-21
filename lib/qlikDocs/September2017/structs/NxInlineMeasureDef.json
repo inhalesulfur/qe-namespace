@@ -1,22 +1,22 @@
 {
     "qLabel": {
         "desc": "Name of the measure.\nThis parameter is optional.\nAn empty string is returned as a default value.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qLabelExpression": {
         "desc": "Label expression.\nThis parameter is optional.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDescription": {
         "desc": "Description of the measure.\nThis parameter is optional.\nAn empty string is returned as a default value.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qTags": {
         "desc": "Name connected to the measure that is used for search purposes.\nThis parameter is optional.\nA&nbsp;measure can have several tags.\n",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qGrouping": {
@@ -30,47 +30,47 @@
     },
     "qDef": {
         "desc": "Definition of the expression in the measure.\nExample: Sum (OrderTotal)\nThis parameter is mandatory.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qNumFormat": {
         "desc": "Format of the field.\nThis parameter is optional.\n",
-        "instance": "FieldAttributes",
+        "class": "FieldAttributes",
         "type": "object"
     },
     "qRelative": {
         "desc": "If set to true, percentage values are returned instead of absolute numbers.\nThis parameter is optional. Default is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qBrutalSum": {
         "desc": "If set to true, the sum of rows total should be used rather than real expression total.\nThis parameter is optional and applies to straight tables.\nDefault is false. If using the Qlik Sense interface, it means that the total mode is set to Expression Total.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qAggrFunc": {
         "desc": "Aggregate function.\n For more information on the aggregate function syntax, see the section Working with Qlik Sense on the online help portal.\nThe default value is 0 (Sum of rows)\nThis parameter is optional.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qAccumulate": {
         "desc": "• 0 means no accumulation\n• 1 means full accumulation (each y-value accumulates all previous y-values of the expression)\n• ≥ 2 means accumulate as many steps as the qAccumulate value\nThis parameter is optional.\nDefault is 0.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qReverseSort": {
         "desc": "If set to true, it inverts the sort criteria in the field.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qActiveExpression": {
         "desc": "Index of the active expression in a cyclic measure. The indexing starts from 0.\nThis parameter is optional. The default value is 0.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qExpressions": {
         "desc": "Array of expressions. This parameter is used in case of cyclic measures (qGrouping is C). List of the expressions in the cyclic group.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     }
 }

@@ -1,12 +1,12 @@
 {
     "qStateName": {
         "desc": "Name of the alternate state.\n\n\nDefault is current selections: $\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qFieldItems": {
         "desc": "List of the selections",
-        "instance": "BookmarkFieldItem",
+        "class": "BookmarkFieldItem",
         "type": "array"
     }
 }

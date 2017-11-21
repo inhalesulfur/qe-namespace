@@ -1,22 +1,22 @@
 {
     "qMin": {
         "desc": "Lowest value in the range",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     },
     "qMax": {
         "desc": "Highest value in the range",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     },
     "qMinInclEq": {
         "desc": "If set to true, the range includes the lowest value in the range of selections (Equals to ). [bn(50500)]\nExample: \nThe range is [1,10]. If qMinInclEq is set to true it means that 1 is included in the range of selections.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qMaxInclEq": {
         "desc": "If set to true, the range includes the highest value in the range of selections (Equals to ). [bn(50500)]\nExample: \nThe range is [1,10]. If qMinInclEq is set to true it means that 10 is included in the range of selections.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

@@ -1,7 +1,7 @@
 {
     "qUrl": {
         "desc": "Relative path of the thumbnail.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

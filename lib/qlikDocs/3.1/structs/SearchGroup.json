@@ -1,7 +1,7 @@
 {
     "qId": {
         "desc": "Identifier of the search group.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qGroupType": {
@@ -14,17 +14,17 @@
     },
     "qSearchTermsMatched": {
         "desc": "Indexes of the search terms that are included in the group. These search terms are related to the list of terms defined in SearchResult.qSearchTerms.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "array"
     },
     "qTotalNumberOfItems": {
         "desc": "Total number of distinct items in the search group.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qItems": {
         "desc": "List of items in the search group. \nThe group items are numbered from the value of SearchGroupOptions.qOffset to the value of SearchGroupOptions.qOffset + SearchGroupOptions.qCount\n",
-        "instance": "SearchGroupItem",
+        "class": "SearchGroupItem",
         "type": "array"
     }
 }

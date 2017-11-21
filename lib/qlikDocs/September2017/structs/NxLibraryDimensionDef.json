@@ -10,12 +10,12 @@
     },
     "qFieldDefs": {
         "desc": "Array of dimension names.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qFieldLabels": {
         "desc": "Array of dimension labels.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     }
 }

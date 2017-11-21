@@ -1,22 +1,22 @@
 {
     "qBnf": {
         "desc": "Array of token references that all together build up the definition of the current token.\nIf the array is not empty, it means that the definition is a BNF rule (qIsBnfRule is set to true).\nThere are a few exceptions where some BNF&nbsp;rules have an empty array (qBnf is empty).\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "array"
     },
     "qNbr": {
         "desc": "Number of the current token definition.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qPNbr": {
         "desc": "Number of the parent rule definition.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qHelpId": {
         "desc": "Reference identifier to a function described in the documentation.The identifier is stored in the definition of the token containing the function name.\nIs not used in Qlik Sense.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qName": {
@@ -30,37 +30,37 @@
     },
     "qStr": {
         "desc": "Literal string of the token.\nExamples: 'Round' and '('.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qIsBnfRule": {
         "desc": "If set to true, it means that a list of related rule tokens is assigned to qBnf .\nThis parameter is optional. The default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qScriptStatement": {
         "desc": "If set to true, it means that the definition specifies a script statement.\nThis parameter is optional. The default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qControlStatement": {
         "desc": "If set to true, it means that the definition specifies a control statement.\nThis parameter is optional. The default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qBnfLiteral": {
         "desc": "If set to true, it means that the definition specifies a literal token.\nThis parameter is optional. The default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qQvFunc": {
         "desc": "If set to true, it means that the definition is related to a Qlik Sense function. It cannot be an aggregation function.\nThis parameter is optional. The default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qAggrFunc": {
         "desc": "If set to true, it means that the definition is related to an aggregation function.\nThis parameter is optional. The default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qFG": {
@@ -96,7 +96,7 @@
     },
     "qFieldFlag": {
         "desc": "If set to true, it means that the definition is related to a field.\nThis parameter is optional. The default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qMT": {
@@ -110,7 +110,7 @@
     },
     "qDepr": {
         "desc": "Indicates if a script statement, a chart or a script function is deprecated (not recommended to use).\nIf set to true, it means that the script statement or thefunction is not recommended for use in Qlik Sense. \nThis parameter is optional. The default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

@@ -1,12 +1,12 @@
 {
     "qType": {
         "desc": "Type of the app list.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qData": {
         "desc": "Data that you want to include in the app list definition.\nYou need to enter the paths to the information you want to retrieve.\n",
-        "instance": "JSON",
+        "class": "JSON",
         "type": "primitive"
     }
 }

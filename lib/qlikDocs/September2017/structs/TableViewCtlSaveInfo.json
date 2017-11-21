@@ -1,12 +1,12 @@
 {
     "qInternalView": {
         "desc": "Internal view mode.\n",
-        "instance": "TableViewSaveInfo",
+        "class": "TableViewSaveInfo",
         "type": "object"
     },
     "qSourceView": {
         "desc": "Source view mode.",
-        "instance": "TableViewSaveInfo",
+        "class": "TableViewSaveInfo",
         "type": "object"
     }
 }

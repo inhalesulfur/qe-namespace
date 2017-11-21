@@ -1,17 +1,17 @@
 {
     "qName": {
         "desc": "Name of the library.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qAppSpecific": {
         "desc": "Is set to true if the library is specific to the app (not a global content library).",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qMeta": {
         "desc": "Information about publishing and permissions.",
-        "instance": "NxMeta",
+        "class": "NxMeta",
         "type": "object"
     }
 }

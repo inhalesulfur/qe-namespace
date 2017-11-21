@@ -1,7 +1,7 @@
 {
     "qItems": {
         "desc": "Information about the items in the app object",
-        "instance": "NxContainerEntry",
+        "class": "NxContainerEntry",
         "type": "array"
     }
 }

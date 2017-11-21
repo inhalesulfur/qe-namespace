@@ -1,7 +1,7 @@
 {
     "qItems": {
         "desc": "List of the variables.",
-        "instance": "NxVariableListItem",
+        "class": "NxVariableListItem",
         "type": "object"
     }
 }

@@ -1,12 +1,12 @@
 {
     "qLabel": {
         "desc": "Label of the measure.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qDef": {
         "desc": "Definition of the measure.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qGrouping": {
@@ -20,12 +20,12 @@
     },
     "qExpressions": {
         "desc": "Array of expressions.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qActiveExpression": {
         "desc": "Index to the active expression in a measure.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     }
 }

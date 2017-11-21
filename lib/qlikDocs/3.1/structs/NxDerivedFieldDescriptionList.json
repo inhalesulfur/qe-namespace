@@ -1,7 +1,7 @@
 {
     "qDerivedFieldLists": {
         "desc": "Information about the derived fields.",
-        "instance": "NxDerivedFieldsData",
+        "class": "NxDerivedFieldsData",
         "type": "array"
     }
 }

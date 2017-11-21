@@ -1,27 +1,27 @@
 {
     "qInfo": {
         "desc": "Identifier and type of the object that contains the expression",
-        "instance": "NxInfo",
+        "class": "NxInfo",
         "type": "object"
     },
     "qTags": {
         "desc": "Gives information on a field. For example, it can return the type of the field.\nExamples: key, text, ASCII\n",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qLocation": {
         "desc": "Location of the expression within the object",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qExpression": {
         "desc": "Value of the expression",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qParentPath": {
         "desc": "This parameter is displayed if the expression is located in a child object. The path of the parent of the child is given.\nThe format of the parent path is:\n/&lt;type of the parent&gt;:&lt;identifier of the parent&gt;\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     }
 }

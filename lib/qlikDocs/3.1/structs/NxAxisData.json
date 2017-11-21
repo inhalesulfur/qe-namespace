@@ -1,7 +1,7 @@
 {
     "qAxis": {
         "desc": "List of Axis data.",
-        "instance": "NxAxisTicks",
+        "class": "NxAxisTicks",
         "type": "array"
     }
 }

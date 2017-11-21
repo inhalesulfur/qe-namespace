@@ -1,32 +1,32 @@
 {
     "qTag": {
         "desc": "Name of the variable.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qRefSeqNo": {
         "desc": "Order in which the variable was referenced during the script execution. \nThe same number sequence is used for both qRefSeqNo and qSetSeqNo.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qSetSeqNo": {
         "desc": "Order in which the variable was updated during the script execution. \nThe same number sequence is used for both qRefSeqNo and qSetSeqNo.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qDisplayString": {
         "desc": "Variable value.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qIsSystem": {
         "desc": "Is set to true if the variable is a system variable.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qIsReserved": {
         "desc": "Is set to true if the variable is a reserved variable.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

@@ -1,12 +1,12 @@
 {
     "qPos": {
         "desc": "Information about the position of the dialog window.\nNot used in Qlik Sense.\n",
-        "instance": "Rect",
+        "class": "Rect",
         "type": "object"
     },
     "qCtlInfo": {
         "desc": "Set of data for internal and source view modes.",
-        "instance": "TableViewCtlSaveInfo",
+        "class": "TableViewCtlSaveInfo",
         "type": "object"
     },
     "qMode": {

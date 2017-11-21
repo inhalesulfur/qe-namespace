@@ -1,13 +1,13 @@
 {
     "qInfo": {
         "desc": "Information about the bookmark.\nThis parameter is mandatory.\n",
-        "instance": "NxInfo",
+        "class": "NxInfo",
         "type": "primitive",
         "values": {}
     },
     "qMetaDef": {
         "desc": "Definition of the dynamic properties.",
-        "instance": "Dynamic properties",
+        "class": "Dynamic properties",
         "type": "primitive"
     }
 }

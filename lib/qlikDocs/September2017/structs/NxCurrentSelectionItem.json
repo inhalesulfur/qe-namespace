@@ -1,77 +1,77 @@
 {
     "qField": {
         "desc": "Name of the field that is selected.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qIsNum": {
         "desc": "Optional parameter. This parameter is displayed if its value is true.\nIs set to true if the field is a numeric.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qLocked": {
         "desc": "Optional parameter. This parameter is displayed if its value is true.\nIs set to true if the field is locked.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qNotSelectedFieldSelectionInfo": {
         "desc": "Information about the fields that are not selected.",
-        "instance": "NxFieldSelectionInfo",
+        "class": "NxFieldSelectionInfo",
         "type": "array"
     },
     "qOneAndOnlyOne": {
         "desc": "Optional parameter. This parameter is displayed if its value is true.\nProperty that is set to a field. Is set to true if the field cannot be unselected. \n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qRangeInfo": {
         "desc": "Information about the range of selected values.\nIs empty if there is no range of selected values.\n",
-        "instance": "RangeSelectInfo",
+        "class": "RangeSelectInfo",
         "type": "array"
     },
     "qReadableName": {
         "desc": "Label that, if defined, is displayed in current selections instead of the actual expression. \n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qSelected": {
         "desc": "Values that are selected.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qSelectedCount": {
         "desc": "Number of values that are selected.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qSelectedFieldSelectionInfo": {
         "desc": "Information about the fields that are selected.",
-        "instance": "NxFieldSelectionInfo",
+        "class": "NxFieldSelectionInfo",
         "type": "array"
     },
     "qSelectionThreshold": {
         "desc": "Maximum values to show in the current selections.\nThe default value is 6.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qSortIndex": {
         "desc": "Sort index of the field. Indexing starts from 0.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qStateCounts": {
         "desc": "Number of values in a particular state.",
-        "instance": "NxStateCounts",
+        "class": "NxStateCounts",
         "type": "object"
     },
     "qTextSearch": {
         "desc": "Optional parameter.\nText that was used for the search. This parameter is filled when searching for a value and selecting it.\n",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qTotal": {
         "desc": "Number of values in the field.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     }
 }

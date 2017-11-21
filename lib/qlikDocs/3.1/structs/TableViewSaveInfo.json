@@ -1,22 +1,22 @@
 {
     "qTables": {
         "desc": "List of the tables in the database model viewer.\n",
-        "instance": "TableViewTableWinSaveInfo",
+        "class": "TableViewTableWinSaveInfo",
         "type": "array"
     },
     "qBroomPoints": {
         "desc": "List of the broom points in the database model viewer.\nNot used in Qlik Sense.\n",
-        "instance": "TableViewBroomPointSaveInfo",
+        "class": "TableViewBroomPointSaveInfo",
         "type": "array"
     },
     "qConnectionPoints": {
         "desc": "List of connection points in the database model viewer.\nNot used in Qlik Sense.\n",
-        "instance": "TableViewConnectionPointSaveInfo",
+        "class": "TableViewConnectionPointSaveInfo",
         "type": "array"
     },
     "qZoomFactor": {
         "desc": "Zoom factor in the database model viewer.\nThe default value is 1.0.\n",
-        "instance": "Double",
+        "class": "Double",
         "type": "primitive"
     }
 }

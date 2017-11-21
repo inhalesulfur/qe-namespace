@@ -1,12 +1,12 @@
 {
     "qx": {
         "desc": "Position of the cell on the x-axis.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qy": {
         "desc": "Position of the cell on the y-axis.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     }
 }

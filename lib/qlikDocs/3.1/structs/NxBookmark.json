@@ -1,17 +1,17 @@
 {
     "qStateData": {
         "desc": "List of selections for each state.\n",
-        "instance": "AlternateStateData",
+        "class": "AlternateStateData",
         "type": "array"
     },
     "qUtcModifyTime": {
         "desc": "Time when the bookmark was created.",
-        "instance": "Double precision floating point",
+        "class": "Double precision floating point",
         "type": "primitive"
     },
     "qVariableItems": {
         "desc": "List of the variables in the app at the time the bookmark was created. ",
-        "instance": "BookmarkVariableItem",
+        "class": "BookmarkVariableItem",
         "type": "array"
     }
 }

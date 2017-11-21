@@ -1,12 +1,12 @@
 {
     "qId": {
         "desc": "Identifier of the group.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qName": {
         "desc": "Name of the derived group.",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qGrouping": {
@@ -20,7 +20,7 @@
     },
     "qFieldDefs": {
         "desc": "List of the derived fields in the group.",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     }
 }

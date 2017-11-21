@@ -10,12 +10,12 @@
     },
     "qCol": {
         "desc": "Column index to select\nIndexing starts from 0.\nIf the cell's type is:\n\nD, the index is based on the data matrix. \nT, the index is based on the data matrix\nL, the index is based on the left dimensions indexes\n\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qRow": {
         "desc": "Row index to select\nIndexing starts from 0.\nIf the cell's type is:\n\nD, the index is based on the data matrix. \nT, the index is based on the top dimensions indexes\nL, the index is based on the data matrix\n\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     }
 }

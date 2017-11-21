@@ -1,27 +1,27 @@
 {
     "qApprMaxGlyphCount": {
         "desc": "Length of the longest value in the field.",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qCardinal": {
         "desc": "Number of distinct field values",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qTags": {
         "desc": "Gives information on a field. For example, it can return the type of the field.\nExamples: key, text, ASCII\n",
-        "instance": "String",
+        "class": "String",
         "type": "array"
     },
     "qIsSemantic": {
         "desc": "If set to true, it means that the field is a semantic.",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qAndMode": {
         "desc": "If set to true a logical AND (instead of a logical OR) is used when making selections in a field.\nThe default value is false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     }
 }

@@ -1,27 +1,27 @@
 {
     "qText": {
         "desc": "Some text",
-        "instance": "String",
+        "class": "String",
         "type": "primitive"
     },
     "qElemNo": {
         "desc": "Rank number of the value\nIf set to -1, it means that the value is not an element number.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qValue": {
         "desc": "Value of the cell\nIs set to NaN, if the value is not a number.\n",
-        "instance": "Double precision floating point",
+        "class": "Double precision floating point",
         "type": "primitive"
     },
     "qCanExpand": {
         "desc": "If set to true, it means that the cell can be expanded.\nThis parameter is not returned if it is set to false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qCanCollapse": {
         "desc": "If set to true, it means that the cell can be collapsed.\nThis parameter is not returned if it is set to false.\n",
-        "instance": "Boolean",
+        "class": "Boolean",
         "type": "primitive"
     },
     "qType": {
@@ -39,27 +39,27 @@
     },
     "qUp": {
         "desc": "Number of elements that are part of the previous tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qDown": {
         "desc": "Number of elements that are part of the next tail.\nThis number depends on the paging, more particularly it depends on the values defined in qTop and qHeight.\n",
-        "instance": "Integer",
+        "class": "Integer",
         "type": "primitive"
     },
     "qSubNodes": {
         "desc": "Information about sub nodes (or sub cells)\nThe array is empty [ ] when there is no sub nodes.\n",
-        "instance": "NxPivotDimensionCell",
+        "class": "NxPivotDimensionCell",
         "type": "array"
     },
     "qAttrExps": {
         "desc": "Information about attribute expressions.\nThe array is empty [ ] when there is no attribute expressions.\n",
-        "instance": "NxAttributeExpressionValues",
+        "class": "NxAttributeExpressionValues",
         "type": "array"
     },
     "qAttrDims": {
         "desc": "Information about attribute dimensions.",
-        "instance": "NxAttributeDimValues",
+        "class": "NxAttributeDimValues",
         "type": "array"
     }
 }
