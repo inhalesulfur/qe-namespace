@@ -108,7 +108,7 @@ format.qDef instanseof NxInlineDimensionDef // true
 Also setters check `instanceof` for setting value:
 ```js
 dim.set.qDef({});
-//TypeError: setted object is not an instance of the NxInlineDimensionDef
+//TypeError: setted object is not an instance of NxInlineDimensionDef
 ```
 
 You can awoid `instanceof` checking by setting value directly to the property:
@@ -142,7 +142,7 @@ Function `.push` for properties with `type:array` checks class of pushed value:
 ```js
 var cube = new st.HyperCubeDef;
 cube.qDimensions.push({})
-//TypeError: pushed value is not an instance of the NxDimension
+//TypeError: pushed value is not an instance of NxDimension
 ```
 
 #### Stringify
