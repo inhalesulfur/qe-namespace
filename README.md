@@ -118,7 +118,6 @@ dim.qDef = { qFieldDefs:[] };
 
 If property has `values` attribute, setter will check for possible values:
 ```js
-dim.qDef = { qFieldDefs:[] };
 var format = new st.FileDataFormat;
 format.set.qType("123")
 /*
