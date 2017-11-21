@@ -95,14 +95,14 @@ This collections are costructed with Function expression, so `JSON.parse` ingore
 var format = new st.FileDataFormat;
 format.set("qType", "CSV")     //need to surf through documentation for possible properties
 format.set.qType("CSV")        //no need to surf through documentation for possible properties
-//format.qType === "CSV"
+format.qType === "CSV" // true
 ```
 
 For properties, which class presented in namespace, constructor adds initialisation function into `.init` collection:
 ```js
 var dim = new st.NxDimension;
 dim.init.qDef() // equal to dim.set.qDef(new st.NxInlineDimensionDef)
-//format.qDef instanseof NxInlineDimensionDef
+format.qDef instanseof NxInlineDimensionDef // true
 ```
 
 Also setters check `instanceof` for setting value:
