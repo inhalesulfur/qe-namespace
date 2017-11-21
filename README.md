@@ -1,9 +1,8 @@
-# qe-namespace
-## Qlik Engine Structs Documentation parser and class builder
+# Qlik Engine Structs Documentation parser and class builder
 
 ### Project consists of two parts:
 - Script for uploading and parsing [Qlik Engine API Structs Documentation](http://help.qlik.com/en-US/sense-developer/June2017/Subsystems/EngineAPI/Content/Structs/OverviewStruct.htm) into json files
-- Script for generating namespace of JavaScript classes, that encapsulate JSON structure of Qlik Engine API data sets and provide some type cheking
+- Script for generating namespace of JavaScript classes that encapsulate JSON structure of Qlik Engine API data sets and provide some type checking
 
 ### Installing
 
