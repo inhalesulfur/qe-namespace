@@ -93,8 +93,8 @@ In this implementation each constructor adds to result object `.set` and `.init`
 This collections are costructed with Function expression, so `JSON.parse` ingore them.
 ```js
 var format = new st.FileDataFormat;
-format.set("qType", "CSV") 	//need to surf through documentation for possible properties
-format.set.qType("CSV")		//no need to surf through documentation for possible properties
+format.set("qType", "CSV")     //need to surf through documentation for possible properties
+format.set.qType("CSV")        //no need to surf through documentation for possible properties
 //format.qType === "CSV"
 ```
 
@@ -159,8 +159,8 @@ Functions from `.set` collection return initial object:
 ```js
 var format = new st.FileDataFormat;
 format.set.qType("CSV")
-	.set.qComment("comment")
-	.set.qCodePage("utf8")
+    .set.qComment("comment")
+    .set.qCodePage("utf8")
 ```
 
 Functions from `.init` collection return initialized object:
@@ -173,26 +173,26 @@ Function `.push` for properties `type:array` returns initial array:
 ```js
 var cube = new st.HyperCubeDef;
 cube.qDimensions.push(new st.NxDimension)
-	.push(new st.NxDimension)
-	.push(new st.NxDimension);
+    .push(new st.NxDimension)
+    .push(new st.NxDimension);
 ```
 
 If array items class presented in namespace, method `.pushNew` added. This method returns pushed object:
 ```js
 var cube = new st.HyperCubeDef;
 cube.qInitialDataFetch.pushNew()
-	.set.qLeft(0)
-	.set.qTop(0)
-	.set.qWidth(4)
-	.set.qHeight(50);
+    .set.qLeft(0)
+    .set.qTop(0)
+    .set.qWidth(4)
+    .set.qHeight(50);
 cube.qDimensions.pushNew()
-	.init.qDef()
-		.qFieldDefs
-			.push("field1")
-			.push("field2")
-			.push("field3")
-			.push("field4");
-console.log(cube.stringify(null, 4));		
+    .init.qDef()
+        .qFieldDefs
+            .push("field1")
+            .push("field2")
+            .push("field3")
+            .push("field4");
+console.log(cube.stringify(null, 4));        
 ```
 
 Console:
