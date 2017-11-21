@@ -89,7 +89,7 @@ define([
 })
 ```
 
-In this implementation each constructor adds to result object `.set` and `.init` collections for setting and initialisation functions
+In this implementation each constructor adds to result object `.set` and `.init` collections for setting and initialisation functions. 
 This collections are costructed with Function expression, so `JSON.parse` ingore them
 ```js
 var format = new st.FileDataFormat;
